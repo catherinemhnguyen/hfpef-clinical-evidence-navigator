@@ -1,99 +1,100 @@
 # HFpEF Clinical Evidence Navigator
 
-A lightweight, **GitHub Pages-ready** educational prototype for searching selected landmark trials in heart failure with preserved or mildly reduced ejection fraction.
+**v0.2.0 | 22 selected research studies + 3 published guidance documents | Updated November 11, 2026**
 
-**Current status:** version 0.1.0 — six curated trial records, preliminary summaries, and no independent clinician validation. **Not clinical decision support.**
+A small, reproducible, public-facing **Python/Streamlit** prototype organizing selected trial findings and guidance related to heart failure with preserved ejection fraction (HFpEF) and adjacent mildly reduced EF populations. The previous static GitHub Pages website is preserved.
 
-## What's included
+> **Research and education only — not for clinical decision-making.** Records have undergone selective publication/abstract-level checks, **not** independent full-text verification, systematic screening, guideline recommendation extraction, clinical adjudication, or formal risk-of-bias assessment. Sources and exact EF eligibility vary; results must not be pooled casually.
 
-- `index.html` — the website's landing page, filters, study cards, and methods section.
-- `assets/styles.css` — responsive visual design.
-- `assets/app.js` — JavaScript that reads the JSON, searches/filters studies, and exports filtered results.
-- `data/studies.json` — **single source of truth** for the clinical data. Each study includes its population, EF eligibility, intervention/comparator, primary endpoint(s), results, DOI, PMID, and NCT ID.
-- `scripts/validate_data.py` — a basic structural check of the dataset.
+## Features
 
-No npm installation, JavaScript framework, API key, or external backend is required.
+- **22 study records** selected from different trial eras, including both neutral and positive findings.
+- **3 guidance records**: 2022 AHA/ACC/HFSA HF guideline, 2023 ESC focused update, and 2023 ACC HFpEF expert consensus decision pathway (labeled as consensus, not a graded formal guideline).
+- Streamlit searches and filters by **study design, treatment, endpoint family, enrolled phenotype, primary result status, and publication year**.
+- Side-by-side descriptive comparison of **up to four selected studies**, with endpoint definitions and original citations visible.
+- Direct PubMed/DOI links and ClinicalTrials.gov links **when a confirmed registration ID was recorded**.
+- CSV exports for studies, guidance and all 25 evidence records, plus filtered JSON download.
+- Validation and regression tests using built-in Python `unittest`.
 
-## Preview on your computer
+## Project files
 
-1. Unzip the project and open a terminal inside the `hfpef-clinical-evidence-navigator` folder.
-2. Run:
-
-   ```bash
-   python -m http.server 8000
-   ```
-
-3. In your browser, visit **http://localhost:8000**.
-
-> Opening `index.html` directly with `file://` may fail because browser security restrictions can block fetching local JSON. Use the local server instead.
-
-## Put it on GitHub and publish it
-
-### Browser method (no terminal Git required)
-
-1. Create a **public** repository on [GitHub](https://github.com/new) called `hfpef-clinical-evidence-navigator`.
-2. Extract this ZIP. In your new repository select **Add file → Upload files** and upload the *contents of the project folder*, preserving `assets/`, `data/`, and `scripts/` paths. GitHub's web upload supports dragging the extracted project files/folders into the upload area. **Do not upload only the ZIP.**
-3. Commit the files to the `main` branch.
-4. Go to **Settings → Pages → Build and deployment**, set **Source: Deploy from a branch**, **Branch: main**, **Folder: /(root)**, and select **Save**.
-5. GitHub Pages will publish to `https://YOUR-USERNAME.github.io/hfpef-clinical-evidence-navigator/` once deployment completes (replace `YOUR-USERNAME`).
-
-### Terminal method (if Git is installed)
-
-```bash
-git init
-git add .
-git commit -m "Build initial HFpEF evidence navigator"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/hfpef-clinical-evidence-navigator.git
-git push -u origin main
+```text
+.
+├── streamlit_app.py               # Python/Streamlit application
+├── requirements.txt               # Python dependencies
+├── .streamlit/config.toml         # Theme
+├── data/
+│   ├── studies.json               # Canonical clinical-trial data
+│   ├── guidelines.json            # Canonical guidance records
+│   ├── studies.csv                 # Export snapshot
+│   ├── guidelines.csv              # Export snapshot
+│   └── evidence_index.csv         # All 25 records in one table
+├── scripts/
+│   ├── evidence.py                # Data, filters, flattening, export logic
+│   ├── validate_data.py           # Basic structural validation
+│   └── export_csv.py              # Rebuild CSV snapshots from JSON
+├── tests/test_evidence.py         # Offline checks
+├── docs/EXTRACTION_PROTOCOL.md    # Provenance and reviewer workflow
+├── index.html                     # Original GitHub Pages website
+└── assets/                        # Original HTML site CSS/JavaScript
 ```
 
-Create the empty GitHub repository first, then enable Pages as above.
+## Run Streamlit locally
 
-**Publishing note:** GitHub Pages websites are public; do not commit patient data, unpublished confidential results, or internal communications.
+```bash
+python -m pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
 
-## Add another study
+Then visit the local address printed by Streamlit (usually `http://localhost:8501`).
 
-1. Open `data/studies.json` in VS Code or any text editor.
-2. Duplicate an existing study object inside the `studies` array, then assign a new, unique `id`.
-3. Replace the title, population, EF threshold, intervention, exact endpoint definition, effect measure and CI, and all source IDs.
-4. Label the endpoint analysis accurately (e.g., time-to-first event, recurrent-event composite, KCCQ change). **Do not treat HR, RR, and between-group mean difference as interchangeable.**
-5. Update `updated_at` and the study's curation/source-check fields.
-6. Validate and reload the website:
+## Deploy the Streamlit version
 
-   ```bash
-   python scripts/validate_data.py
-   ```
+1. Push this repository to your GitHub account (already tracked under `catherinemhnguyen/hfpef-clinical-evidence-navigator`).
+2. Sign in at [Streamlit Community Cloud](https://share.streamlit.io/) with GitHub.
+3. Choose **Create app** → **Deploy a public app from GitHub**.
+4. Select the repository `catherinemhnguyen/hfpef-clinical-evidence-navigator`, branch `main`, and app file `streamlit_app.py`.
+5. Deploy, then verify search, comparison, guidance and download controls on the public app.
 
-**Data quality rule:** Never label a trial's overall primary outcome positive when its prespecified result is not statistically significant. Preserve whether the source reports a hazard ratio, rate ratio, or difference, and avoid claiming an isolated mortality benefit based on a composite endpoint.
+**Deployment status:** GitHub Pages hosts the original *static* interface, which now lists the 22 studies. **Streamlit deployment is a separate step**, requiring the account owner to authorize Streamlit Community Cloud. Do not confuse the successful GitHub Pages build with an active Streamlit application.
 
-## Research development roadmap
+## Use or edit the data
 
-- **v0.1**: six source-linked original RCTs, searchable filters, CSV/JSON export (this release).
-- **v0.2**: full-text verification by a second reviewer; protocol details, registration status, follow-up period, adverse events, and risk-of-bias fields.
-- **v0.3**: phenotype tags (obesity/AF/CKD/EF strata), guidelines mapped to studies, structured search provenance, reviewer audit log.
-- **v1.0**: clinician-reviewed evidence summaries with a documented update process and clearly declared scope.
+JSON is the **source of truth**. Do not hand-edit CSV exports. To add a study, append a JSON object with a unique `id`, an accurate source, explicit EF eligibility, intervention/comparator, primary endpoint structure, and conservative verification status. Missing numerical effect estimates should be `null` and should be described as unextracted rather than guessed.
 
-## Academic and clinical limitations
+After editing:
 
-This is a **selected-study navigator**, not a systematic review, complete evidence synthesis, or diagnostic/treatment recommendation engine. Some trials include HF with mildly reduced or improved EF; verify inclusion and exclusion criteria in the full publication/protocol. The initial records have been checked against published abstracts and bibliographic records, but **full-text verification, expert adjudication, and independent data extraction remain outstanding**.
+```bash
+python scripts/validate_data.py
+python scripts/export_csv.py
+python -m unittest discover -s tests -v
+```
 
-The content is original paraphrase of source articles, not copied abstracts. The source publications remain the authoritative reference. If used in a manuscript or shared with a mentor, describe this as an **early prototype** rather than as validated clinical evidence infrastructure.
+The structural validator checks field consistency, DOI/PMID formatting, the limited 22+3 inventory, and coherence of confidence intervals where numeric results are entered. **These tests do not check actual scientific accuracy, full-text fidelity, or physician agreement.**
 
-## Initial source publications (primary reports)
+## How this aligns with the initial mentor proposal
 
-| Trial | PMID | DOI |
-|---|---|---|
-| EMPEROR-Preserved | 34449189 | [10.1056/NEJMoa2107038](https://doi.org/10.1056/NEJMoa2107038) |
-| DELIVER | 36027570 | [10.1056/NEJMoa2206286](https://doi.org/10.1056/NEJMoa2206286) |
-| PARAGON-HF | 31475794 | [10.1056/NEJMoa1908655](https://doi.org/10.1056/NEJMoa1908655) |
-| TOPCAT | 24716680 | [10.1056/NEJMoa1313731](https://doi.org/10.1056/NEJMoa1313731) |
-| STEP-HFpEF | 37622681 | [10.1056/NEJMoa2306963](https://doi.org/10.1056/NEJMoa2306963) |
-| FINEARTS-HF | 39225278 | [10.1056/NEJMoa2407107](https://doi.org/10.1056/NEJMoa2407107) |
+| Proposed milestone | Current prototype |
+| --- | --- |
+| 20–30 studies/guidance sources | 22 study records plus 3 guidance documents |
+| Structured CSV/database | Canonical JSON plus reproducible CSV exports |
+| Python + Streamlit website | `streamlit_app.py` with search and multi-select filters |
+| GitHub hosting | Public GitHub repository; static site already on GitHub Pages |
+| Verification and iteration | Source metadata/abstract checks, audit statuses and offline code tests; independent review **pending** |
+| Automation later | CSV generation is automated; **PubMed ingestion is not yet automated**, avoiding premature extraction error |
 
-## Suggested mentor questions
+## Clinical/research limitations
 
-1. Should the initial scope include only trials with LVEF ≥50%, or clearly tagged HFmrEF/HFpEF spectrum studies too?
-2. What fields must be physician-validated before a record is labeled *reviewed*?
-3. Should the navigator prioritize trial-level evidence, guideline recommendation mapping, or both?
-4. What minimum extraction and audit documentation would make the dataset appropriate for a methods publication?
+- This is a **purposefully selected** library, not a systematic review or meta-analysis. No PRISMA flow, exhaustive searches, or formal GRADE assessment.
+- Study endpoints differ (clinical events, recurrent events, exercise capacity, biomarkers, KCCQ scores, body weight); effect measures are not interchangeable.
+- Several studies enrolled EF >40% or ≥45% and should not be labeled as restricted to EF ≥50%.
+- A tag such as `Obesity` describes trial enrollment criteria, **not a validated interaction effect**.
+- Guidelines are **not** reduced to clinical recommendations; exact recommendation text, class and evidence level require targeted extraction and attribution.
+- Trial registration IDs are included only when recorded; a blank field means **not yet extracted**, not "not registered".
+- Review field values remain preliminary until independent checking by a research collaborator and qualified clinical reviewer.
+
+See [`docs/EXTRACTION_PROTOCOL.md`](docs/EXTRACTION_PROTOCOL.md) for the review plan and reviewer worksheet. All clinical assertions should be checked in linked primary sources before public-facing scholarly claims.
+
+## Selected sources
+
+Links to the original bibliographic records are embedded alongside **every** study and guidance record in the JSON and both website interfaces. For example: [CHARM-Preserved](https://pubmed.ncbi.nlm.nih.gov/13678871/), [EMPEROR-Preserved](https://pubmed.ncbi.nlm.nih.gov/34449189/), [DELIVER](https://pubmed.ncbi.nlm.nih.gov/36027570/), [SUMMIT](https://pubmed.ncbi.nlm.nih.gov/39555826/), [2022 AHA/ACC/HFSA guideline](https://pubmed.ncbi.nlm.nih.gov/35363499/), and [2023 ACC HFpEF pathway](https://pubmed.ncbi.nlm.nih.gov/37137593/).
