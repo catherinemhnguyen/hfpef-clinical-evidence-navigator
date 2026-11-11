@@ -53,7 +53,7 @@
         <div>
           <p class="section-kicker">THE EVIDENCE LIBRARY</p>
           <h2>Clinical trial explorer</h2>
-          <p>Search by trial, intervention, population, or outcome.</p>
+          <p>Search 22 selected trials by intervention, population, or outcome. Three guidance records are separately available in the source data and Streamlit app.</p>
         </div>
         <div class="source-actions">
           <button id="download-json" class="button button-quiet" type="button">Export results as JSON ↓</button>
@@ -90,11 +90,11 @@
         <div>
           <p class="section-kicker">DESIGN & METHODOLOGY</p>
           <h2>Evidence in context</h2>
-          <p>The navigator uses structured JSON to make individual studies easy to discover and update. Each entry records eligibility, treatment, comparator, prespecified primary outcome, effect estimate, and citation.</p>
-          <a class="inline-link" href="data/studies.json" target="_blank" rel="noopener">Explore the dataset structure <span aria-hidden="true">↗</span></a>
+          <p>The navigator uses structured JSON to make individual studies easy to discover and update. Each entry records eligibility, treatment, comparator, primary outcome, available effect estimates, and citation. A Python/Streamlit version adds study-type and outcome filters, comparisons, and guidance records.</p>
+          <a class="inline-link" href="data/studies.json" target="_blank" rel="noopener">Explore the studies JSON <span aria-hidden="true">↗</span></a> · <a class="inline-link" href="data/guidelines.json" target="_blank" rel="noopener">View guidance records <span aria-hidden="true">↗</span></a>
         </div>
         <div class="method-list">
-          <div class="method-item"><span>01</span><div><h3>Traceable sources</h3><p>Primary trial publications are linked by DOI, PMID, and ClinicalTrials.gov identifier.</p></div></div>
+          <div class="method-item"><span>01</span><div><h3>Traceable sources</h3><p>Primary trial publications are linked by DOI and PMID, plus ClinicalTrials.gov identifiers when recorded.</p></div></div>
           <div class="method-item"><span>02</span><div><h3>Explicit denominators</h3><p>Enrollment criteria and LVEF thresholds remain visible, even when studies span HFmrEF and HFpEF.</p></div></div>
           <div class="method-item"><span>03</span><div><h3>Outcome-aware summaries</h3><p>Hazard ratios, recurrent-event rate ratios, and patient-reported outcomes are labeled separately.</p></div></div>
           <div class="method-item"><span>04</span><div><h3>Clinical review pending</h3><p>These first records are source-checked drafts, not an exhaustive review or expert-approved synthesis.</p></div></div>
@@ -102,6 +102,6 @@
       </div>
     </section>
   </main>
-  <footer class="footer"><div class="container footer-inner"><span>HFpEF Clinical Evidence Navigator · v0.1</span><span>Educational research prototype · Updated 2026</span></div></footer>
+  <footer class="footer"><div class="container footer-inner"><span>HFpEF Clinical Evidence Navigator · v0.2</span><span>Educational research prototype · Updated 2026</span></div></footer>
 </body>
 </html>
