@@ -1,0 +1,68 @@
+{
+  "project": "HFpEF Clinical Evidence Navigator",
+  "schema_version": "0.2.0",
+  "updated_at": "2026-11-11",
+  "scope_note": "Three selected, established heart-failure guidance documents. This is not an exhaustive or necessarily most recent guideline list; statements need line-by-line recommendation-level extraction before being used for clinical decisions.",
+  "guidelines": [
+    {
+      "id": "aha-acc-hfsa-2022",
+      "short_name": "2022 AHA/ACC/HFSA HF Guideline",
+      "title": "2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure",
+      "year": 2022,
+      "organization": "AHA / ACC / HFSA",
+      "publication_type": "Clinical practice guideline",
+      "study_type": "Guideline",
+      "topics": [
+        "Diagnosis",
+        "Therapeutics",
+        "HF hospitalization"
+      ],
+      "summary": "Comprehensive U.S. heart failure guideline with HFpEF and HFmrEF treatment sections. Consult the source for exact classes of recommendation and levels of evidence.",
+      "doi": "10.1161/CIR.0000000000001063",
+      "pmid": "35363499",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/35363499/",
+      "verification_status": "Bibliographic record verified; recommendation-level abstraction pending",
+      "last_source_check": "2026-11-11"
+    },
+    {
+      "id": "esc-update-2023",
+      "short_name": "2023 ESC Focused HF Update",
+      "title": "2023 Focused Update of the 2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure",
+      "year": 2023,
+      "organization": "European Society of Cardiology",
+      "publication_type": "Focused guideline update",
+      "study_type": "Guideline",
+      "topics": [
+        "Therapeutics",
+        "HF hospitalization"
+      ],
+      "summary": "Focused European heart failure guideline update incorporating pivotal HFpEF/HFmrEF evidence. Consult the primary text for exact recommendations.",
+      "doi": "10.1093/eurheartj/ehad195",
+      "pmid": "37622666",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/37622666/",
+      "verification_status": "Bibliographic record verified; recommendation-level abstraction pending",
+      "last_source_check": "2026-11-11"
+    },
+    {
+      "id": "acc-ecdp-2023",
+      "short_name": "2023 ACC HFpEF Decision Pathway",
+      "title": "2023 ACC Expert Consensus Decision Pathway on Management of Heart Failure With Preserved Ejection Fraction",
+      "year": 2023,
+      "organization": "American College of Cardiology",
+      "publication_type": "Expert consensus decision pathway",
+      "study_type": "Guideline",
+      "topics": [
+        "Diagnosis",
+        "Therapeutics",
+        "Phenotyping",
+        "Symptoms/quality of life"
+      ],
+      "summary": "HFpEF-focused expert consensus and diagnostic/management pathway; distinct from a formal graded clinical practice guideline. Consult the source for individual statements.",
+      "doi": "10.1016/j.jacc.2023.03.393",
+      "pmid": "37137593",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/37137593/",
+      "verification_status": "Bibliographic record verified; recommendation-level abstraction pending",
+      "last_source_check": "2026-11-11"
+    }
+  ]
+}
