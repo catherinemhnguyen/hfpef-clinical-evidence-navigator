@@ -1,9 +1,9 @@
 {
   "project": "HFpEF Clinical Evidence Navigator",
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "updated_at": "2026-11-11",
-  "project_status": "Educational research prototype — not a clinical decision-support device",
-  "scope_note": "Selected landmark trials; intentionally not a systematic review or exhaustive database. Enrollment EF thresholds and primary endpoints vary across studies.",
+  "project_status": "Educational research prototype — abstract-level extraction; full-text review pending — not clinical decision support",
+  "scope_note": "Curated, non-systematic selection of 22 randomized studies. EF thresholds, endpoint types, years, and populations vary. Do not directly compare or pool effect estimates; some numeric data remain unextracted.",
   "studies": [
     {
       "id": "emperor-preserved-2021",
@@ -60,9 +60,18 @@
       ],
       "curation": {
         "source_basis": "Primary trial abstract and bibliographic PubMed record",
-        "verification_status": "Source-checked; clinical expert review pending",
-        "last_source_check": "2026-11-11"
-      }
+        "verification_status": "Abstract-checked; independent full-text/clinician review pending",
+        "last_source_check": "2026-11-11",
+        "reviewer": "",
+        "second_reviewer": "",
+        "review_notes": ""
+      },
+      "study_type": "Randomized trial",
+      "outcome_tags": [
+        "Cardiovascular events",
+        "HF hospitalization"
+      ],
+      "phenotype_tags": []
     },
     {
       "id": "deliver-2022",
@@ -120,9 +129,18 @@
       ],
       "curation": {
         "source_basis": "Primary trial abstract and bibliographic PubMed record",
-        "verification_status": "Source-checked; clinical expert review pending",
-        "last_source_check": "2026-11-11"
-      }
+        "verification_status": "Abstract-checked; independent full-text/clinician review pending",
+        "last_source_check": "2026-11-11",
+        "reviewer": "",
+        "second_reviewer": "",
+        "review_notes": ""
+      },
+      "study_type": "Randomized trial",
+      "outcome_tags": [
+        "Cardiovascular events",
+        "HF hospitalization"
+      ],
+      "phenotype_tags": []
     },
     {
       "id": "paragon-hf-2019",
@@ -179,9 +197,18 @@
       ],
       "curation": {
         "source_basis": "Primary trial abstract and bibliographic PubMed record",
-        "verification_status": "Source-checked; clinical expert review pending",
-        "last_source_check": "2026-11-11"
-      }
+        "verification_status": "Abstract-checked; independent full-text/clinician review pending",
+        "last_source_check": "2026-11-11",
+        "reviewer": "",
+        "second_reviewer": "",
+        "review_notes": ""
+      },
+      "study_type": "Randomized trial",
+      "outcome_tags": [
+        "Cardiovascular events",
+        "HF hospitalization"
+      ],
+      "phenotype_tags": []
     },
     {
       "id": "topcat-2014",
@@ -238,9 +265,18 @@
       ],
       "curation": {
         "source_basis": "Primary trial abstract and bibliographic PubMed record",
-        "verification_status": "Source-checked; clinical expert review pending",
-        "last_source_check": "2026-11-11"
-      }
+        "verification_status": "Abstract-checked; independent full-text/clinician review pending",
+        "last_source_check": "2026-11-11",
+        "reviewer": "",
+        "second_reviewer": "",
+        "review_notes": ""
+      },
+      "study_type": "Randomized trial",
+      "outcome_tags": [
+        "Cardiovascular events",
+        "HF hospitalization"
+      ],
+      "phenotype_tags": []
     },
     {
       "id": "step-hfpef-2023",
@@ -311,9 +347,20 @@
       ],
       "curation": {
         "source_basis": "Primary trial abstract and bibliographic PubMed record",
-        "verification_status": "Source-checked; clinical expert review pending",
-        "last_source_check": "2026-11-11"
-      }
+        "verification_status": "Abstract-checked; independent full-text/clinician review pending",
+        "last_source_check": "2026-11-11",
+        "reviewer": "",
+        "second_reviewer": "",
+        "review_notes": ""
+      },
+      "study_type": "Randomized trial",
+      "outcome_tags": [
+        "Symptoms/quality of life",
+        "Weight"
+      ],
+      "phenotype_tags": [
+        "Obesity"
+      ]
     },
     {
       "id": "finearts-hf-2024",
@@ -371,8 +418,1133 @@
       ],
       "curation": {
         "source_basis": "Primary trial abstract and bibliographic PubMed record",
-        "verification_status": "Source-checked; clinical expert review pending",
-        "last_source_check": "2026-11-11"
+        "verification_status": "Abstract-checked; independent full-text/clinician review pending",
+        "last_source_check": "2026-11-11",
+        "reviewer": "",
+        "second_reviewer": "",
+        "review_notes": ""
+      },
+      "study_type": "Randomized trial",
+      "outcome_tags": [
+        "Cardiovascular events",
+        "HF hospitalization"
+      ],
+      "phenotype_tags": []
+    },
+    {
+      "id": "charm-preserved-2003",
+      "acronym": "CHARM-Preserved",
+      "title": "Effects of candesartan in patients with chronic heart failure and preserved left-ventricular ejection fraction",
+      "year": 2003,
+      "journal": "Lancet",
+      "study_design": "Randomized trial",
+      "study_type": "Randomized trial",
+      "treatment_category": "ARB",
+      "population_group": "Broad EF spectrum",
+      "population": {
+        "summary": "Patients with chronic symptomatic HF and EF >40%.",
+        "sample_size": 3023,
+        "lvef_eligibility": ">40%",
+        "additional_criteria": "Consult the original eligibility criteria and protocol."
+      },
+      "intervention": {
+        "name": "Candesartan",
+        "dose": "Target 32 mg daily",
+        "comparator": "Placebo"
+      },
+      "primary_outcomes": [
+        {
+          "name": "CV death or CHF hospitalization",
+          "analysis": "Time to first event",
+          "effect_type": "Hazard ratio",
+          "effect_estimate": 0.89,
+          "ci_95": [
+            0.77,
+            1.03
+          ],
+          "p_value": "0.118",
+          "significant": false,
+          "result_text": "Unadjusted HR 0.89 (95% CI 0.77–1.03), p=0.118; fewer CHF admissions observed."
+        }
+      ],
+      "interpretation": "Overall unadjusted primary composite did not reach significance; admissions for HF were lower.",
+      "cautions": [
+        "Do not equate an unadjusted non-significant primary result with an adjusted sensitivity result."
+      ],
+      "reference": {
+        "short_citation": "CHARM-Preserved, Lancet (2003)",
+        "doi": "10.1016/S0140-6736(03)14285-7",
+        "pmid": "13678871",
+        "clinicaltrials_id": "",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/13678871/"
+      },
+      "tags": [
+        "ARB",
+        "cardiovascular events",
+        "hf hospitalization"
+      ],
+      "outcome_tags": [
+        "Cardiovascular events",
+        "HF hospitalization"
+      ],
+      "phenotype_tags": [],
+      "curation": {
+        "source_basis": "Original trial publication, PubMed bibliographic record, and abstract; full-text extraction not completed",
+        "verification_status": "Abstract-checked; independent full-text/clinician review pending",
+        "last_source_check": "2026-11-11",
+        "reviewer": "",
+        "second_reviewer": "",
+        "review_notes": ""
+      }
+    },
+    {
+      "id": "i-preserve-2008",
+      "acronym": "I-PRESERVE",
+      "title": "Irbesartan in patients with heart failure and preserved ejection fraction",
+      "year": 2008,
+      "journal": "New England Journal of Medicine",
+      "study_design": "Randomized trial",
+      "study_type": "Randomized trial",
+      "treatment_category": "ARB",
+      "population_group": "Broad EF spectrum",
+      "population": {
+        "summary": "Symptomatic HF in adults aged at least 60 years.",
+        "sample_size": 4128,
+        "lvef_eligibility": "≥45%",
+        "additional_criteria": "Consult the original eligibility criteria and protocol."
+      },
+      "intervention": {
+        "name": "Irbesartan",
+        "dose": "300 mg daily",
+        "comparator": "Placebo"
+      },
+      "primary_outcomes": [
+        {
+          "name": "All-cause death or cardiovascular hospitalization",
+          "analysis": "Time to first event",
+          "effect_type": "Hazard ratio",
+          "effect_estimate": 0.95,
+          "ci_95": [
+            0.86,
+            1.05
+          ],
+          "p_value": "0.35",
+          "significant": false,
+          "result_text": "Primary outcome HR 0.95 (95% CI 0.86–1.05), p=0.35; not significant."
+        }
+      ],
+      "interpretation": "Irbesartan did not significantly reduce the prespecified clinical composite.",
+      "cautions": [
+        "Preliminary abstract-level extraction; eligibility and secondary endpoints require independent full-text review."
+      ],
+      "reference": {
+        "short_citation": "I-PRESERVE, New England Journal of Medicine (2008)",
+        "doi": "10.1056/NEJMoa0805450",
+        "pmid": "19001508",
+        "clinicaltrials_id": "",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/19001508/"
+      },
+      "tags": [
+        "ARB",
+        "cardiovascular events",
+        "hf hospitalization"
+      ],
+      "outcome_tags": [
+        "Cardiovascular events",
+        "HF hospitalization"
+      ],
+      "phenotype_tags": [
+        "Older adults"
+      ],
+      "curation": {
+        "source_basis": "Original trial publication, PubMed bibliographic record, and abstract; full-text extraction not completed",
+        "verification_status": "Abstract-checked; independent full-text/clinician review pending",
+        "last_source_check": "2026-11-11",
+        "reviewer": "",
+        "second_reviewer": "",
+        "review_notes": ""
+      }
+    },
+    {
+      "id": "pep-chf-2006",
+      "acronym": "PEP-CHF",
+      "title": "The perindopril in elderly people with chronic heart failure (PEP-CHF) study",
+      "year": 2006,
+      "journal": "European Heart Journal",
+      "study_design": "Randomized trial",
+      "study_type": "Randomized trial",
+      "treatment_category": "ACE inhibitor",
+      "population_group": "Preserved EF",
+      "population": {
+        "summary": "Older adults with HF, echocardiographic suggestion of diastolic dysfunction, and no substantial LV systolic dysfunction.",
+        "sample_size": 850,
+        "lvef_eligibility": "Not specified as a numerical EF threshold in the abstract",
+        "additional_criteria": "Consult the original eligibility criteria and protocol."
+      },
+      "intervention": {
+        "name": "Perindopril",
+        "dose": "4 mg/day",
+        "comparator": "Placebo"
+      },
+      "primary_outcomes": [
+        {
+          "name": "All-cause mortality or unplanned HF hospitalization",
+          "analysis": "Time to first event",
+          "effect_type": "Hazard ratio",
+          "effect_estimate": 0.919,
+          "ci_95": [
+            0.7,
+            1.208
+          ],
+          "p_value": "0.545",
+          "significant": false,
+          "result_text": "HR 0.919 (95% CI 0.700–1.208), p=0.545; trial was underpowered."
+        }
+      ],
+      "interpretation": "No significant primary outcome difference; under-enrollment and crossover to open-label ACE inhibitors limit interpretation.",
+      "cautions": [
+        "Do not assign a numerical EF cut-off without checking the original trial protocol."
+      ],
+      "reference": {
+        "short_citation": "PEP-CHF, European Heart Journal (2006)",
+        "doi": "10.1093/eurheartj/ehl250",
+        "pmid": "16963472",
+        "clinicaltrials_id": "",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/16963472/"
+      },
+      "tags": [
+        "ACE inhibitor",
+        "cardiovascular events",
+        "hf hospitalization"
+      ],
+      "outcome_tags": [
+        "Cardiovascular events",
+        "HF hospitalization"
+      ],
+      "phenotype_tags": [
+        "Older adults"
+      ],
+      "curation": {
+        "source_basis": "Original trial publication, PubMed bibliographic record, and abstract; full-text extraction not completed",
+        "verification_status": "Abstract-checked; independent full-text/clinician review pending",
+        "last_source_check": "2026-11-11",
+        "reviewer": "",
+        "second_reviewer": "",
+        "review_notes": ""
+      }
+    },
+    {
+      "id": "relax-2013",
+      "acronym": "RELAX",
+      "title": "Effect of phosphodiesterase-5 inhibition on exercise capacity and clinical status in HFpEF",
+      "year": 2013,
+      "journal": "JAMA",
+      "study_design": "Randomized trial",
+      "study_type": "Randomized trial",
+      "treatment_category": "PDE-5 inhibitor",
+      "population_group": "Preserved EF",
+      "population": {
+        "summary": "Symptomatic HFpEF with objective evidence of elevated filling pressure and reduced exercise capacity.",
+        "sample_size": 216,
+        "lvef_eligibility": "≥50%",
+        "additional_criteria": "Consult the original eligibility criteria and protocol."
+      },
+      "intervention": {
+        "name": "Sildenafil",
+        "dose": "See primary source",
+        "comparator": "Placebo"
+      },
+      "primary_outcomes": [
+        {
+          "name": "Change in peak oxygen consumption",
+          "analysis": "Change from baseline at 24 weeks",
+          "effect_type": "Not extracted",
+          "effect_estimate": null,
+          "ci_95": null,
+          "p_value": null,
+          "significant": false,
+          "result_text": "No significant improvement in peak oxygen consumption with sildenafil."
+        }
+      ],
+      "interpretation": "Sildenafil did not improve exercise capacity or clinical status in the overall HFpEF study population.",
+      "cautions": [
+        "Preliminary abstract-level extraction; eligibility and secondary endpoints require independent full-text review."
+      ],
+      "reference": {
+        "short_citation": "RELAX, JAMA (2013)",
+        "doi": "10.1001/jama.2013.2024",
+        "pmid": "23478662",
+        "clinicaltrials_id": "",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/23478662/"
+      },
+      "tags": [
+        "PDE-5 inhibitor",
+        "exercise capacity"
+      ],
+      "outcome_tags": [
+        "Exercise capacity"
+      ],
+      "phenotype_tags": [],
+      "curation": {
+        "source_basis": "Original trial publication, PubMed bibliographic record, and abstract; full-text extraction not completed",
+        "verification_status": "Abstract-checked; independent full-text/clinician review pending",
+        "last_source_check": "2026-11-11",
+        "reviewer": "",
+        "second_reviewer": "",
+        "review_notes": ""
+      }
+    },
+    {
+      "id": "aldo-dhf-2013",
+      "acronym": "Aldo-DHF",
+      "title": "Effect of spironolactone on diastolic function and exercise capacity in patients with HFpEF",
+      "year": 2013,
+      "journal": "JAMA",
+      "study_design": "Randomized trial",
+      "study_type": "Randomized trial",
+      "treatment_category": "Steroidal MRA",
+      "population_group": "Preserved EF",
+      "population": {
+        "summary": "Ambulatory HFpEF patients with preserved EF and diastolic dysfunction.",
+        "sample_size": 422,
+        "lvef_eligibility": "≥50%",
+        "additional_criteria": "Consult the original eligibility criteria and protocol."
+      },
+      "intervention": {
+        "name": "Spironolactone",
+        "dose": "See primary source",
+        "comparator": "Placebo"
+      },
+      "primary_outcomes": [
+        {
+          "name": "E/e′, diastolic function",
+          "analysis": "Change at 12 months",
+          "effect_type": "Mean difference",
+          "effect_estimate": -1.5,
+          "ci_95": [
+            -2.0,
+            -0.9
+          ],
+          "p_value": "<0.001",
+          "significant": true,
+          "result_text": "Adjusted between-group E/e′ difference −1.5 (95% CI −2.0 to −0.9); p<0.001."
+        },
+        {
+          "name": "Peak oxygen consumption",
+          "analysis": "Change at 12 months",
+          "effect_type": "Not extracted",
+          "effect_estimate": null,
+          "ci_95": null,
+          "p_value": null,
+          "significant": false,
+          "result_text": "No significant improvement in exercise capacity."
+        }
+      ],
+      "interpretation": "Improved echocardiographic diastolic function without improving peak oxygen consumption.",
+      "cautions": [
+        "Two co-primary endpoints yielded different results."
+      ],
+      "reference": {
+        "short_citation": "Aldo-DHF, JAMA (2013)",
+        "doi": "10.1001/jama.2013.905",
+        "pmid": "23443441",
+        "clinicaltrials_id": "",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/23443441/"
+      },
+      "tags": [
+        "Steroidal MRA",
+        "exercise capacity",
+        "diastolic function"
+      ],
+      "outcome_tags": [
+        "Exercise capacity",
+        "Diastolic function"
+      ],
+      "phenotype_tags": [],
+      "curation": {
+        "source_basis": "Original trial publication, PubMed bibliographic record, and abstract; full-text extraction not completed",
+        "verification_status": "Abstract-checked; independent full-text/clinician review pending",
+        "last_source_check": "2026-11-11",
+        "reviewer": "",
+        "second_reviewer": "",
+        "review_notes": ""
+      }
+    },
+    {
+      "id": "neat-hfpef-2015",
+      "acronym": "NEAT-HFpEF",
+      "title": "Isosorbide Mononitrate in Heart Failure with Preserved Ejection Fraction",
+      "year": 2015,
+      "journal": "New England Journal of Medicine",
+      "study_design": "Randomized crossover trial",
+      "study_type": "Randomized crossover trial",
+      "treatment_category": "Nitrate",
+      "population_group": "Preserved EF",
+      "population": {
+        "summary": "HFpEF patients in a crossover study with daily activity tracking.",
+        "sample_size": 110,
+        "lvef_eligibility": "≥50%",
+        "additional_criteria": "Consult the original eligibility criteria and protocol."
+      },
+      "intervention": {
+        "name": "Isosorbide mononitrate",
+        "dose": "30 to 120 mg daily, escalating",
+        "comparator": "Placebo"
+      },
+      "primary_outcomes": [
+        {
+          "name": "Daily activity by accelerometer",
+          "analysis": "Crossover, dose-escalation",
+          "effect_type": "Not extracted",
+          "effect_estimate": null,
+          "ci_95": null,
+          "p_value": null,
+          "significant": false,
+          "result_text": "No beneficial increase in daily activity; activity tended to be lower with isosorbide mononitrate."
+        }
+      ],
+      "interpretation": "Isosorbide mononitrate did not improve daily activity.",
+      "cautions": [
+        "Preliminary abstract-level extraction; eligibility and secondary endpoints require independent full-text review."
+      ],
+      "reference": {
+        "short_citation": "NEAT-HFpEF, New England Journal of Medicine (2015)",
+        "doi": "10.1056/NEJMoa1510774",
+        "pmid": "26549714",
+        "clinicaltrials_id": "",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/26549714/"
+      },
+      "tags": [
+        "Nitrate",
+        "exercise capacity",
+        "daily activity"
+      ],
+      "outcome_tags": [
+        "Exercise capacity",
+        "Daily activity"
+      ],
+      "phenotype_tags": [],
+      "curation": {
+        "source_basis": "Original trial publication, PubMed bibliographic record, and abstract; full-text extraction not completed",
+        "verification_status": "Abstract-checked; independent full-text/clinician review pending",
+        "last_source_check": "2026-11-11",
+        "reviewer": "",
+        "second_reviewer": "",
+        "review_notes": ""
+      }
+    },
+    {
+      "id": "paramount-2012",
+      "acronym": "PARAMOUNT",
+      "title": "The angiotensin receptor neprilysin inhibitor LCZ696 in heart failure with preserved ejection fraction",
+      "year": 2012,
+      "journal": "Lancet",
+      "study_design": "Phase 2 randomized trial",
+      "study_type": "Phase 2 randomized trial",
+      "treatment_category": "ARNI",
+      "population_group": "Broad EF spectrum",
+      "population": {
+        "summary": "Symptomatic NYHA II–III HF with EF ≥45% and NT-proBNP >400 pg/mL.",
+        "sample_size": 301,
+        "lvef_eligibility": "≥45%",
+        "additional_criteria": "Consult the original eligibility criteria and protocol."
+      },
+      "intervention": {
+        "name": "Sacubitril/valsartan (LCZ696)",
+        "dose": "Target LCZ696 200 mg twice daily",
+        "comparator": "Valsartan"
+      },
+      "primary_outcomes": [
+        {
+          "name": "NT-proBNP",
+          "analysis": "Change at 12 weeks",
+          "effect_type": "Not extracted",
+          "effect_estimate": null,
+          "ci_95": null,
+          "p_value": null,
+          "significant": true,
+          "result_text": "The phase 2 trial found a greater short-term decrease in NT-proBNP with LCZ696 versus valsartan."
+        }
+      ],
+      "interpretation": "A biomarker-focused phase 2 trial; not evidence of a confirmed reduction in HF hospitalization or mortality.",
+      "cautions": [
+        "NT-proBNP is a surrogate biomarker, not a clinical event endpoint."
+      ],
+      "reference": {
+        "short_citation": "PARAMOUNT, Lancet (2012)",
+        "doi": "10.1016/S0140-6736(12)61227-6",
+        "pmid": "22932717",
+        "clinicaltrials_id": "",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/22932717/"
+      },
+      "tags": [
+        "ARNI",
+        "biomarkers"
+      ],
+      "outcome_tags": [
+        "Biomarkers"
+      ],
+      "phenotype_tags": [],
+      "curation": {
+        "source_basis": "Original trial publication, PubMed bibliographic record, and abstract; full-text extraction not completed",
+        "verification_status": "Abstract-checked; independent full-text/clinician review pending",
+        "last_source_check": "2026-11-11",
+        "reviewer": "",
+        "second_reviewer": "",
+        "review_notes": ""
+      }
+    },
+    {
+      "id": "parallax-2021",
+      "acronym": "PARALLAX",
+      "title": "Effect of Sacubitril/Valsartan vs Standard Medical Therapies on NT-proBNP and Exercise Capacity",
+      "year": 2021,
+      "journal": "JAMA",
+      "study_design": "Randomized trial",
+      "study_type": "Randomized trial",
+      "treatment_category": "ARNI",
+      "population_group": "Broad EF spectrum",
+      "population": {
+        "summary": "Symptomatic HF with EF >40%, structural heart disease, elevated NT-proBNP and reduced quality of life.",
+        "sample_size": 2572,
+        "lvef_eligibility": ">40%",
+        "additional_criteria": "Consult the original eligibility criteria and protocol."
+      },
+      "intervention": {
+        "name": "Sacubitril/valsartan",
+        "dose": "See primary source",
+        "comparator": "Enalapril, valsartan, or placebo according to prior therapy"
+      },
+      "primary_outcomes": [
+        {
+          "name": "NT-proBNP",
+          "analysis": "Change at 12 weeks",
+          "effect_type": "Geometric mean ratio",
+          "effect_estimate": 0.84,
+          "ci_95": [
+            0.8,
+            0.88
+          ],
+          "p_value": "<0.001",
+          "significant": true,
+          "result_text": "Adjusted geometric mean ratio 0.84 (95% CI 0.80–0.88), p<0.001."
+        },
+        {
+          "name": "6-minute walk distance",
+          "analysis": "Change at 24 weeks",
+          "effect_type": "Mean difference",
+          "effect_estimate": -2.5,
+          "ci_95": [
+            -8.5,
+            3.5
+          ],
+          "p_value": "0.42",
+          "significant": false,
+          "result_text": "Adjusted mean difference −2.5 m (95% CI −8.5 to 3.5), p=0.42."
+        }
+      ],
+      "interpretation": "NT-proBNP improved, but the co-primary 6-minute walk endpoint did not.",
+      "cautions": [
+        "The comparator differed by prior background therapy."
+      ],
+      "reference": {
+        "short_citation": "PARALLAX, JAMA (2021)",
+        "doi": "10.1001/jama.2021.18463",
+        "pmid": "34783839",
+        "clinicaltrials_id": "",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34783839/"
+      },
+      "tags": [
+        "ARNI",
+        "biomarkers",
+        "exercise capacity"
+      ],
+      "outcome_tags": [
+        "Biomarkers",
+        "Exercise capacity"
+      ],
+      "phenotype_tags": [],
+      "curation": {
+        "source_basis": "Original trial publication, PubMed bibliographic record, and abstract; full-text extraction not completed",
+        "verification_status": "Abstract-checked; independent full-text/clinician review pending",
+        "last_source_check": "2026-11-11",
+        "reviewer": "",
+        "second_reviewer": "",
+        "review_notes": ""
+      }
+    },
+    {
+      "id": "emperial-preserved-2021",
+      "acronym": "EMPERIAL-Preserved",
+      "title": "Effect of empagliflozin on exercise ability and symptoms in HF with preserved EF",
+      "year": 2021,
+      "journal": "European Heart Journal",
+      "study_design": "Randomized trial",
+      "study_type": "Randomized trial",
+      "treatment_category": "SGLT2 inhibitor",
+      "population_group": "Broad EF spectrum",
+      "population": {
+        "summary": "HF with EF >40%, with or without type 2 diabetes.",
+        "sample_size": 315,
+        "lvef_eligibility": ">40%",
+        "additional_criteria": "Consult the original eligibility criteria and protocol."
+      },
+      "intervention": {
+        "name": "Empagliflozin",
+        "dose": "10 mg once daily",
+        "comparator": "Placebo"
+      },
+      "primary_outcomes": [
+        {
+          "name": "6-minute walk distance",
+          "analysis": "Change at week 12",
+          "effect_type": "Median difference",
+          "effect_estimate": 4.0,
+          "ci_95": [
+            -5,
+            13
+          ],
+          "p_value": "0.37",
+          "significant": false,
+          "result_text": "Between-group median difference 4.0 m (95% CI −5.0 to 13.0), p=0.37."
+        }
+      ],
+      "interpretation": "No significant improvement in 6-minute walk distance; this paper also reports the separate EMPERIAL-Reduced study.",
+      "cautions": [
+        "Only the EMPERIAL-Preserved subgroup/trial is entered here; the publication also reports a reduced-EF cohort."
+      ],
+      "reference": {
+        "short_citation": "EMPERIAL-Preserved, European Heart Journal (2021)",
+        "doi": "10.1093/eurheartj/ehaa943",
+        "pmid": "33351892",
+        "clinicaltrials_id": "NCT03448406",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33351892/"
+      },
+      "tags": [
+        "SGLT2 inhibitor",
+        "exercise capacity",
+        "symptoms/quality of life"
+      ],
+      "outcome_tags": [
+        "Exercise capacity",
+        "Symptoms/quality of life"
+      ],
+      "phenotype_tags": [],
+      "curation": {
+        "source_basis": "Original trial publication, PubMed bibliographic record, and abstract; full-text extraction not completed",
+        "verification_status": "Abstract-checked; independent full-text/clinician review pending",
+        "last_source_check": "2026-11-11",
+        "reviewer": "",
+        "second_reviewer": "",
+        "review_notes": ""
+      }
+    },
+    {
+      "id": "preserved-hf-2021",
+      "acronym": "PRESERVED-HF",
+      "title": "The SGLT2 inhibitor dapagliflozin in HFpEF: a multicenter randomized trial",
+      "year": 2021,
+      "journal": "Nature Medicine",
+      "study_design": "Randomized trial",
+      "study_type": "Randomized trial",
+      "treatment_category": "SGLT2 inhibitor",
+      "population_group": "Broad EF spectrum",
+      "population": {
+        "summary": "Symptomatic HFpEF with patient-reported health-status limitation.",
+        "sample_size": 324,
+        "lvef_eligibility": "≥45%",
+        "additional_criteria": "Consult the original eligibility criteria and protocol."
+      },
+      "intervention": {
+        "name": "Dapagliflozin",
+        "dose": "10 mg daily",
+        "comparator": "Placebo"
+      },
+      "primary_outcomes": [
+        {
+          "name": "KCCQ Clinical Summary Score",
+          "analysis": "Change at week 12",
+          "effect_type": "Mean difference",
+          "effect_estimate": 5.8,
+          "ci_95": [
+            2.3,
+            9.2
+          ],
+          "p_value": "0.001",
+          "significant": true,
+          "result_text": "Between-group treatment difference +5.8 points (95% CI 2.3–9.2), p=0.001."
+        }
+      ],
+      "interpretation": "Dapagliflozin improved KCCQ clinical summary score over 12 weeks.",
+      "cautions": [
+        "Preliminary abstract-level extraction; eligibility and secondary endpoints require independent full-text review."
+      ],
+      "reference": {
+        "short_citation": "PRESERVED-HF, Nature Medicine (2021)",
+        "doi": "10.1038/s41591-021-01536-x",
+        "pmid": "34711976",
+        "clinicaltrials_id": "NCT03030235",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34711976/"
+      },
+      "tags": [
+        "SGLT2 inhibitor",
+        "symptoms/quality of life",
+        "exercise capacity"
+      ],
+      "outcome_tags": [
+        "Symptoms/quality of life",
+        "Exercise capacity"
+      ],
+      "phenotype_tags": [],
+      "curation": {
+        "source_basis": "Original trial publication, PubMed bibliographic record, and abstract; full-text extraction not completed",
+        "verification_status": "Abstract-checked; independent full-text/clinician review pending",
+        "last_source_check": "2026-11-11",
+        "reviewer": "",
+        "second_reviewer": "",
+        "review_notes": ""
+      }
+    },
+    {
+      "id": "socrates-preserved-2017",
+      "acronym": "SOCRATES-PRESERVED",
+      "title": "Vericiguat in patients with worsening chronic HF and preserved EF",
+      "year": 2017,
+      "journal": "European Heart Journal",
+      "study_design": "Phase 2 randomized trial",
+      "study_type": "Phase 2 randomized trial",
+      "treatment_category": "sGC stimulator",
+      "population_group": "Broad EF spectrum",
+      "population": {
+        "summary": "Recently worsening symptomatic HF, EF ≥45%.",
+        "sample_size": 477,
+        "lvef_eligibility": "≥45%",
+        "additional_criteria": "Consult the original eligibility criteria and protocol."
+      },
+      "intervention": {
+        "name": "Vericiguat",
+        "dose": "See primary source",
+        "comparator": "Placebo"
+      },
+      "primary_outcomes": [
+        {
+          "name": "NT-proBNP",
+          "analysis": "Change at 12 weeks",
+          "effect_type": "Not extracted",
+          "effect_estimate": null,
+          "ci_95": null,
+          "p_value": null,
+          "significant": false,
+          "result_text": "No significant difference in log NT-proBNP between pooled vericiguat dose arms and placebo."
+        },
+        {
+          "name": "Left atrial volume",
+          "analysis": "Change at 12 weeks",
+          "effect_type": "Not extracted",
+          "effect_estimate": null,
+          "ci_95": null,
+          "p_value": null,
+          "significant": false,
+          "result_text": "No significant difference in left atrial volume between pooled vericiguat dose arms and placebo."
+        }
+      ],
+      "interpretation": "The trial did not meet either co-primary endpoint; quality-of-life signals were exploratory.",
+      "cautions": [
+        "The reported KCCQ improvement was exploratory, not a positive primary endpoint."
+      ],
+      "reference": {
+        "short_citation": "SOCRATES-PRESERVED, European Heart Journal (2017)",
+        "doi": "10.1093/eurheartj/ehw593",
+        "pmid": "28369340",
+        "clinicaltrials_id": "",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28369340/"
+      },
+      "tags": [
+        "sGC stimulator",
+        "biomarkers",
+        "cardiac structure"
+      ],
+      "outcome_tags": [
+        "Biomarkers",
+        "Cardiac structure"
+      ],
+      "phenotype_tags": [
+        "Recent HF decompensation"
+      ],
+      "curation": {
+        "source_basis": "Original trial publication, PubMed bibliographic record, and abstract; full-text extraction not completed",
+        "verification_status": "Abstract-checked; independent full-text/clinician review pending",
+        "last_source_check": "2026-11-11",
+        "reviewer": "",
+        "second_reviewer": "",
+        "review_notes": ""
+      }
+    },
+    {
+      "id": "reduce-lap-hf-ii-2022",
+      "acronym": "REDUCE LAP-HF II",
+      "title": "Atrial shunt device for HF with preserved and mildly reduced EF",
+      "year": 2022,
+      "journal": "Lancet",
+      "study_design": "Sham-controlled device trial",
+      "study_type": "Sham-controlled device trial",
+      "treatment_category": "Interatrial shunt device",
+      "population_group": "Broad EF spectrum",
+      "population": {
+        "summary": "Selected HF patients with elevated exercise pulmonary capillary wedge pressure; 626 randomized.",
+        "sample_size": 626,
+        "lvef_eligibility": "≥40%",
+        "additional_criteria": "Consult the original eligibility criteria and protocol."
+      },
+      "intervention": {
+        "name": "Interatrial shunt device",
+        "dose": "See primary source",
+        "comparator": "Sham procedure"
+      },
+      "primary_outcomes": [
+        {
+          "name": "Hierarchical clinical composite",
+          "analysis": "Hierarchical win-ratio analysis",
+          "effect_type": "Win ratio",
+          "effect_estimate": 1,
+          "ci_95": [
+            0.8,
+            1.2
+          ],
+          "p_value": "0.85",
+          "significant": false,
+          "result_text": "Win ratio 1.0 (95% CI 0.8–1.2), p=0.85."
+        }
+      ],
+      "interpretation": "No improvement in the overall hierarchical composite compared with sham.",
+      "cautions": [
+        "1072 were enrolled/screened in the study period; 626 were randomized. Sample size here is randomized patients."
+      ],
+      "reference": {
+        "short_citation": "REDUCE LAP-HF II, Lancet (2022)",
+        "doi": "10.1016/S0140-6736(22)00016-2",
+        "pmid": "35120593",
+        "clinicaltrials_id": "NCT03088033",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35120593/"
+      },
+      "tags": [
+        "Interatrial shunt device",
+        "cardiovascular events",
+        "hf hospitalization",
+        "symptoms/quality of life"
+      ],
+      "outcome_tags": [
+        "Cardiovascular events",
+        "HF hospitalization",
+        "Symptoms/quality of life"
+      ],
+      "phenotype_tags": [],
+      "curation": {
+        "source_basis": "Original trial publication, PubMed bibliographic record, and abstract; full-text extraction not completed",
+        "verification_status": "Abstract-checked; independent full-text/clinician review pending",
+        "last_source_check": "2026-11-11",
+        "reviewer": "",
+        "second_reviewer": "",
+        "review_notes": ""
+      }
+    },
+    {
+      "id": "step-hfpef-dm-2024",
+      "acronym": "STEP-HFpEF DM",
+      "title": "Semaglutide in Patients with Obesity-Related HFpEF and Type 2 Diabetes",
+      "year": 2024,
+      "journal": "New England Journal of Medicine",
+      "study_design": "Randomized trial",
+      "study_type": "Randomized trial",
+      "treatment_category": "GLP-1 receptor agonist",
+      "population_group": "Broad EF spectrum",
+      "population": {
+        "summary": "Obesity-related HFpEF with BMI ≥30 kg/m² and type 2 diabetes.",
+        "sample_size": 616,
+        "lvef_eligibility": "≥45%",
+        "additional_criteria": "Consult the original eligibility criteria and protocol."
+      },
+      "intervention": {
+        "name": "Semaglutide",
+        "dose": "2.4 mg weekly",
+        "comparator": "Placebo"
+      },
+      "primary_outcomes": [
+        {
+          "name": "KCCQ Clinical Summary Score",
+          "analysis": "Change at 52 weeks",
+          "effect_type": "Mean difference",
+          "effect_estimate": 7.3,
+          "ci_95": [
+            4.1,
+            10.4
+          ],
+          "p_value": "<0.001",
+          "significant": true,
+          "result_text": "Between-group difference +7.3 points (95% CI 4.1–10.4), p<0.001."
+        },
+        {
+          "name": "Body weight",
+          "analysis": "Percent change at 52 weeks",
+          "effect_type": "Percentage-point difference",
+          "effect_estimate": -6.4,
+          "ci_95": [
+            -7.6,
+            -5.2
+          ],
+          "p_value": "<0.001",
+          "significant": true,
+          "result_text": "Difference −6.4 percentage points (95% CI −7.6 to −5.2), p<0.001."
+        }
+      ],
+      "interpretation": "Both symptom and weight co-primary endpoints favored semaglutide.",
+      "cautions": [
+        "Preliminary abstract-level extraction; eligibility and secondary endpoints require independent full-text review."
+      ],
+      "reference": {
+        "short_citation": "STEP-HFpEF DM, New England Journal of Medicine (2024)",
+        "doi": "10.1056/NEJMoa2313917",
+        "pmid": "38587233",
+        "clinicaltrials_id": "NCT04916470",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38587233/"
+      },
+      "tags": [
+        "GLP-1 receptor agonist",
+        "symptoms/quality of life",
+        "weight"
+      ],
+      "outcome_tags": [
+        "Symptoms/quality of life",
+        "Weight"
+      ],
+      "phenotype_tags": [
+        "Obesity",
+        "Type 2 diabetes"
+      ],
+      "curation": {
+        "source_basis": "Original trial publication, PubMed bibliographic record, and abstract; full-text extraction not completed",
+        "verification_status": "Abstract-checked; independent full-text/clinician review pending",
+        "last_source_check": "2026-11-11",
+        "reviewer": "",
+        "second_reviewer": "",
+        "review_notes": ""
+      }
+    },
+    {
+      "id": "summit-2025",
+      "acronym": "SUMMIT",
+      "title": "Tirzepatide for Heart Failure with Preserved Ejection Fraction and Obesity",
+      "year": 2025,
+      "journal": "New England Journal of Medicine",
+      "study_design": "Randomized trial",
+      "study_type": "Randomized trial",
+      "treatment_category": "GIP/GLP-1 receptor agonist",
+      "population_group": "Preserved EF",
+      "population": {
+        "summary": "HFpEF (EF ≥50%) with obesity (BMI ≥30 kg/m²).",
+        "sample_size": 731,
+        "lvef_eligibility": "≥50%",
+        "additional_criteria": "Consult the original eligibility criteria and protocol."
+      },
+      "intervention": {
+        "name": "Tirzepatide",
+        "dose": "Up to 15 mg subcutaneous weekly",
+        "comparator": "Placebo"
+      },
+      "primary_outcomes": [
+        {
+          "name": "CV death or worsening HF event",
+          "analysis": "Time to first event",
+          "effect_type": "Hazard ratio",
+          "effect_estimate": 0.62,
+          "ci_95": [
+            0.41,
+            0.95
+          ],
+          "p_value": "0.026",
+          "significant": true,
+          "result_text": "HR 0.62 (95% CI 0.41–0.95), p=0.026."
+        },
+        {
+          "name": "KCCQ Clinical Summary Score",
+          "analysis": "Change at week 52",
+          "effect_type": "Mean difference",
+          "effect_estimate": 6.9,
+          "ci_95": [
+            3.3,
+            10.6
+          ],
+          "p_value": "<0.001",
+          "significant": true,
+          "result_text": "Between-group difference +6.9 points (95% CI 3.3–10.6), p<0.001."
+        }
+      ],
+      "interpretation": "Both co-primary outcomes favored tirzepatide; the primary event difference should not be interpreted as a separate CV death benefit.",
+      "cautions": [
+        "Publication appeared online Nov 2024 and in the 2025 journal issue."
+      ],
+      "reference": {
+        "short_citation": "SUMMIT, New England Journal of Medicine (2025)",
+        "doi": "10.1056/NEJMoa2410027",
+        "pmid": "39555826",
+        "clinicaltrials_id": "NCT04847557",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39555826/"
+      },
+      "tags": [
+        "GIP/GLP-1 receptor agonist",
+        "cardiovascular events",
+        "hf hospitalization",
+        "symptoms/quality of life"
+      ],
+      "outcome_tags": [
+        "Cardiovascular events",
+        "HF hospitalization",
+        "Symptoms/quality of life"
+      ],
+      "phenotype_tags": [
+        "Obesity"
+      ],
+      "curation": {
+        "source_basis": "Original trial publication, PubMed bibliographic record, and abstract; full-text extraction not completed",
+        "verification_status": "Abstract-checked; independent full-text/clinician review pending",
+        "last_source_check": "2026-11-11",
+        "reviewer": "",
+        "second_reviewer": "",
+        "review_notes": ""
+      }
+    },
+    {
+      "id": "secret-kitzman-2016",
+      "acronym": "SECRET / Kitzman",
+      "title": "Effect of Caloric Restriction or Aerobic Exercise Training on Peak Oxygen Consumption and Quality of Life",
+      "year": 2016,
+      "journal": "JAMA",
+      "study_design": "Randomized lifestyle intervention",
+      "study_type": "Randomized lifestyle intervention",
+      "treatment_category": "Lifestyle intervention",
+      "population_group": "Preserved EF",
+      "population": {
+        "summary": "Older adults with obesity and stable HFpEF.",
+        "sample_size": 100,
+        "lvef_eligibility": "≥50%",
+        "additional_criteria": "Consult the original eligibility criteria and protocol."
+      },
+      "intervention": {
+        "name": "Caloric restriction and/or aerobic training",
+        "dose": "20-week diet/exercise intervention",
+        "comparator": "Attention control"
+      },
+      "primary_outcomes": [
+        {
+          "name": "Peak oxygen consumption",
+          "analysis": "Change after 20 weeks",
+          "effect_type": "Not extracted",
+          "effect_estimate": null,
+          "ci_95": null,
+          "p_value": null,
+          "significant": true,
+          "result_text": "Aerobic exercise and caloric restriction each improved peak oxygen consumption in a 2×2 factorial design."
+        }
+      ],
+      "interpretation": "Lifestyle arms improved exercise capacity; the factorial design differs from two-arm medication RCTs.",
+      "cautions": [
+        "This was a factorial trial and does not provide one simple drug-versus-placebo effect estimate."
+      ],
+      "reference": {
+        "short_citation": "SECRET / Kitzman, JAMA (2016)",
+        "doi": "10.1001/jama.2015.17346",
+        "pmid": "26746456",
+        "clinicaltrials_id": "",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/26746456/"
+      },
+      "tags": [
+        "Lifestyle intervention",
+        "exercise capacity",
+        "symptoms/quality of life"
+      ],
+      "outcome_tags": [
+        "Exercise capacity",
+        "Symptoms/quality of life"
+      ],
+      "phenotype_tags": [
+        "Obesity",
+        "Older adults"
+      ],
+      "curation": {
+        "source_basis": "Original trial publication, PubMed bibliographic record, and abstract; full-text extraction not completed",
+        "verification_status": "Abstract-checked; independent full-text/clinician review pending",
+        "last_source_check": "2026-11-11",
+        "reviewer": "",
+        "second_reviewer": "",
+        "review_notes": ""
+      }
+    },
+    {
+      "id": "vitality-hfpef-2020",
+      "acronym": "VITALITY-HFpEF",
+      "title": "Effect of Vericiguat vs Placebo on Quality of Life in Patients With HFpEF",
+      "year": 2020,
+      "journal": "JAMA",
+      "study_design": "Randomized trial",
+      "study_type": "Randomized trial",
+      "treatment_category": "sGC stimulator",
+      "population_group": "Broad EF spectrum",
+      "population": {
+        "summary": "Symptomatic HFpEF after recent worsening HF.",
+        "sample_size": 789,
+        "lvef_eligibility": "≥45%",
+        "additional_criteria": "Consult the original eligibility criteria and protocol."
+      },
+      "intervention": {
+        "name": "Vericiguat",
+        "dose": "See primary source",
+        "comparator": "Placebo"
+      },
+      "primary_outcomes": [
+        {
+          "name": "KCCQ physical limitation score",
+          "analysis": "Change at week 24",
+          "effect_type": "Mean difference",
+          "effect_estimate": -1.5,
+          "ci_95": [
+            -5.5,
+            2.5
+          ],
+          "p_value": "0.47",
+          "significant": false,
+          "result_text": "15-mg vs placebo difference −1.5 points (95% CI −5.5 to 2.5), p=0.47."
+        }
+      ],
+      "interpretation": "No significant difference in the primary KCCQ physical limitation outcome at 24 weeks.",
+      "cautions": [
+        "Preliminary abstract-level extraction; eligibility and secondary endpoints require independent full-text review."
+      ],
+      "reference": {
+        "short_citation": "VITALITY-HFpEF, JAMA (2020)",
+        "doi": "10.1001/jama.2020.15922",
+        "pmid": "33079152",
+        "clinicaltrials_id": "NCT03547583",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33079152/"
+      },
+      "tags": [
+        "sGC stimulator",
+        "symptoms/quality of life",
+        "exercise capacity"
+      ],
+      "outcome_tags": [
+        "Symptoms/quality of life",
+        "Exercise capacity"
+      ],
+      "phenotype_tags": [
+        "Recent HF decompensation"
+      ],
+      "curation": {
+        "source_basis": "Original trial publication, PubMed bibliographic record, and abstract; full-text extraction not completed",
+        "verification_status": "Abstract-checked; independent full-text/clinician review pending",
+        "last_source_check": "2026-11-11",
+        "reviewer": "",
+        "second_reviewer": "",
+        "review_notes": ""
       }
     }
   ]
