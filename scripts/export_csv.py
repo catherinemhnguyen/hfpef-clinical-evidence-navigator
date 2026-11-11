@@ -15,7 +15,7 @@ def main() -> None:
     }
     for fname, rows in files.items():
         target = ROOT / 'data' / fname
-        target.write_text(csv_text(rows), encoding="utf-8-sig")
+        target.write_text(csv_text(rows), encoding="utf-8")
         print(f"Wrote {target.relative_to(ROOT)}: {len(rows)} records")
 
 
