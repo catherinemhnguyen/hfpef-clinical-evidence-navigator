@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A searchable educational index of selected HFpEF clinical trials with study population, outcomes, and source links." />
+  <title>HFpEF Clinical Evidence Navigator</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <a href="#evidence" class="skip-link">Skip to clinical evidence</a>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand-mark" aria-hidden="true">H<span>+</span></div>
+      <div class="brand-text">HFpEF <span>Evidence Navigator</span></div>
+      <a class="top-link" href="#methods">About this project <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> CLINICAL RESEARCH / OPEN DATA</p>
+          <h1>Explore the evidence.<br><em>Understand the context.</em></h1>
+          <p class="hero-intro">An organized, searchable guide to selected clinical trials in heart failure with preserved and mildly reduced ejection fraction.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#evidence">Browse studies <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="data/studies.json" target="_blank" rel="noopener">View source JSON <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Dataset summary">
+          <div class="panel-kicker">PROTOTYPE DATASET <span class="status-dot"></span></div>
+          <div class="panel-main-number" id="total-studies">—</div>
+          <p class="panel-main-label">curated clinical trials</p>
+          <div class="panel-rule"></div>
+          <div class="panel-row"><span>Participants enrolled*</span><strong id="total-participants">—</strong></div>
+          <div class="panel-row"><span>Evidence categories</span><strong id="total-categories">—</strong></div>
+          <div class="panel-row"><span>Last dataset update</span><strong id="last-updated">—</strong></div>
+          <small>*Sum of reported trial enrollment; not unique individuals.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="notice container" aria-label="Important context">
+      <div class="notice-icon" aria-hidden="true">i</div>
+      <p><strong>Research prototype, not clinical guidance.</strong> This index is intentionally selective and has not undergone expert clinical validation. EF eligibility criteria, endpoints, and effect measures differ by trial; results should not be directly ranked against each other.</p>
+    </section>
+
+    <section id="evidence" class="container evidence-section">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">THE EVIDENCE LIBRARY</p>
+          <h2>Clinical trial explorer</h2>
+          <p>Search by trial, intervention, population, or outcome.</p>
+        </div>
+        <div class="source-actions">
+          <button id="download-json" class="button button-quiet" type="button">Export results as JSON ↓</button>
+          <button id="download-csv" class="button button-quiet" type="button">Export CSV ↓</button>
+        </div>
+      </div>
+
+      <div class="filters" role="search" aria-label="Filter clinical trials">
+        <div class="field field-search">
+          <label for="search">Search clinical evidence</label>
+          <div class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" autocomplete="off" placeholder="Try 'finerenone', 'KCCQ', or 'hospitalization'" /></div>
+        </div>
+        <div class="field">
+          <label for="category">Treatment category</label>
+          <select id="category"><option value="all">All categories</option></select>
+        </div>
+        <div class="field">
+          <label for="population">Population lens</label>
+          <select id="population"><option value="all">All populations</option></select>
+        </div>
+        <div class="field field-sort">
+          <label for="sort">Sort by</label>
+          <select id="sort"><option value="year-desc">Newest first</option><option value="year-asc">Oldest first</option><option value="name">Trial name A–Z</option></select>
+        </div>
+      </div>
+
+      <div class="results-line"><p id="result-count" aria-live="polite">Loading studies…</p><button id="clear-filters" type="button" class="text-button">Clear filters</button></div>
+      <div id="study-list" class="study-grid" aria-live="polite"></div>
+      <p id="error-message" class="error-message" hidden></p>
+    </section>
+
+    <section id="methods" class="methods-section">
+      <div class="container methods-grid">
+        <div>
+          <p class="section-kicker">DESIGN & METHODOLOGY</p>
+          <h2>Evidence in context</h2>
+          <p>The navigator uses structured JSON to make individual studies easy to discover and update. Each entry records eligibility, treatment, comparator, prespecified primary outcome, effect estimate, and citation.</p>
+          <a class="inline-link" href="data/studies.json" target="_blank" rel="noopener">Explore the dataset structure <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="method-list">
+          <div class="method-item"><span>01</span><div><h3>Traceable sources</h3><p>Primary trial publications are linked by DOI, PMID, and ClinicalTrials.gov identifier.</p></div></div>
+          <div class="method-item"><span>02</span><div><h3>Explicit denominators</h3><p>Enrollment criteria and LVEF thresholds remain visible, even when studies span HFmrEF and HFpEF.</p></div></div>
+          <div class="method-item"><span>03</span><div><h3>Outcome-aware summaries</h3><p>Hazard ratios, recurrent-event rate ratios, and patient-reported outcomes are labeled separately.</p></div></div>
+          <div class="method-item"><span>04</span><div><h3>Clinical review pending</h3><p>These first records are source-checked drafts, not an exhaustive review or expert-approved synthesis.</p></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><span>HFpEF Clinical Evidence Navigator · v0.1</span><span>Educational research prototype · Updated 2026</span></div></footer>
+</body>
+</html>
