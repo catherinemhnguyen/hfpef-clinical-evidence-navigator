@@ -53,8 +53,10 @@ function cardFor(s) {
   addText(result,'p','',p.name + ' — ' + p.result_text);
   card.append(result);
   const signals = s.primary_outcomes.map(o=>o.significant);
-  const allPositive = signals.every(Boolean);
-  addText(card,'span','signal '+(allPositive?'signal-positive':'signal-neutral'), allPositive?'●  Statistically significant primary result':'○  Primary result not statistically significant');
+  const allPositive = signals.every(v=>v===true);
+  const anyPositive = signals.some(v=>v===true);
+  const statusText = allPositive ? '●  All primary endpoints statistically significant' : anyPositive ? '◐  Mixed primary endpoint results' : '○  Primary endpoint(s) not statistically significant';
+  addText(card,'span','signal '+(allPositive?'signal-positive':'signal-neutral'),statusText);
 
   const details = make('details','details');
   details.append(make('summary','','Study details & references'));
@@ -75,7 +77,8 @@ function cardFor(s) {
   const ul = make('ul'); s.cautions.forEach(c=>addText(ul,'li','',c)); dc.append(ul);
   addText(dc,'h4','','Source publication'); addText(dc,'p','',s.reference.short_citation);
   const refs = make('div','source-links');
-  refs.append(detailLink('PubMed ↗',s.reference.pubmed_url),detailLink('DOI ↗','https://doi.org/'+s.reference.doi),detailLink('ClinicalTrials.gov ↗','https://clinicaltrials.gov/study/'+s.reference.clinicaltrials_id));
+  refs.append(detailLink('PubMed ↗',s.reference.pubmed_url),detailLink('DOI ↗','https://doi.org/'+s.reference.doi));
+  if (s.reference.clinicaltrials_id) refs.append(detailLink('ClinicalTrials.gov ↗','https://clinicaltrials.gov/study/'+s.reference.clinicaltrials_id));
   dc.append(refs);
   addText(dc,'p','review-note',s.curation.verification_status + ' · source check ' + s.curation.last_source_check);
   details.append(dc); card.append(details);
