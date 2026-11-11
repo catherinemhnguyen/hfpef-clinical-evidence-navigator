@@ -1,0 +1,379 @@
+{
+  "project": "HFpEF Clinical Evidence Navigator",
+  "schema_version": "0.1.0",
+  "updated_at": "2026-11-11",
+  "project_status": "Educational research prototype — not a clinical decision-support device",
+  "scope_note": "Selected landmark trials; intentionally not a systematic review or exhaustive database. Enrollment EF thresholds and primary endpoints vary across studies.",
+  "studies": [
+    {
+      "id": "emperor-preserved-2021",
+      "acronym": "EMPEROR-Preserved",
+      "title": "Empagliflozin in Heart Failure with a Preserved Ejection Fraction",
+      "year": 2021,
+      "journal": "New England Journal of Medicine",
+      "study_design": "Randomized, double-blind, placebo-controlled trial",
+      "treatment_category": "SGLT2 inhibitor",
+      "population_group": "Broad EF spectrum",
+      "population": {
+        "summary": "Adults with symptomatic NYHA class II–IV heart failure and LVEF >40%.",
+        "sample_size": 5988,
+        "lvef_eligibility": ">40%",
+        "additional_criteria": "With or without diabetes; usual background HF therapy."
+      },
+      "intervention": {
+        "name": "Empagliflozin",
+        "dose": "10 mg once daily",
+        "comparator": "Placebo plus usual therapy"
+      },
+      "primary_outcomes": [
+        {
+          "name": "First cardiovascular death or hospitalization for heart failure",
+          "analysis": "Time to first event",
+          "effect_type": "Hazard ratio",
+          "effect_estimate": 0.79,
+          "ci_95": [
+            0.69,
+            0.9
+          ],
+          "p_value": "<0.001",
+          "significant": true,
+          "result_text": "13.8% (empagliflozin) vs 17.1% (placebo); HR 0.79 (95% CI 0.69–0.90), p<0.001."
+        }
+      ],
+      "interpretation": "The primary composite outcome favored empagliflozin, driven mainly by fewer heart-failure hospitalizations. A significant reduction in cardiovascular mortality alone was not established.",
+      "cautions": [
+        "This enrollment criterion includes a broad EF spectrum, not only LVEF ≥50%.",
+        "Composite event rates and time-to-first-event estimates should not be compared directly with recurrent-event rate ratios."
+      ],
+      "reference": {
+        "short_citation": "Anker et al., N Engl J Med (2021)",
+        "doi": "10.1056/NEJMoa2107038",
+        "pmid": "34449189",
+        "clinicaltrials_id": "NCT03057951",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34449189/"
+      },
+      "tags": [
+        "heart failure hospitalization",
+        "cardiovascular death",
+        "SGLT2",
+        "empagliflozin"
+      ],
+      "curation": {
+        "source_basis": "Primary trial abstract and bibliographic PubMed record",
+        "verification_status": "Source-checked; clinical expert review pending",
+        "last_source_check": "2026-11-11"
+      }
+    },
+    {
+      "id": "deliver-2022",
+      "acronym": "DELIVER",
+      "title": "Dapagliflozin in Heart Failure with Mildly Reduced or Preserved Ejection Fraction",
+      "year": 2022,
+      "journal": "New England Journal of Medicine",
+      "study_design": "Randomized, double-blind, placebo-controlled trial",
+      "treatment_category": "SGLT2 inhibitor",
+      "population_group": "Broad EF spectrum",
+      "population": {
+        "summary": "Adults with symptomatic heart failure and LVEF >40%, including some with previously reduced EF that had improved.",
+        "sample_size": 6263,
+        "lvef_eligibility": ">40%",
+        "additional_criteria": "Structural heart disease and elevated natriuretic peptides; with or without type 2 diabetes."
+      },
+      "intervention": {
+        "name": "Dapagliflozin",
+        "dose": "10 mg once daily",
+        "comparator": "Placebo plus usual therapy"
+      },
+      "primary_outcomes": [
+        {
+          "name": "First worsening heart failure (hospitalization or urgent visit) or cardiovascular death",
+          "analysis": "Time to first event",
+          "effect_type": "Hazard ratio",
+          "effect_estimate": 0.82,
+          "ci_95": [
+            0.73,
+            0.92
+          ],
+          "p_value": "<0.001",
+          "significant": true,
+          "result_text": "16.4% (dapagliflozin) vs 19.5% (placebo); HR 0.82 (95% CI 0.73–0.92), p<0.001."
+        }
+      ],
+      "interpretation": "Dapagliflozin lowered the risk of the primary composite of worsening heart failure or cardiovascular death. Cardiovascular death alone did not show a statistically clear reduction.",
+      "cautions": [
+        "The endpoint includes urgent HF visits, unlike some other trials.",
+        "The trial enrolled mildly reduced and preserved EF, and some improved-EF patients."
+      ],
+      "reference": {
+        "short_citation": "Solomon et al., N Engl J Med (2022)",
+        "doi": "10.1056/NEJMoa2206286",
+        "pmid": "36027570",
+        "clinicaltrials_id": "NCT03619213",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36027570/"
+      },
+      "tags": [
+        "heart failure hospitalization",
+        "urgent heart failure visit",
+        "cardiovascular death",
+        "SGLT2",
+        "dapagliflozin"
+      ],
+      "curation": {
+        "source_basis": "Primary trial abstract and bibliographic PubMed record",
+        "verification_status": "Source-checked; clinical expert review pending",
+        "last_source_check": "2026-11-11"
+      }
+    },
+    {
+      "id": "paragon-hf-2019",
+      "acronym": "PARAGON-HF",
+      "title": "Angiotensin-Neprilysin Inhibition in Heart Failure with Preserved Ejection Fraction",
+      "year": 2019,
+      "journal": "New England Journal of Medicine",
+      "study_design": "Randomized, double-blind, active-comparator trial",
+      "treatment_category": "ARNI",
+      "population_group": "EF ≥45%",
+      "population": {
+        "summary": "Patients with NYHA class II–IV heart failure, LVEF ≥45%, elevated natriuretic peptides, and structural heart disease.",
+        "sample_size": 4822,
+        "lvef_eligibility": "≥45%",
+        "additional_criteria": "Symptomatic heart failure with elevated natriuretic peptide levels."
+      },
+      "intervention": {
+        "name": "Sacubitril/valsartan",
+        "dose": "Target 97/103 mg twice daily",
+        "comparator": "Valsartan, target 160 mg twice daily"
+      },
+      "primary_outcomes": [
+        {
+          "name": "Total heart-failure hospitalizations and cardiovascular death",
+          "analysis": "Recurrent-event composite",
+          "effect_type": "Rate ratio",
+          "effect_estimate": 0.87,
+          "ci_95": [
+            0.75,
+            1.01
+          ],
+          "p_value": "0.06",
+          "significant": false,
+          "result_text": "894 vs 1,009 total primary events; rate ratio 0.87 (95% CI 0.75–1.01), p=0.06."
+        }
+      ],
+      "interpretation": "The prespecified primary composite did not meet statistical significance in the overall study population.",
+      "cautions": [
+        "The comparator was valsartan, not placebo.",
+        "Exploratory subgroup signals should not be presented as overall trial success."
+      ],
+      "reference": {
+        "short_citation": "Solomon et al., N Engl J Med (2019)",
+        "doi": "10.1056/NEJMoa1908655",
+        "pmid": "31475794",
+        "clinicaltrials_id": "NCT01920711",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31475794/"
+      },
+      "tags": [
+        "ARNI",
+        "sacubitril valsartan",
+        "recurrent events",
+        "heart failure hospitalization"
+      ],
+      "curation": {
+        "source_basis": "Primary trial abstract and bibliographic PubMed record",
+        "verification_status": "Source-checked; clinical expert review pending",
+        "last_source_check": "2026-11-11"
+      }
+    },
+    {
+      "id": "topcat-2014",
+      "acronym": "TOPCAT",
+      "title": "Spironolactone for Heart Failure with Preserved Ejection Fraction",
+      "year": 2014,
+      "journal": "New England Journal of Medicine",
+      "study_design": "Randomized, double-blind, placebo-controlled trial",
+      "treatment_category": "Steroidal MRA",
+      "population_group": "EF ≥45%",
+      "population": {
+        "summary": "Patients with symptomatic heart failure and LVEF ≥45%.",
+        "sample_size": 3445,
+        "lvef_eligibility": "≥45%",
+        "additional_criteria": "Trial participants met criteria for symptomatic HFpEF enrollment."
+      },
+      "intervention": {
+        "name": "Spironolactone",
+        "dose": "15–45 mg once daily",
+        "comparator": "Placebo"
+      },
+      "primary_outcomes": [
+        {
+          "name": "Cardiovascular death, aborted cardiac arrest, or HF hospitalization",
+          "analysis": "Time to first event",
+          "effect_type": "Hazard ratio",
+          "effect_estimate": 0.89,
+          "ci_95": [
+            0.77,
+            1.04
+          ],
+          "p_value": "0.14",
+          "significant": false,
+          "result_text": "18.6% (spironolactone) vs 20.4% (placebo); HR 0.89 (95% CI 0.77–1.04), p=0.14."
+        }
+      ],
+      "interpretation": "No statistically significant reduction in the primary composite; hospitalization for heart failure alone was lower, while hyperkalemia was more frequent.",
+      "cautions": [
+        "The primary composite was not statistically significant.",
+        "Serum potassium and renal function safety findings matter when interpreting this trial."
+      ],
+      "reference": {
+        "short_citation": "Pitt et al., N Engl J Med (2014)",
+        "doi": "10.1056/NEJMoa1313731",
+        "pmid": "24716680",
+        "clinicaltrials_id": "NCT00094302",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/24716680/"
+      },
+      "tags": [
+        "spironolactone",
+        "MRA",
+        "heart failure hospitalization",
+        "hyperkalemia"
+      ],
+      "curation": {
+        "source_basis": "Primary trial abstract and bibliographic PubMed record",
+        "verification_status": "Source-checked; clinical expert review pending",
+        "last_source_check": "2026-11-11"
+      }
+    },
+    {
+      "id": "step-hfpef-2023",
+      "acronym": "STEP-HFpEF",
+      "title": "Semaglutide in Patients with Heart Failure with Preserved Ejection Fraction and Obesity",
+      "year": 2023,
+      "journal": "New England Journal of Medicine",
+      "study_design": "Randomized, double-blind, placebo-controlled trial",
+      "treatment_category": "GLP-1 receptor agonist",
+      "population_group": "Obesity-related HFpEF",
+      "population": {
+        "summary": "Patients with HFpEF and obesity (BMI ≥30 kg/m²); LVEF ≥45% under the trial eligibility criteria.",
+        "sample_size": 529,
+        "lvef_eligibility": "≥45%",
+        "additional_criteria": "Obesity-associated HFpEF; this original STEP-HFpEF trial excluded diabetes."
+      },
+      "intervention": {
+        "name": "Semaglutide",
+        "dose": "2.4 mg subcutaneously once weekly",
+        "comparator": "Placebo"
+      },
+      "primary_outcomes": [
+        {
+          "name": "Change in KCCQ clinical summary score at 52 weeks",
+          "analysis": "Between-group mean difference in change",
+          "effect_type": "Mean difference (points)",
+          "effect_estimate": 7.8,
+          "ci_95": [
+            4.8,
+            10.9
+          ],
+          "p_value": "<0.001",
+          "significant": true,
+          "result_text": "Mean change +16.6 vs +8.7 points; estimated difference +7.8 points (95% CI 4.8–10.9), p<0.001."
+        },
+        {
+          "name": "Percentage change in body weight at 52 weeks",
+          "analysis": "Between-group difference in percentage-point change",
+          "effect_type": "Difference (percentage points)",
+          "effect_estimate": -10.7,
+          "ci_95": [
+            -11.9,
+            -9.4
+          ],
+          "p_value": "<0.001",
+          "significant": true,
+          "result_text": "Mean change −13.3% vs −2.6%; difference −10.7 percentage points (95% CI −11.9 to −9.4), p<0.001."
+        }
+      ],
+      "interpretation": "Semaglutide improved patient-reported symptoms/physical limitations and reduced weight in obesity-associated HFpEF. This trial was not primarily designed to establish mortality benefit.",
+      "cautions": [
+        "Its two co-primary outcomes differ substantially from clinical-event endpoints in other trials.",
+        "The 529-participant trial studied a selected obesity-related phenotype and excluded diabetes."
+      ],
+      "reference": {
+        "short_citation": "Kosiborod et al., N Engl J Med (2023)",
+        "doi": "10.1056/NEJMoa2306963",
+        "pmid": "37622681",
+        "clinicaltrials_id": "NCT04788511",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37622681/"
+      },
+      "tags": [
+        "semaglutide",
+        "obesity",
+        "KCCQ",
+        "weight change",
+        "GLP-1"
+      ],
+      "curation": {
+        "source_basis": "Primary trial abstract and bibliographic PubMed record",
+        "verification_status": "Source-checked; clinical expert review pending",
+        "last_source_check": "2026-11-11"
+      }
+    },
+    {
+      "id": "finearts-hf-2024",
+      "acronym": "FINEARTS-HF",
+      "title": "Finerenone in Heart Failure with Mildly Reduced or Preserved Ejection Fraction",
+      "year": 2024,
+      "journal": "New England Journal of Medicine",
+      "study_design": "Randomized, double-blind, placebo-controlled trial",
+      "treatment_category": "Nonsteroidal MRA",
+      "population_group": "Broad EF spectrum",
+      "population": {
+        "summary": "Patients with symptomatic heart failure and LVEF ≥40%.",
+        "sample_size": 6001,
+        "lvef_eligibility": "≥40%",
+        "additional_criteria": "On usual therapy; included participants with mildly reduced or preserved EF."
+      },
+      "intervention": {
+        "name": "Finerenone",
+        "dose": "Up to 20 or 40 mg once daily, depending on protocol criteria",
+        "comparator": "Placebo plus usual therapy"
+      },
+      "primary_outcomes": [
+        {
+          "name": "Total worsening HF events and cardiovascular death",
+          "analysis": "Recurrent-event composite",
+          "effect_type": "Rate ratio",
+          "effect_estimate": 0.84,
+          "ci_95": [
+            0.74,
+            0.95
+          ],
+          "p_value": "0.007",
+          "significant": true,
+          "result_text": "1,083 vs 1,283 total primary events; rate ratio 0.84 (95% CI 0.74–0.95), p=0.007."
+        }
+      ],
+      "interpretation": "Finerenone reduced the rate of the recurrent-event composite outcome. Hyperkalemia occurred more often; cardiovascular death considered alone was not significantly reduced.",
+      "cautions": [
+        "Includes patients with LVEF ≥40%, not solely conventional HFpEF.",
+        "Recurrent-event rate ratio is not interchangeable with a time-to-first-event hazard ratio."
+      ],
+      "reference": {
+        "short_citation": "Solomon et al., N Engl J Med (2024)",
+        "doi": "10.1056/NEJMoa2407107",
+        "pmid": "39225278",
+        "clinicaltrials_id": "NCT04435626",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39225278/"
+      },
+      "tags": [
+        "finerenone",
+        "MRA",
+        "recurrent events",
+        "hyperkalemia",
+        "heart failure hospitalization"
+      ],
+      "curation": {
+        "source_basis": "Primary trial abstract and bibliographic PubMed record",
+        "verification_status": "Source-checked; clinical expert review pending",
+        "last_source_check": "2026-11-11"
+      }
+    }
+  ]
+}
