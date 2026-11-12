@@ -3,5 +3,28 @@
     "source": "Manually sourced PubMed links",
     "retrieved": 15,
     "search_truncated": false
+  },
+  {
+    "source": "PubMed",
+    "query_label": "hfpef",
+    "query": "(\"heart failure with preserved ejection fraction\"[Title/Abstract] OR HFpEF[Title/Abstract] OR \"diastolic heart failure\"[Title/Abstract]) AND (\"clinical trial\"[Publication Type] OR \"randomized controlled trial\"[Publication Type] OR \"observational study\"[Publication Type] OR \"cohort studies\"[MeSH Terms] OR \"guideline\"[Publication Type] OR \"registry\"[Title/Abstract] OR \"trial\"[Title/Abstract])",
+    "reported_matches": 3996,
+    "retrieved": 750,
+    "search_truncated": true
+  },
+  {
+    "source": "PubMed",
+    "query_label": "hfmrEF",
+    "query": "(\"heart failure with mildly reduced ejection fraction\"[Title/Abstract] OR HFmrEF[Title/Abstract] OR \"heart failure with normal ejection fraction\"[Title/Abstract]) AND (\"clinical trial\"[Publication Type] OR \"randomized controlled trial\"[Publication Type] OR \"observational study\"[Publication Type] OR \"cohort studies\"[MeSH Terms] OR \"guideline\"[Publication Type] OR \"registry\"[Title/Abstract] OR \"trial\"[Title/Abstract])",
+    "reported_matches": 713,
+    "retrieved": 713,
+    "search_truncated": false
+  },
+  {
+    "source": "ClinicalTrials.gov",
+    "query": "\"heart failure with preserved ejection fraction\"",
+    "reported_matches": null,
+    "retrieved": 400,
+    "search_truncated": true
   }
 ]
