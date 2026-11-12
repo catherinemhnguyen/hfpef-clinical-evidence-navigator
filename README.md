@@ -1,6 +1,6 @@
 # HFpEF Clinical Evidence Navigator
 
-**v0.3.0 | 22 preliminary detailed studies + 3 guidance documents + 15 new bibliographic candidates | Updated November 12, 2026**
+**v0.3.0 | 22 preliminary detailed studies + 3 guidance documents + 1,660 unreviewed discovery candidates | Updated November 12, 2026**
 
 A small, reproducible, public-facing **Python/Streamlit** prototype organizing selected trial findings and guidance related to heart failure with preserved ejection fraction (HFpEF) and adjacent mildly reduced EF populations. The previous static GitHub Pages website is preserved.
 
@@ -8,7 +8,7 @@ A small, reproducible, public-facing **Python/Streamlit** prototype organizing s
 
 ## Literature discovery expansion (v0.3)
 
-Following mentor feedback, the repository includes **15 new source-linked bibliographic candidates**, bringing the index to **40 records**: 22 preliminary detailed study records, 3 guidance documents, and 15 unreviewed publications. These **are not 40 independent randomized trials**—some candidates are observational studies, protocols or secondary analyses.
+Following mentor feedback, an initial set of 15 manually checked bibliographic links seeded a live API discovery search. GitHub Actions successfully completed the first run, producing **1,660 candidate records** (1,310 PubMed publications plus 350 ClinicalTrials.gov registrations). Together with 22 preliminary detailed study records and 3 guidance documents, the repository contains **1,685 indexed records**, **not 1,685 independent HFpEF studies**. Candidates include observational studies, follow-ups, protocols and potentially irrelevant matches that require screening. The search log records **truncated query windows**, so this is not exhaustive.
 
 - `data/discovery_seed.json`: source-linked PubMed seed records
 - `data/discovery_candidates.json` and `data/discovery_candidates.csv`: separate searchable review queue
@@ -17,7 +17,7 @@ Following mentor feedback, the repository includes **15 new source-linked biblio
 - `.github/workflows/literature-discovery.yml`: weekly/on-demand API collection, subject to GitHub Actions permissions
 - `docs/DISCOVERY_METHODS.md`: scope, limitations, and human review process
 
-Recreate the seed with `python scripts/discover_literature.py --offline` or run the live API search without `--offline` on an internet-connected computer. **The live API crawl has not been run in this environment and must be checked in GitHub Actions before claiming that it works.** Clinical outcomes are never automatically synthesized or promoted from a citation alone. This is not a comprehensive systematic review.
+Recreate the seed with `python scripts/discover_literature.py --offline` or run the live API search without `--offline` on an internet-connected computer. **The first GitHub Actions live API crawl succeeded on November 12, 2026.** It was not independently reproduced in the local offline environment; future weekly runs depend on the GitHub Actions configuration and permissions. Clinical outcomes are never automatically synthesized or promoted from a citation alone. This is not a comprehensive systematic review.
 
 ## Features
 
