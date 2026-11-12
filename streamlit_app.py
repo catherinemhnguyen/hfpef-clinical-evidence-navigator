@@ -207,7 +207,24 @@ with tab_discovery:
                      hide_index=True, use_container_width=True, column_config={"url": st.column_config.LinkColumn("Primary source")})
         st.download_button("Download candidates (CSV)", "\ufeff" + csv_text(visible),
                            file_name="hfpef_discovery_candidates.csv", mime="text/csv; charset=utf-8")
-    st.caption("Source: verified PubMed links and future NCBI E-utilities/ClinicalTrials.gov API v2 search runs. See docs/DISCOVERY_METHODS.md.")
+    st.caption("Source: PubMed and ClinicalTrials.gov metadata. The discovery queue is not a validated clinical evidence dataset; see docs/DISCOVERY_METHODS.md.")
+    st.markdown("#### Title-level triage (machine-generated, not final eligibility)")
+    triage_file = Path(__file__).resolve().parent / "data" / "triage_queue.csv"
+    if triage_file.exists():
+        triage_df = pd.read_csv(triage_file).fillna("")
+        p_opts = sorted(triage_df["priority_for_abstract_review"].unique().tolist())
+        priority = st.selectbox("Review priority", ["All"] + p_opts, key="triage_priority")
+        if priority != "All":
+            triage_df = triage_df[triage_df["priority_for_abstract_review"] == priority]
+        st.caption("These are search-priority and parent-trial hints only; no automatic inclusion, exclusions, or clinical verification.")
+        st.dataframe(triage_df[["title", "proposed_record_type", "title_relevance_flag", "possible_parent_trial", "url"]],
+                     hide_index=True, use_container_width=True,
+                     column_config={"url": st.column_config.LinkColumn("Original source")})
+        st.download_button("Download provisional triage (CSV)", triage_df.to_csv(index=False),
+                           file_name="hfpef_title_triage.csv", mime="text/csv", key="triage_csv")
+    else:
+        st.caption("Run python scripts/triage_candidates.py to generate title-level triage.")
+    st.caption("Ten separate source-linked, abstract-only extraction drafts are available in data/abstract_extraction_drafts.csv; none have independent full-text verification.")
 
 with tab_audit:
     st.subheader("Source extraction & quality dashboard")
