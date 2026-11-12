@@ -32,5 +32,6 @@ jobs:
           git add data/discovery_candidates.json data/discovery_candidates.csv data/discovery_search_log.json data/triage_queue.csv
           if ! git diff --cached --quiet; then
             git commit -m "Update unreviewed HFpEF literature search queue"
+            git pull --rebase origin main
             git push
           fi
