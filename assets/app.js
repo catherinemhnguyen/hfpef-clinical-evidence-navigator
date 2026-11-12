@@ -118,6 +118,33 @@ function download(name,content,type) {
   const a = document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();
   setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
+async function initializeDiscovery() {
+  const count = $('discovery-count');
+  const list = $('discovery-list');
+  try {
+    const response = await fetch('data/discovery_candidates.json');
+    if (!response.ok) throw Error('Discovery data unavailable');
+    const records = (await response.json()).candidates;
+    const input = $('discovery-search');
+    function render() {
+      const query = input.value.trim().toLowerCase();
+      const filtered = records.filter(r => [r.title, r.journal, r.publication_type, r.year, r.pmid, r.nct_id].join(' ').toLowerCase().includes(query));
+      count.textContent = filtered.length + ' candidate publications awaiting screening; 22 detailed study records are separate.';
+      list.replaceChildren(...filtered.map(r => {
+        const card = make('article', 'study-card');
+        addText(card, 'span', 'tag', r.source + ' · Pending screening');
+        addText(card, 'h3', '', r.title);
+        addText(card, 'p', 'study-title', (r.year || '') + ' · ' + (r.journal || r.publication_type));
+        addText(card, 'p', 'review-note', r.publication_type);
+        if (r.url && r.url.startsWith('https://')) card.append(detailLink('Open source ↗', r.url));
+        return card;
+      }));
+    }
+    input.addEventListener('input', render);
+    render();
+  } catch(error) { count.textContent = 'Could not load the unreviewed discovery index.'; }
+}
+
 async function initialize() {
   try {
     const response = await fetch('data/studies.json');
@@ -133,6 +160,7 @@ async function initialize() {
     $('download-json').addEventListener('click',()=>download('hfpef-filtered-studies.json',JSON.stringify({...state.metadata,studies:state.filtered},null,2),'application/json'));
     $('download-csv').addEventListener('click',()=>download('hfpef-filtered-studies.csv','\ufeff'+getCsv(state.filtered),'text/csv;charset=utf-8'));
     applyFilters();
+    initializeDiscovery();
   } catch(error) {
     $('result-count').textContent='Unable to load evidence records.';
     const el=$('error-message');el.hidden=false;
