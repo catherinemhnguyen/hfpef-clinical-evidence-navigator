@@ -1,10 +1,23 @@
 # HFpEF Clinical Evidence Navigator
 
-**v0.2.0 | 22 selected research studies + 3 published guidance documents | Updated November 11, 2026**
+**v0.3.0 | 22 preliminary detailed studies + 3 guidance documents + 15 new bibliographic candidates | Updated November 12, 2026**
 
 A small, reproducible, public-facing **Python/Streamlit** prototype organizing selected trial findings and guidance related to heart failure with preserved ejection fraction (HFpEF) and adjacent mildly reduced EF populations. The previous static GitHub Pages website is preserved.
 
 > **Research and education only — not for clinical decision-making.** Records have undergone selective publication/abstract-level checks, **not** independent full-text verification, systematic screening, guideline recommendation extraction, clinical adjudication, or formal risk-of-bias assessment. Sources and exact EF eligibility vary; results must not be pooled casually.
+
+## Literature discovery expansion (v0.3)
+
+Following mentor feedback, the repository includes **15 new source-linked bibliographic candidates**, bringing the index to **40 records**: 22 preliminary detailed study records, 3 guidance documents, and 15 unreviewed publications. These **are not 40 independent randomized trials**—some candidates are observational studies, protocols or secondary analyses.
+
+- `data/discovery_seed.json`: source-linked PubMed seed records
+- `data/discovery_candidates.json` and `data/discovery_candidates.csv`: separate searchable review queue
+- `scripts/discover_literature.py`: PubMed ESearch/ESummary and ClinicalTrials.gov API v2 discovery, deduplication and pagination
+- `data/discovery_search_log.json`: search provenance and truncation tracking
+- `.github/workflows/literature-discovery.yml`: weekly/on-demand API collection, subject to GitHub Actions permissions
+- `docs/DISCOVERY_METHODS.md`: scope, limitations, and human review process
+
+Recreate the seed with `python scripts/discover_literature.py --offline` or run the live API search without `--offline` on an internet-connected computer. **The live API crawl has not been run in this environment and must be checked in GitHub Actions before claiming that it works.** Clinical outcomes are never automatically synthesized or promoted from a citation alone. This is not a comprehensive systematic review.
 
 ## Features
 
