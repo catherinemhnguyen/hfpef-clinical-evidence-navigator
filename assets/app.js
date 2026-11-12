@@ -129,8 +129,8 @@ async function initializeDiscovery() {
     function render() {
       const query = input.value.trim().toLowerCase();
       const filtered = records.filter(r => [r.title, r.journal, r.publication_type, r.year, r.pmid, r.nct_id].join(' ').toLowerCase().includes(query));
-      count.textContent = filtered.length + ' candidate publications awaiting screening; 22 detailed study records are separate.';
-      list.replaceChildren(...filtered.map(r => {
+      count.textContent = filtered.length + ' candidates match; showing first ' + Math.min(filtered.length,100) + '. Refine search or download the full CSV. The 22 detailed study records are separate.';
+      list.replaceChildren(...filtered.slice(0,100).map(r => {
         const card = make('article', 'study-card');
         addText(card, 'span', 'tag', r.source + ' · Pending screening');
         addText(card, 'h3', '', r.title);
