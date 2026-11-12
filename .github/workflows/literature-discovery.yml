@@ -21,13 +21,15 @@ jobs:
           python-version: '3.11'
       - name: Discover bibliographic candidates
         run: python scripts/discover_literature.py --max-pubmed 1500 --max-trials 400
+      - name: Generate title-level screening queue (never promotes records)
+        run: python scripts/triage_candidates.py
       - name: Confirm curated data unchanged and structurally valid
         run: python scripts/validate_data.py
       - name: Commit only candidate citations, never unverified clinical outcomes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/discovery_candidates.json data/discovery_candidates.csv data/discovery_search_log.json
+          git add data/discovery_candidates.json data/discovery_candidates.csv data/discovery_search_log.json data/triage_queue.csv
           if ! git diff --cached --quiet; then
             git commit -m "Update unreviewed HFpEF literature search queue"
             git push
