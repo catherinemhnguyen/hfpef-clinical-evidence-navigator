@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import json
 from collections import Counter
+from pathlib import Path
 
 import pandas as pd
 import streamlit as st
@@ -48,6 +49,7 @@ def data():
 studies_data, guidance_data = data()
 studies = studies_data["studies"]
 guidance = guidance_data["guidelines"]
+candidates = json.loads((Path(__file__).resolve().parent / "data" / "discovery_candidates.json").read_text(encoding="utf-8"))["candidates"]
 
 st.markdown('<div class="eyebrow">Clinical research · Data navigator</div>', unsafe_allow_html=True)
 st.title("HFpEF Clinical Evidence Navigator")
@@ -65,7 +67,7 @@ st.info(
 m1, m2, m3, m4 = st.columns(4)
 m1.metric("Studies", len(studies))
 m2.metric("Guidance records", len(guidance))
-m3.metric("Total indexed records", len(studies) + len(guidance))
+m3.metric("All indexed records", len(studies) + len(guidance) + len(candidates))
 m4.metric("Source check", studies_data["updated_at"])
 
 with st.sidebar:
@@ -96,8 +98,8 @@ filtered = filter_studies(
 
 st.caption(f"Showing **{len(filtered)} of {len(studies)}** study records · Last source-check date: {studies_data['updated_at']}")
 
-tab_studies, tab_compare, tab_guidelines, tab_audit, tab_about = st.tabs(
-    ["Study explorer", "Compare studies", "Guidance documents", "Data quality", "Methods & scope"]
+tab_studies, tab_compare, tab_guidelines, tab_discovery, tab_audit, tab_about = st.tabs(
+    ["Study explorer", "Compare studies", "Guidance documents", "Discovery queue", "Data quality", "Methods & scope"]
 )
 
 with tab_studies:
@@ -191,6 +193,21 @@ with tab_guidelines:
             st.link_button("Read indexed source", g['source_url'])
     st.download_button("Download guidance CSV", "\ufeff" + csv_text([flatten_guideline(g) for g in visible_guidance]),
                        file_name="hfpef_guidance.csv", mime="text/csv; charset=utf-8", disabled=not visible_guidance)
+
+with tab_discovery:
+    st.subheader("New HFpEF publications awaiting screening")
+    st.warning("These are bibliographic candidates, not independently verified clinical trials. Protocols, follow-ups and subgroup analyses may relate to existing studies; no efficacy claims are auto-extracted.")
+    query = st.text_input("Search literature candidates", placeholder="e.g., exercise, shunt, tirzepatide", key="dsearch")
+    types = st.multiselect("Candidate publication type", sorted({r["publication_type"] for r in candidates}), key="dtype")
+    visible = [r for r in candidates if (not query or query.casefold() in json.dumps(r).casefold())
+               and (not types or r["publication_type"] in types)]
+    st.caption(f"{len(visible)} of {len(candidates)} source-linked citations; clinical eligibility and outcome extraction pending")
+    if visible:
+        st.dataframe(pd.DataFrame(visible)[["title", "year", "publication_type", "journal", "pmid", "nct_id", "url", "discovery_status"]],
+                     hide_index=True, use_container_width=True, column_config={"url": st.column_config.LinkColumn("Primary source")})
+        st.download_button("Download candidates (CSV)", "\ufeff" + csv_text(visible),
+                           file_name="hfpef_discovery_candidates.csv", mime="text/csv; charset=utf-8")
+    st.caption("Source: verified PubMed links and future NCBI E-utilities/ClinicalTrials.gov API v2 search runs. See docs/DISCOVERY_METHODS.md.")
 
 with tab_audit:
     st.subheader("Source extraction & quality dashboard")
