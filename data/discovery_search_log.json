@@ -8,7 +8,7 @@
     "source": "PubMed",
     "query_label": "hfpef",
     "query": "(\"heart failure with preserved ejection fraction\"[Title/Abstract] OR HFpEF[Title/Abstract] OR \"diastolic heart failure\"[Title/Abstract]) AND (\"clinical trial\"[Publication Type] OR \"randomized controlled trial\"[Publication Type] OR \"observational study\"[Publication Type] OR \"cohort studies\"[MeSH Terms] OR \"guideline\"[Publication Type] OR \"registry\"[Title/Abstract] OR \"trial\"[Title/Abstract])",
-    "reported_matches": 3996,
+    "reported_matches": 3997,
     "retrieved": 750,
     "search_truncated": true
   },
