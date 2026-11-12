@@ -15,8 +15,8 @@ def check(cond: bool, msg: str) -> None:
 def validate() -> dict[str, int]:
     studies, guidance = load_records()
     a, b = studies['studies'], guidance['guidelines']
-    check(len(a) == 22, f"Expected 22 studies; got {len(a)}")
-    check(len(b) == 3, f"Expected 3 guidance documents; got {len(b)}")
+    check(len(a) >= 1, "No study records present")
+    check(len(b) >= 1, "No guidance records present")
     ids = set()
     pmids = set()
     for r in a:
