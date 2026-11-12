@@ -53,7 +53,7 @@
         <div>
           <p class="section-kicker">THE EVIDENCE LIBRARY</p>
           <h2>Clinical trial explorer</h2>
-          <p>Search 22 selected trials by intervention, population, or outcome. Three guidance records are separately available in the source data and Streamlit app.</p>
+          <p>Search 22 selected detailed studies by intervention, population, or outcome. Three guidance records are separately available in the source data and Streamlit app.</p>
         </div>
         <div class="source-actions">
           <button id="download-json" class="button button-quiet" type="button">Export results as JSON ↓</button>
@@ -85,6 +85,17 @@
       <p id="error-message" class="error-message" hidden></p>
     </section>
 
+    <section id="discovery" class="container evidence-section">
+      <div class="section-heading">
+        <div><p class="section-kicker">EXPANDING THE EVIDENCE</p><h2>New literature discovery queue</h2>
+        <p>Source-linked citations awaiting review. Some publications are follow-up analyses or protocols, not new independent trials.</p></div>
+        <a class="button button-secondary" href="data/discovery_candidates.csv" download>Download candidate CSV ↓</a>
+      </div>
+      <div class="field field-search"><label for="discovery-search">Search candidate publications</label>
+      <input id="discovery-search" type="search" placeholder="Try shunt, exercise, iron, or tirzepatide" /></div>
+      <div class="results-line"><p id="discovery-count">Loading citations…</p></div>
+      <div id="discovery-list" class="study-grid"></div>
+    </section>
     <section id="methods" class="methods-section">
       <div class="container methods-grid">
         <div>
@@ -102,6 +113,6 @@
       </div>
     </section>
   </main>
-  <footer class="footer"><div class="container footer-inner"><span>HFpEF Clinical Evidence Navigator · v0.2</span><span>Educational research prototype · Updated 2026</span></div></footer>
+  <footer class="footer"><div class="container footer-inner"><span>HFpEF Clinical Evidence Navigator · v0.3</span><span>Educational research prototype · Updated 2026</span></div></footer>
 </body>
 </html>
