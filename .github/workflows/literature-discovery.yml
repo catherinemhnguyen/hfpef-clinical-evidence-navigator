@@ -1,6 +1,11 @@
 name: HFpEF literature discovery
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/literature-discovery.yml'
+      - 'scripts/discover_literature.py'
   schedule:
     - cron: '17 8 * * 1'
 permissions:
