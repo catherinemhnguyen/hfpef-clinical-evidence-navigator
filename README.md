@@ -94,7 +94,7 @@ The structural validator checks field consistency, DOI/PMID formatting, the limi
 | Python + Streamlit website | `streamlit_app.py` with search and multi-select filters |
 | GitHub hosting | Public GitHub repository; static site already on GitHub Pages |
 | Verification and iteration | Source metadata/abstract checks, audit statuses and offline code tests; independent review **pending** |
-| Automation later | CSV generation is automated; **PubMed ingestion is not yet automated**, avoiding premature extraction error |
+| Automation later | CSV generation is automated; PubMed discovery via public APIs is now automated, avoiding premature extraction error |
 
 ## Clinical/research limitations
 
@@ -111,3 +111,18 @@ See [`docs/EXTRACTION_PROTOCOL.md`](docs/EXTRACTION_PROTOCOL.md) for the review 
 ## Selected sources
 
 Links to the original bibliographic records are embedded alongside **every** study and guidance record in the JSON and both website interfaces. For example: [CHARM-Preserved](https://pubmed.ncbi.nlm.nih.gov/13678871/), [EMPEROR-Preserved](https://pubmed.ncbi.nlm.nih.gov/34449189/), [DELIVER](https://pubmed.ncbi.nlm.nih.gov/36027570/), [SUMMIT](https://pubmed.ncbi.nlm.nih.gov/39555826/), [2022 AHA/ACC/HFSA guideline](https://pubmed.ncbi.nlm.nih.gov/35363499/), and [2023 ACC HFpEF pathway](https://pubmed.ncbi.nlm.nih.gov/37137593/).
+
+## Screening and extraction workflow (v0.4)
+
+To expand beyond 22 detailed studies without inventing results or counting multiple reports as independent trials, the project now has a **separate evidence-screening layer**:
+
+- [All bibliographic candidates](data/discovery_candidates.csv): public-API metadata, not clinical claims.
+- [Automated triage](data/triage_queue.csv): all candidates assigned provisional priority, report type, and title-based possible parent-trial hints. **No automated eligibility decisions**.
+- [First 50 title-level suggestions](data/title_triage_first50.csv): an initial practical review batch. These are not 50 completed abstract screens.
+- [Human decisions ledger](data/screening_decisions.csv): stable file reserved for reviewer decisions; the weekly discovery workflow does **not** overwrite it. Record decisions against exact candidate IDs.
+- [Ten source-linked extraction drafts](data/abstract_extraction_drafts.csv): PubMed abstract-level records across original randomized trials, a trial-design paper, observational studies, and a pooled analysis. **No independent full-text confirmation or second reviewer yet**; drafts are not promoted to `studies.json`.
+- [Screening and extraction methods](docs/SCREENING_AND_EXTRACTION.md): eligibility rules, citation-to-trial linkage, verification process, and audit fields.
+
+Run `python scripts/triage_candidates.py` to regenerate the candidate review queue; the scheduled GitHub Actions workflow also performs this step. Python validation no longer fixes the study inventory to exactly 22, allowing addition of truly reviewed studies. The Python files can be tested with `python -m unittest discover -s tests -v`.
+
+**Next scientific milestone:** verify eligible records with original manuscripts/protocols and independent adjudication. Automated title relevance is not full-text eligibility, and PubMed abstract transcription is not medical/clinical validation. 
