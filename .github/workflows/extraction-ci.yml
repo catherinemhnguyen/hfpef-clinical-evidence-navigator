@@ -1,0 +1,31 @@
+name: HFpEF extraction safeguards and dataset tests
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/extract_candidates.py'
+      - 'scripts/validate_data.py'
+      - 'tests/**'
+      - '.github/workflows/extraction-ci.yml'
+  pull_request:
+    paths:
+      - 'scripts/extract_candidates.py'
+      - 'scripts/validate_data.py'
+      - 'tests/**'
+      - '.github/workflows/extraction-ci.yml'
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate structured study data
+        run: python scripts/validate_data.py
+      - name: Run offline regression and extraction-safety tests
+        run: python -m unittest discover -s tests -v
