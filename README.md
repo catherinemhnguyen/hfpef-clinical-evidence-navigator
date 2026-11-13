@@ -1,6 +1,6 @@
-**v0.4.0 | Discovery + opt-in LLM draft extraction | Updated November 12, 2026**nical Evidence Navigator
+# HFpEF Clinical Evidence Navigator
 
-**v0.3.0 | 22 preliminary detailed studies + 3 guidance documents + 1,660 unreviewed discovery candidates | Updated November 12, 2026**
+**v0.4.0 | Discovery + opt-in LLM draft extraction | Updated November 12, 2026**
 
 A small, reproducible, public-facing **Python/Streamlit** prototype organizing selected trial findings and guidance related to heart failure with preserved ejection fraction (HFpEF) and adjacent mildly reduced EF populations. The previous static GitHub Pages website is preserved.
 
