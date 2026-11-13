@@ -1,4 +1,4 @@
-# HFpEF Clinical Evidence Navigator
+**v0.4.0 | Discovery + opt-in LLM draft extraction | Updated November 12, 2026**nical Evidence Navigator
 
 **v0.3.0 | 22 preliminary detailed studies + 3 guidance documents + 1,660 unreviewed discovery candidates | Updated November 12, 2026**
 
@@ -18,6 +18,24 @@ Following mentor feedback, an initial set of 15 manually checked bibliographic l
 - `docs/DISCOVERY_METHODS.md`: scope, limitations, and human review process
 
 Recreate the seed with `python scripts/discover_literature.py --offline` or run the live API search without `--offline` on an internet-connected computer. **The first GitHub Actions live API crawl succeeded on November 12, 2026.** It was not independently reproduced in the local offline environment; future weekly runs depend on the GitHub Actions configuration and permissions. Clinical outcomes are never automatically synthesized or promoted from a citation alone. This is not a comprehensive systematic review.
+
+## LLM-assisted extraction drafts (v0.4)
+
+**New: opt-in research extraction, not automatic clinical publication.** The [manual GitHub Actions extraction workflow](.github/workflows/extraction-drafts.yml) selects 1–10 PubMed publications already found by the discovery crawler, retrieves available **PubMed abstracts**, and calls an LLM to produce structured clinical fields and source-linked knowledge units. Every populated field must have a short verbatim source excerpt. Basic evidence-substring and numerical consistency checks flag possible unsupported claims; an optional second LLM call audits contextual support and omissions.
+
+**Requirements:** Set your own `OPENAI_API_KEY` as a GitHub Actions repository secret before running the workflow; this is a paid model API and will not execute without credentials. It is manual-trigger-only to avoid unintended charges. After a run, download the **unreviewed-extraction-drafts** artifact; the draft JSON files are not committed, incorporated into `data/studies.json`, or shown as validated clinical results. The GitHub Pages site remains a static research index; the extraction agent is a separate server-side batch workflow.
+
+To run locally:
+
+```bash
+python scripts/extract_candidates.py --limit 3 --priority High --llm-check
+python scripts/extract_candidates.py --pmids 41697954 --limit 1
+python -m unittest discover -s tests -v
+```
+
+Use `--source-text /path/to/authorized_fulltext.txt` with one explicit PMID to inspect a locally supplied, appropriately licensed complete document. The model then processes that text via an external API. The default public API ingestion is **abstract-only**, so no claims of full-text completeness are supported.
+
+**[Read the full setup, source verification, and limitations](docs/LLM_EXTRACTION.md).** Automated retrieval and source-quote matching do not replace independent full-text extraction and human verification; the formal promotion path is still described in [the screening protocol](docs/SCREENING_AND_EXTRACTION.md).
 
 ## Features
 
@@ -83,7 +101,7 @@ python scripts/export_csv.py
 python -m unittest discover -s tests -v
 ```
 
-The structural validator checks field consistency, DOI/PMID formatting, the limited 22+3 inventory, and coherence of confidence intervals where numeric results are entered. **These tests do not check actual scientific accuracy, full-text fidelity, or physician agreement.**
+The structural validator checks field consistency, DOI/PMID formatting, a nonempty, growing inventory, and coherence of confidence intervals where numeric results are entered. **These tests do not check actual scientific accuracy, full-text fidelity, or physician agreement.**
 
 ## How this aligns with the initial mentor proposal
 
