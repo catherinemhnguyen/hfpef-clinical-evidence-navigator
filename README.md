@@ -8,7 +8,7 @@ A small, reproducible, public-facing **Python/Streamlit** prototype organizing s
 
 ## Literature discovery expansion (v0.3)
 
-Following mentor feedback, an initial set of 15 manually checked bibliographic links seeded a live API discovery search. GitHub Actions successfully completed the first run, producing **1,660 candidate records** (1,310 PubMed publications plus 350 ClinicalTrials.gov registrations). Together with 22 preliminary detailed study records and 3 guidance documents, the repository contains **1,685 indexed records**, **not 1,685 independent HFpEF studies**. Candidates include observational studies, follow-ups, protocols and potentially irrelevant matches that require screening. The search log records **truncated query windows**, so this is not exhaustive.
+GitHub Actions successfully completed the first run, producing **1,660 candidate records** (1,310 PubMed publications plus 350 ClinicalTrials.gov registrations). Together with 22 preliminary detailed study records and 3 guidance documents, the repository contains **1,685 indexed records**, **not 1,685 independent HFpEF studies**. Candidates include observational studies, follow-ups, protocols and potentially irrelevant matches that require screening. The search log records **truncated query windows**, so this is not exhaustive.
 
 - `data/discovery_seed.json`: source-linked PubMed seed records
 - `data/discovery_candidates.json` and `data/discovery_candidates.csv`: separate searchable review queue
