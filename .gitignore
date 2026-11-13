@@ -1,0 +1,7 @@
+# Unreviewed LLM data must never be silently committed or deployed
+outputs/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.log
