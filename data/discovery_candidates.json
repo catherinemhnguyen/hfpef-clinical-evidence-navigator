@@ -1,6 +1,6 @@
 {
   "project": "HFpEF Clinical Evidence Navigator",
-  "generated_at": "2026-11-12T16:43:03+00:00",
+  "generated_at": "2026-11-14T02:14:45+00:00",
   "discovery_method": "Public API bibliographic discovery; clinical eligibility and outcome review pending",
   "not_systematic_review": true,
   "candidates": [
@@ -245,21 +245,6 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT07431866",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07431866",
-      "doi": "",
-      "title": "A Clinical Study of the Effect of MK-2828 on Rosuvastatin or Furosemide in Healthy People (MK-2828-005)",
-      "year": 2026,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07431866",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-42206579",
       "source": "PubMed",
       "pmid": "42206579",
@@ -395,6 +380,21 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
+      "id": "nct-NCT07761117",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT07761117",
+      "doi": "",
+      "title": "A Study to Investigate CV Outcomes With Elecoglipron Compared With Placebo in Adult Participants With HFpEF or HFmrEF",
+      "year": 2026,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT07761117",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-42936607",
       "source": "PubMed",
       "pmid": "42936607",
@@ -408,21 +408,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT07365501",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07365501",
-      "doi": "",
-      "title": "Acute Effect of Nurse-assessed Remote Ischemic Preconditioning on Improving Vascular Parameters in Patients With Suspected Heart Failure With Preserved Ejection Fraction",
-      "year": 2026,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07365501",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-41696058",
@@ -750,6 +735,21 @@
       "journal": "Frontiers in cardiovascular medicine",
       "publication_type": "Journal Article, Review",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42903401/",
+      "discovery_status": "Pending screening",
+      "source_kind": "Journal publication",
+      "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "pmid-43020749",
+      "source": "PubMed",
+      "pmid": "43020749",
+      "nct_id": "",
+      "doi": "10.1016/j.ejim.2026.107273",
+      "title": "Assessment of eligibility for evidence-based pharmacological therapies in acute heart failure across heart failure with reduced and non-reduced ejection fraction.",
+      "year": 2026,
+      "journal": "European journal of internal medicine",
+      "publication_type": "Journal Article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43020749/",
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
@@ -1310,6 +1310,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT07416279",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT07416279",
+      "doi": "",
+      "title": "Can Tiny Bubbles Offer an Alternative to Catheters for Assessing Pressures Inside the Heart? Investigating Ultrasound Contrast Agents as Pressure Sensors Against Gold Standard Catheter Pressures in Cardiac Catheterisation Patients.",
+      "year": 2026,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT07416279",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-42658386",
       "source": "PubMed",
       "pmid": "42658386",
@@ -1430,21 +1445,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT07693049",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07693049",
-      "doi": "",
-      "title": "Cardiopulmonary Exercise Testing-based High-intensity Interval Training For Improving Heart Failure With Preserved Ejection Fraction",
-      "year": 2026,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07693049",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-40957539",
       "source": "PubMed",
       "pmid": "40957539",
@@ -1563,21 +1563,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT07565610",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07565610",
-      "doi": "",
-      "title": "Changes in Intramyocardial Fat Assessed by Cardiac CT Before and After Bariatric Surgery and Their Relationship With Cardiac Diastolic Function",
-      "year": 2026,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07565610",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-41526605",
@@ -1745,16 +1730,16 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT07776054",
+      "id": "nct-NCT07598760",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT07776054",
+      "nct_id": "NCT07598760",
       "doi": "",
-      "title": "Clinical Impact of SGLT2 Inhibitor After DC Cardioversion in Persistent AF With HFpEF",
+      "title": "Clinical Feasibility of Cardiac Neuromodulation Therapy for Heart Failure With Preserved Ejection Fraction",
       "year": 2026,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07776054",
+      "url": "https://clinicaltrials.gov/study/NCT07598760",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -1893,6 +1878,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT07390110",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT07390110",
+      "doi": "",
+      "title": "Comparative Effectiveness of Oral Semaglutide vs Sitagliptin Among Individuals With Heart Failure With Preserved Ejection Fraction (STEP-HFpEF DM ORAL)",
+      "year": 2026,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT07390110",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-42159264",
@@ -2043,21 +2043,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT07560436",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07560436",
-      "doi": "",
-      "title": "Coronary Artery Stents in Heart Failure With Preserved Ejection Fraction",
-      "year": 2026,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07560436",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-41467886",
@@ -2253,21 +2238,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT07429396",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07429396",
-      "doi": "",
-      "title": "Data-Driven Phenotyping in Heart Failure With Preserved Ejection Fraction",
-      "year": 2026,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07429396",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-42206291",
@@ -2915,16 +2885,16 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT07878325",
+      "id": "nct-NCT07798856",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT07878325",
+      "nct_id": "NCT07798856",
       "doi": "",
-      "title": "Effects of a Specialized Diabetes and Heart Clinic and Detection of Unrecognized Heart Failure in People With Type 2 Diabetes and Cardiovascular Disease",
+      "title": "Effects of a Multidisciplinary Integrated Care Model on Care Outcomes in Patients With Heart Failure With Preserved Ejection Fraction",
       "year": 2026,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07878325",
+      "url": "https://clinicaltrials.gov/study/NCT07798856",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -3275,21 +3245,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT07661732",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07661732",
-      "doi": "",
-      "title": "eHealth Lifestyle Intervention To Enhance Outcomes in HFpEF",
-      "year": 2026,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07661732",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "nct-NCT07385417",
       "source": "ClinicalTrials.gov",
       "pmid": "",
@@ -3485,36 +3440,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT07401771",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07401771",
-      "doi": "",
-      "title": "Exercise Cardiovascular Magnetic Resonance In Heart Failure With Preserved Ejection Fraction",
-      "year": 2026,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07401771",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT07933172",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07933172",
-      "doi": "",
-      "title": "Exercise Metrics and Perfusion Indices in CoRonary Microvascular Dysfunction: A Multimodal Correlative Study in ANOCA and HFpEF Patients (EMPIRE-Trial)",
-      "year": 2026,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07933172",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-42783048",
       "source": "PubMed",
       "pmid": "42783048",
@@ -3588,6 +3513,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT07628777",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT07628777",
+      "doi": "",
+      "title": "Fecal Microbiota Transplantation for Elderly Patients With HFpEF: A Randomized Controlled Trial",
+      "year": 2026,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT07628777",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-41338355",
@@ -3693,21 +3633,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT07575672",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07575672",
-      "doi": "",
-      "title": "Finerenone in Patients Undergoing Transcatheter Aortic Valve Implantation With Heart Failure",
-      "year": 2026,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07575672",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-42720721",
@@ -3873,6 +3798,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT07787936",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT07787936",
+      "doi": "",
+      "title": "GLP-1/GIP Receptor Agonists in Obesity-Related HFpEF: The GLIDE-HF Registry",
+      "year": 2026,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT07787936",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-42654343",
@@ -4175,21 +4115,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT07375433",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07375433",
-      "doi": "",
-      "title": "Heart Failure With Preserved Ejection Fraction in Patients With Сhronic Obstructive Pulmonary Disease: Clinical Course and Prognosis",
-      "year": 2026,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07375433",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-41495328",
       "source": "PubMed",
       "pmid": "41495328",
@@ -4308,6 +4233,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT07634640",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT07634640",
+      "doi": "",
+      "title": "Hearts on Fire: Targeting Inflammation in Heart Failure With Preserved Ejection Fraction",
+      "year": 2026,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT07634640",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-43000472",
@@ -4805,16 +4745,16 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT07554638",
+      "id": "nct-NCT07413081",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT07554638",
+      "nct_id": "NCT07413081",
       "doi": "",
-      "title": "Incretin Therapies in Obesity-related HFpEF",
+      "title": "Increased Pacemaker Lower Rate in ATTR Cardiac Amyloidosis",
       "year": 2026,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07554638",
+      "url": "https://clinicaltrials.gov/study/NCT07413081",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -4910,6 +4850,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT07521293",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT07521293",
+      "doi": "",
+      "title": "Intracranial Pressure and a Potential Vicious Circle of Atrial Fibrillation in HFpEF",
+      "year": 2026,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT07521293",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-42148667",
       "source": "PubMed",
       "pmid": "42148667",
@@ -4938,21 +4893,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT07643818",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07643818",
-      "doi": "",
-      "title": "Intravenous Iron to Improve Symptoms, Quality of Life and Exercise Capacity in HFpEF With Iron Deficiency",
-      "year": 2026,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07643818",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-41955408",
@@ -5043,6 +4983,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT07686692",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT07686692",
+      "doi": "",
+      "title": "IV Iron Therapy for Older Adults With Heart Failure With Preserved Ejection Fraction and Iron Deficiency",
+      "year": 2026,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT07686692",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-41782434",
@@ -5570,21 +5525,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT07336316",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07336316",
-      "doi": "",
-      "title": "Multimodal Cardiovascular Magnetic Resonance Imaging for Cardiometabolic Pre-HF and HFpEF",
-      "year": 2026,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07336316",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-42875459",
       "source": "PubMed",
       "pmid": "42875459",
@@ -5968,7 +5908,7 @@
       "title": "Obesity is associated with distinct oxylipins in heart failure with preserved ejection fraction.",
       "year": 2026,
       "journal": "Metabolomics : Official journal of the Metabolomic Society",
-      "publication_type": "Journal Article",
+      "publication_type": "Journal Article, Research Support, Non-U.S. Gov't",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42115484/",
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
@@ -6003,21 +5943,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT07835828",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07835828",
-      "doi": "",
-      "title": "Optimised Cardiovascular and Renal Protection in Patients With Chronic Kidney Disease and Cardiovascular Disease",
-      "year": 2026,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07835828",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-41894572",
@@ -6335,21 +6260,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT07798219",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07798219",
-      "doi": "",
-      "title": "Pilot Study of Endoscopic Sleeve Gastroplasty for Obese Patients With Heart Failure and Preserved Ejection Fraction",
-      "year": 2026,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07798219",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-42309700",
       "source": "PubMed",
       "pmid": "42309700",
@@ -6425,21 +6335,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT07324772",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07324772",
-      "doi": "",
-      "title": "PREACTIVE: Preconditioning Exercise Intervention to Improve Symptoms and Quality of Life in Comorbid Atrial Fibrillation and HFpEF",
-      "year": 2026,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07324772",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-42063484",
       "source": "PubMed",
       "pmid": "42063484",
@@ -6453,36 +6348,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT07864558",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07864558",
-      "doi": "",
-      "title": "PrEcision Pacing in HFpEF: the PEP-HFpEF Trial",
-      "year": 2026,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07864558",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT07355088",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07355088",
-      "doi": "",
-      "title": "Precision Subtyping and Prognostic Study of Heart Failure Based on Multi-Omics Integration and Clinical Indicators: A Prospective Single-Center Cohort Study",
-      "year": 2026,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07355088",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-42257333",
@@ -6995,6 +6860,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT07331220",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT07331220",
+      "doi": "",
+      "title": "Pulmonary Artery Denervation for Heart Failure With Preserved Left Ventricular Ejection Fraction",
+      "year": 2026,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT07331220",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-42485648",
       "source": "PubMed",
       "pmid": "42485648",
@@ -7355,21 +7235,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT07918209",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07918209",
-      "doi": "",
-      "title": "Remote Rehabilitation in Patients With HFpEF (PATRON-HF)",
-      "year": 2026,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07918209",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-42201301",
       "source": "PubMed",
       "pmid": "42201301",
@@ -7563,6 +7428,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT07530029",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT07530029",
+      "doi": "",
+      "title": "Sarcopenia in Older Patients Hospitalized for Acute Heart Failure.",
+      "year": 2026,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT07530029",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-42107185",
@@ -8495,6 +8375,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT07417215",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT07417215",
+      "doi": "",
+      "title": "The Effect of Sacubitril and Valsartan on Heart Function in Chronic Hemodialysis Patients With HFpEF",
+      "year": 2026,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT07417215",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-42355618",
       "source": "PubMed",
       "pmid": "42355618",
@@ -8718,21 +8613,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT07630454",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07630454",
-      "doi": "",
-      "title": "Tirzepatide on Atrial Fibrillation Recurrence After Catheter Ablation in Patients With Obesity and HFpEF",
-      "year": 2026,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07630454",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-42114780",
@@ -8975,6 +8855,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT07902453",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT07902453",
+      "doi": "",
+      "title": "Virtual Human Twins as Tools for Personalized Clinical Care in Heart Failure With Preserved Ejection Fraction: a Pilot Study",
+      "year": 2026,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT07902453",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-42335097",
       "source": "PubMed",
       "pmid": "42335097",
@@ -9155,6 +9050,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT06979362",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT06979362",
+      "doi": "",
+      "title": "A Research Study Comparing Different Doses of CDR132L With Placebo on the Structure and Function of the Heart in People With Heart Failure With Preserved Ejection Fraction and Left Ventricular Hypertrophy",
+      "year": 2025,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT06979362",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-40592663",
       "source": "PubMed",
       "pmid": "40592663",
@@ -9180,36 +9090,6 @@
       "journal": "",
       "publication_type": "INTERVENTIONAL",
       "url": "https://clinicaltrials.gov/study/NCT07083011",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT07093528",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07093528",
-      "doi": "",
-      "title": "A Study Of CS Reducer For Symptomatic Heart Failure With HFpEF And CMD",
-      "year": 2025,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07093528",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT06862908",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06862908",
-      "doi": "",
-      "title": "A Study of IBI362 in Subjects With HFpEF or HFmrEF Combined With Obesity",
-      "year": 2025,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06862908",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -9320,6 +9200,21 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
+      "id": "nct-NCT06909682",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT06909682",
+      "doi": "",
+      "title": "AI-Based Monitoring System for Chronic Heart Failure With Advanced Wearable and Mini-Invasive Devices",
+      "year": 2025,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT06909682",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-40377177",
       "source": "PubMed",
       "pmid": "40377177",
@@ -9363,21 +9258,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT07042360",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07042360",
-      "doi": "",
-      "title": "Application of Comprehensive Non-invasive Assessment To Phenotype Tricuspid Regurgitation",
-      "year": 2025,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07042360",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-40869644",
@@ -9635,21 +9515,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT06833138",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06833138",
-      "doi": "",
-      "title": "Atrioventricular Node Ablation and Conduction System Pacing in Patients With Well Controlled Permanent Atrial Fibrillation (AF), Heart Failure and Preserved Ejection Fraction: Heart Rate Regularization Versus Medical Rate Control",
-      "year": 2025,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06833138",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-39215677",
       "source": "PubMed",
       "pmid": "39215677",
@@ -9678,21 +9543,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT06762964",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06762964",
-      "doi": "",
-      "title": "CAMEO-FONTAN -Dapagliflozin in the Failing Fontan Circulation",
-      "year": 2025,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06762964",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-41110921",
@@ -9783,21 +9633,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT07254455",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07254455",
-      "doi": "",
-      "title": "CASTLE-HFpEF (Catheter Ablation for Atrial Fibrillation Patients With Heart Failure With Mildly Reduced and Preserved Ejection Fraction)",
-      "year": 2025,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07254455",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-39359227",
@@ -9933,21 +9768,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT06937320",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06937320",
-      "doi": "",
-      "title": "Chronic Exogenous Ketosis in HFpEF",
-      "year": 2025,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06937320",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-41029951",
@@ -10220,21 +10040,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT06763549",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06763549",
-      "doi": "",
-      "title": "COR-INSIGHT: Optimizing Cardiovascular and Cardiopulmonary Outcomes with AI-Driven Multiplexed Indications Using COR ECG Wearable",
-      "year": 2025,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06763549",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-40847486",
       "source": "PubMed",
       "pmid": "40847486",
@@ -10248,21 +10053,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT07010029",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07010029",
-      "doi": "",
-      "title": "Coronary Sinus Reducer in Patients With Angina With no Obstructive Coronary Disease",
-      "year": 2025,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07010029",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-40705482",
@@ -10368,6 +10158,36 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT07298993",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT07298993",
+      "doi": "",
+      "title": "Deprescribing Beta-Blockers in Elders With Heart Failure With Preserved Ejection Fraction (DEPRESCRIBE-HFpEF)",
+      "year": 2025,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT07298993",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT07185100",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT07185100",
+      "doi": "",
+      "title": "Determination of the Prevalence of Unrecognized Heart Failure Among Patients at Risk in Urban Areas Across Germany Using CMR",
+      "year": 2025,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT07185100",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-40935414",
@@ -10535,21 +10355,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT07059260",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07059260",
-      "doi": "",
-      "title": "Early Diagnosis of Heart Failure Using NT-proBNP Levels in Primary Care",
-      "year": 2025,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07059260",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-41669137",
       "source": "PubMed",
       "pmid": "41669137",
@@ -10608,6 +10413,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT07024810",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT07024810",
+      "doi": "",
+      "title": "Effect of Nurse-assessed Remote Ischemic Preconditioning on Improving Exercise Capacity, Endothelial Function, and Arterial Stiffness in Patients With Heart Failure With Preserved Ejection Fraction",
+      "year": 2025,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT07024810",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-39978275",
@@ -10700,6 +10520,21 @@
       "provenance": "PubMed listing manually cross-checked, 2026-11-12"
     },
     {
+      "id": "nct-NCT07251361",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT07251361",
+      "doi": "",
+      "title": "Effects of a Multicomponent Training Program on Cardiac Function, Skeletal Muscle Metabolism, Functional Capacity, and Quality of Life in Patients With HFpEF: SENSORFIT-4HEART Study",
+      "year": 2025,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT07251361",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-40174692",
       "source": "PubMed",
       "pmid": "40174692",
@@ -10770,6 +10605,21 @@
       "journal": "European journal of preventive cardiology",
       "publication_type": "Journal Article, Randomized Controlled Trial",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40083304/",
+      "discovery_status": "Pending screening",
+      "source_kind": "Journal publication",
+      "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "pmid-40377184",
+      "source": "PubMed",
+      "pmid": "40377184",
+      "nct_id": "",
+      "doi": "10.1002/ejhf.3694",
+      "title": "Effects of finerenone on natriuretic peptide levels in heart failure with mildly reduced or preserved ejection fraction: The FINEARTS-HF trial.",
+      "year": 2025,
+      "journal": "European journal of heart failure",
+      "publication_type": "Journal Article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40377184/",
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
@@ -10895,6 +10745,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT06946095",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT06946095",
+      "doi": "",
+      "title": "Efficacy and Safety of Xinyue Capsule in the Treatment of Heart Failure With Preserved Ejection Fraction",
+      "year": 2025,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT06946095",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-40802267",
       "source": "PubMed",
       "pmid": "40802267",
@@ -10968,21 +10833,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT07112274",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07112274",
-      "doi": "",
-      "title": "Empagliflozin on Patients With Preserved Heart Failure",
-      "year": 2025,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07112274",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "nct-NCT06914102",
@@ -11570,6 +11420,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT06774014",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT06774014",
+      "doi": "",
+      "title": "Heart Failure in Patients With Diabetes: Cells, Crosstalk and Consequences",
+      "year": 2025,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT06774014",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-41248346",
       "source": "PubMed",
       "pmid": "41248346",
@@ -11733,6 +11598,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT07123779",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT07123779",
+      "doi": "",
+      "title": "HS235 Study in Overweight and Obese Participants With Combined Pre and Post-Capillary Pulmonary Hypertension Due to Heart Failure With Preserved Ejection Fraction",
+      "year": 2025,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT07123779",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-40311842",
@@ -12170,6 +12050,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT07053475",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT07053475",
+      "doi": "",
+      "title": "IRONICA: IRON Repletion In Heart Failure - A Comparison of Oral and IV Approaches",
+      "year": 2025,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT07053475",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-41152936",
       "source": "PubMed",
       "pmid": "41152936",
@@ -12305,6 +12200,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT06927973",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT06927973",
+      "doi": "",
+      "title": "Leveraging Exercise Stress Echocardiography for Heart Failure With Preserved Ejection Fraction",
+      "year": 2025,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT06927973",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-40045364",
       "source": "PubMed",
       "pmid": "40045364",
@@ -12363,6 +12273,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT06977477",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT06977477",
+      "doi": "",
+      "title": "Managing Congestion in Heart Failure: A Mechanistic Study in Patients With HFpEF",
+      "year": 2025,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT06977477",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "nct-NCT07037459",
@@ -13085,21 +13010,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT07057466",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07057466",
-      "doi": "",
-      "title": "Prospective Evaluation of AI-ECG for SHD Detection",
-      "year": 2025,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07057466",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-40825966",
       "source": "PubMed",
       "pmid": "40825966",
@@ -13265,6 +13175,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT06837623",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT06837623",
+      "doi": "",
+      "title": "Role of Colchicine as Anti-Inflammatory Therapy in HFpEF",
+      "year": 2025,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT06837623",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-40839760",
       "source": "PubMed",
       "pmid": "40839760",
@@ -13308,21 +13233,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT07082400",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT07082400",
-      "doi": "",
-      "title": "Screening and Phenotyping of Pulmonary Hypertension in Heart Failure With Preserved Ejection Fraction .",
-      "year": 2025,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT07082400",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-41045908",
@@ -13475,21 +13385,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT06992089",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06992089",
-      "doi": "",
-      "title": "SHort Of Pace - Heart Failure (SHOP-HF)",
-      "year": 2025,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06992089",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-40632519",
       "source": "PubMed",
       "pmid": "40632519",
@@ -13563,21 +13458,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT06931015",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06931015",
-      "doi": "",
-      "title": "Staging Heart Failure With Preserved Ejection Fraction",
-      "year": 2025,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06931015",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-41354820",
@@ -13668,6 +13548,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT07223242",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT07223242",
+      "doi": "",
+      "title": "Tailored Exercise Training Study Among Adults With HFpEF",
+      "year": 2025,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT07223242",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-40857999",
@@ -13850,6 +13745,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT06768437",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT06768437",
+      "doi": "",
+      "title": "The Role of Epicardial Adiposity in Heart Failure With Preserved Ejection Fraction",
+      "year": 2025,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT06768437",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-40383455",
       "source": "PubMed",
       "pmid": "40383455",
@@ -13998,21 +13908,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT06937827",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06937827",
-      "doi": "",
-      "title": "Transitions of Care Clinic (TOCC)",
-      "year": 2025,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06937827",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "nct-NCT07272902",
@@ -14240,21 +14135,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT06616974",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06616974",
-      "doi": "",
-      "title": "A Study of TX000045 in Patients With Pulmonary Hypertension Secondary to Heart Failure With Preserved Ejection Fraction (the APEX Study)",
-      "year": 2024,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06616974",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "nct-NCT06692439",
       "source": "ClinicalTrials.gov",
       "pmid": "",
@@ -14270,46 +14150,16 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT06664866",
+      "id": "nct-NCT06650995",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT06664866",
+      "nct_id": "NCT06650995",
       "doi": "",
-      "title": "AI Echocardiographic Screening of Cardiac Amyloidosis",
+      "title": "AlEX-DHF: Ablation and Exercise in Diastolic Heart Failure",
       "year": 2024,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06664866",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT06699056",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06699056",
-      "doi": "",
-      "title": "AI-Enabled Direct-from-ECG Ejection Fraction (EF) Severity Assessment Using COR ECG Wearable Monitor",
-      "year": 2024,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06699056",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT06486649",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06486649",
-      "doi": "",
-      "title": "Application of Multimodal Large Language Model in HFpEF",
-      "year": 2024,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06486649",
+      "url": "https://clinicaltrials.gov/study/NCT06650995",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -14480,21 +14330,6 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT06409585",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06409585",
-      "doi": "",
-      "title": "Cardiomyopathies and Heart Muscle Diseases: Cardiac Imaging in the Evaluation of Myocardial Fibrosis Transition",
-      "year": 2024,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06409585",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-39023141",
       "source": "PubMed",
       "pmid": "39023141",
@@ -14645,6 +14480,21 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
+      "id": "nct-NCT06604611",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT06604611",
+      "doi": "",
+      "title": "Colchicine in Patients With Heart Failure With Preserved Ejection Fraction and Inflammation",
+      "year": 2024,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT06604611",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-39597888",
       "source": "PubMed",
       "pmid": "39597888",
@@ -14673,21 +14523,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT06685237",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06685237",
-      "doi": "",
-      "title": "Copenhagen Heart Failure With Preserved Ejection Fraction",
-      "year": 2024,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06685237",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-38406922",
@@ -14870,6 +14705,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT06582992",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT06582992",
+      "doi": "",
+      "title": "DNA Methylation Trajectories in Aging",
+      "year": 2024,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT06582992",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-38597298",
       "source": "PubMed",
       "pmid": "38597298",
@@ -14975,21 +14825,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT06678841",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06678841",
-      "doi": "",
-      "title": "ELEVATE-HFpEF Clinical Study",
-      "year": 2024,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06678841",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-38439585",
       "source": "PubMed",
       "pmid": "38439585",
@@ -15035,6 +14870,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT06278844",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT06278844",
+      "doi": "",
+      "title": "Exercise Capacity Improvement by Conduction System Pacing in heArt Failure patieNts Without Compelling CRT inDication",
+      "year": 2024,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT06278844",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "nct-NCT06514820",
       "source": "ClinicalTrials.gov",
       "pmid": "",
@@ -15045,6 +14895,21 @@
       "journal": "",
       "publication_type": "OBSERVATIONAL",
       "url": "https://clinicaltrials.gov/study/NCT06514820",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT06337812",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT06337812",
+      "doi": "",
+      "title": "Fiber Supplementation in Heart Failure With Preserved Ejection Fraction (HFpEF)",
+      "year": 2024,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT06337812",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -15123,21 +14988,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT06671314",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06671314",
-      "doi": "",
-      "title": "Heart Failure Therapy and Outcomes in Patients With Heart Failure With Mildly Reduced or Preserved Ejection Fraction",
-      "year": 2024,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06671314",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-38104937",
@@ -15230,21 +15080,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT06510231",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06510231",
-      "doi": "",
-      "title": "Inspiratory Muscle Training in HFpEF",
-      "year": 2024,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06510231",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-39079587",
       "source": "PubMed",
       "pmid": "39079587",
@@ -15320,16 +15155,16 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT06652763",
+      "id": "nct-NCT06731738",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT06652763",
+      "nct_id": "NCT06731738",
       "doi": "",
-      "title": "Manganese-enhanced Magnetic Resonance Imaging (MEMRI) in Heart Failure With Preserved Ejection Fraction",
+      "title": "Mangafodipir - an Intracellular Contrast Agent for Magnetic Resonance Imaging (MRI): Measuring Manganese Uptake Rate in Heart Failure Patients With Preserved Ejection Fraction (HFpEF) Patients.",
       "year": 2024,
       "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06652763",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT06731738",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -15425,21 +15260,6 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT06517186",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06517186",
-      "doi": "",
-      "title": "Myocardial Mechanisms in Heart Failure With Preserved Ejection Fraction",
-      "year": 2024,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06517186",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "nct-NCT06196086",
       "source": "ClinicalTrials.gov",
       "pmid": "",
@@ -15450,21 +15270,6 @@
       "journal": "",
       "publication_type": "OBSERVATIONAL",
       "url": "https://clinicaltrials.gov/study/NCT06196086",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT06536309",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06536309",
-      "doi": "",
-      "title": "Neprilysin Inhibition to Reduce Myocardial Fibrosis in Heart Failure With Preserved Ejection Fraction",
-      "year": 2024,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06536309",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -15498,6 +15303,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT06311552",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT06311552",
+      "doi": "",
+      "title": "Optimising CMR Scan Acquisitions for Novel Equipment/Sequences in Clinical Cardiovascular Populations.",
+      "year": 2024,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT06311552",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-39193716",
@@ -15740,21 +15560,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT06616233",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06616233",
-      "doi": "",
-      "title": "Remote Ischaemic Conditioning (RIC) in Heart Failure",
-      "year": 2024,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06616233",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-39637394",
       "source": "PubMed",
       "pmid": "39637394",
@@ -15770,6 +15575,36 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT06217120",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT06217120",
+      "doi": "",
+      "title": "Reversing Microvascular Dysfunction in Heart Failure With Preserved Ejection Fraction",
+      "year": 2024,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT06217120",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT06652087",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT06652087",
+      "doi": "",
+      "title": "Rifaximin and Cardiac Function in Patients with Heart Failure with Preserved Ejection Fraction",
+      "year": 2024,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT06652087",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-39343601",
       "source": "PubMed",
       "pmid": "39343601",
@@ -15783,6 +15618,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT06487468",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT06487468",
+      "doi": "",
+      "title": "Risk Factors In Heart Failure Patients With Preserved Ejection Fraction",
+      "year": 2024,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT06487468",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-38490597",
@@ -15950,6 +15800,21 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
+      "id": "nct-NCT06369298",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT06369298",
+      "doi": "",
+      "title": "Study of JK07 in Patients With Chronic Heart Failure",
+      "year": 2024,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT06369298",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "nct-NCT06377761",
       "source": "ClinicalTrials.gov",
       "pmid": "",
@@ -15995,6 +15860,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT06350487",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT06350487",
+      "doi": "",
+      "title": "The Efficacy of Enavogliflozin in Heart Failure With Preserved Ejection Fraction",
+      "year": 2024,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT06350487",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-38797306",
       "source": "PubMed",
       "pmid": "38797306",
@@ -16023,21 +15903,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT06702501",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06702501",
-      "doi": "",
-      "title": "The PeriCut Catheter System Early Feasibility Study (REIMAGINE-HFpEF)",
-      "year": 2024,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06702501",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-38402565",
@@ -16130,21 +15995,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT06338839",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06338839",
-      "doi": "",
-      "title": "Transthyretin Amyloidosis Cardiomyopathy in Patients With HFpEF in Russia",
-      "year": 2024,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06338839",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-39180423",
       "source": "PubMed",
       "pmid": "39180423",
@@ -16233,6 +16083,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT06401343",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT06401343",
+      "doi": "",
+      "title": "Use of SGLT2i in noHCM With HFpEF",
+      "year": 2024,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT06401343",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "nct-NCT06405126",
@@ -16355,6 +16220,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT05824923",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05824923",
+      "doi": "",
+      "title": "A Trial to Evaluate the Safety and Efficacy of Pulmonary Artery Denervation for the Treatment of Pulmonary Hypertension Associated With Left Heart Failure",
+      "year": 2023,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05824923",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-37221514",
       "source": "PubMed",
       "pmid": "37221514",
@@ -16400,21 +16280,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT05884346",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT05884346",
-      "doi": "",
-      "title": "Association Between Coronary and Peripheral Vascular Injury in Heart Failure Patients With Preserved Ejection Fraction.",
-      "year": 2023,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05884346",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-37480877",
       "source": "PubMed",
       "pmid": "37480877",
@@ -16428,21 +16293,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT05745337",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT05745337",
-      "doi": "",
-      "title": "Atrial Fibrillation: Chronic Beta-blocker Use Versus As-needed Rate Control Guided by Implantable Cardiac Monitor",
-      "year": 2023,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05745337",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-36934987",
@@ -16505,21 +16355,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT06101693",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06101693",
-      "doi": "",
-      "title": "Biomarkers in Patients With Suspected HFpEF",
-      "year": 2023,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06101693",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-37771260",
       "source": "PubMed",
       "pmid": "37771260",
@@ -16548,21 +16383,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT06125925",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06125925",
-      "doi": "",
-      "title": "Catheter Ablation in Atrial Fibrillation Patients With HFpEF (STABLE-SR IV Trial)",
-      "year": 2023,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06125925",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-37745020",
@@ -16608,6 +16428,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT05828888",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05828888",
+      "doi": "",
+      "title": "CHIP in Endothelial Dysfunction Associated With HEpEF",
+      "year": 2023,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05828888",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-35947112",
@@ -16685,6 +16520,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT05726474",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05726474",
+      "doi": "",
+      "title": "Comparison of the Effect of Two Types of Physical Exercises in Patients With Heart Failure With Preserved Ejection Fraction",
+      "year": 2023,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05726474",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-37172316",
       "source": "PubMed",
       "pmid": "37172316",
@@ -16728,6 +16578,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT05833581",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05833581",
+      "doi": "",
+      "title": "Consistently Assess Signs and Symptom of Heart Failure",
+      "year": 2023,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05833581",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-36325978",
@@ -16788,21 +16653,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT05676684",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT05676684",
-      "doi": "",
-      "title": "Dapagliflozin With or Without Spironolactone for HFpEF",
-      "year": 2023,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05676684",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-37575288",
@@ -17015,16 +16865,16 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT06046612",
+      "id": "nct-NCT06027307",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT06046612",
+      "nct_id": "NCT06027307",
       "doi": "",
-      "title": "Empagliflozin for Peripheral Microvascular Dysfunction in Heart Failure With Preserved Ejection Fraction",
+      "title": "Enavogliflozin Outcome Trial in Functional Tricuspid Regurgitation",
       "year": 2023,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06046612",
+      "url": "https://clinicaltrials.gov/study/NCT06027307",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -17045,31 +16895,31 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT05672134",
+      "id": "nct-NCT05764564",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT05672134",
+      "nct_id": "NCT05764564",
       "doi": "",
-      "title": "Evaluation of GeranylGeranylAcetone in Heart Failure With Preserved Ejection Fraction",
+      "title": "External Body Pressure in Heart Failure With Preserved Ejection Fraction",
       "year": 2023,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05672134",
+      "url": "https://clinicaltrials.gov/study/NCT05764564",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT05731466",
+      "id": "nct-NCT05839730",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT05731466",
+      "nct_id": "NCT05839730",
       "doi": "",
-      "title": "Exercise Right Ventricular Coupling in HFpEF",
+      "title": "Fast Induced Remodeling in Heart Failure With Preserved Ejection Fraction",
       "year": 2023,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05731466",
+      "url": "https://clinicaltrials.gov/study/NCT05839730",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -17118,6 +16968,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT05784753",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05784753",
+      "doi": "",
+      "title": "HEART Camp Connect -Promoting Exercise in Adults With Heart Failure With Preserved Ejection Fraction",
+      "year": 2023,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05784753",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "nct-NCT05985395",
@@ -17195,16 +17060,16 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT05873634",
+      "id": "nct-NCT06114498",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT05873634",
+      "nct_id": "NCT06114498",
       "doi": "",
-      "title": "HeartShare: Combining Omics, Deep Phenotyping, and Electronic Health Records for Heart Failure Subtypes and Treatment Targets",
+      "title": "Hospital Register of Decompensated Heart Failure With Preserved Ejection Fraction",
       "year": 2023,
       "journal": "",
       "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05873634",
+      "url": "https://clinicaltrials.gov/study/NCT06114498",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -17285,6 +17150,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT05753553",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05753553",
+      "doi": "",
+      "title": "Incidence and Echocardiographic Predictors of HFpEF in High-Risk Population Afferent to Italian Echo-labs Network",
+      "year": 2023,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05753553",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-36332899",
       "source": "PubMed",
       "pmid": "36332899",
@@ -17345,6 +17225,21 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
+      "id": "nct-NCT06081543",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT06081543",
+      "doi": "",
+      "title": "Ketogenic Diet vs Mixed Diet in Patients With Heart Failure",
+      "year": 2023,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT06081543",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-36752112",
       "source": "PubMed",
       "pmid": "36752112",
@@ -17370,21 +17265,6 @@
       "journal": "",
       "publication_type": "OBSERVATIONAL",
       "url": "https://clinicaltrials.gov/study/NCT05992558",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT05839028",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT05839028",
-      "doi": "",
-      "title": "Mechanisms of LV Remodeling in Hypertensive Patients Working on a Rotational Expeditionary Basis in the Arctic",
-      "year": 2023,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05839028",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -17448,21 +17328,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT06057623",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06057623",
-      "doi": "",
-      "title": "Neuromuscular Fatigue and Exercise Capacity in Patients With Type 2 Diabetes Mellitus and HFpEF",
-      "year": 2023,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06057623",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-37517939",
@@ -17630,6 +17495,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT05772091",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05772091",
+      "doi": "",
+      "title": "Prognostic Value of Echocardiographic Parameters Based on Machine Learning Approach",
+      "year": 2023,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05772091",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-36436827",
       "source": "PubMed",
       "pmid": "36436827",
@@ -17673,21 +17553,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT06015776",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT06015776",
-      "doi": "",
-      "title": "Purinergic Signaling and the Postmenopausal Heart",
-      "year": 2023,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT06015776",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-37470101",
@@ -17750,6 +17615,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT05822622",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05822622",
+      "doi": "",
+      "title": "Relationship Between Heart Failure With Preserved Ejection Fraction and Nonalcoholic Fatty Liver Disease.",
+      "year": 2023,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05822622",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-36928271",
       "source": "PubMed",
       "pmid": "36928271",
@@ -17778,21 +17658,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT05953831",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT05953831",
-      "doi": "",
-      "title": "Reverse Remodeling Effects of CDR132L in Patients With Heart Failure With Mildly Reduced or Preserved Ejection Fraction and Cardiac Hypertrophy",
-      "year": 2023,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05953831",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-36969379",
@@ -17825,21 +17690,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT05991284",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT05991284",
-      "doi": "",
-      "title": "Sacubitril-Valsartan in Heart Failure With Preserved Ejection Fraction and Secondary Mitral Valve Regurgitation",
-      "year": 2023,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05991284",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-37210743",
       "source": "PubMed",
       "pmid": "37210743",
@@ -17868,6 +17718,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT05693376",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05693376",
+      "doi": "",
+      "title": "Screening Algorithm for Early Detection of Occult Cardiac Amyloidosis",
+      "year": 2023,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05693376",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-36987929",
@@ -17915,21 +17780,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT05796050",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT05796050",
-      "doi": "",
-      "title": "Sex Related Differences in Cardiac Function",
-      "year": 2023,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05796050",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-36914068",
       "source": "PubMed",
       "pmid": "36914068",
@@ -17943,6 +17793,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT06122779",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT06122779",
+      "doi": "",
+      "title": "Study to Evaluate Safety, Tolerability and Drug Levels of BMS-986435/MYK-224 in Participants With Heart Failure With Preserved Ejection Fraction (HFpEF)",
+      "year": 2023,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT06122779",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "nct-NCT05723679",
@@ -17960,16 +17825,61 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT05991128",
+      "id": "nct-NCT06081049",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT05991128",
+      "nct_id": "NCT06081049",
       "doi": "",
-      "title": "The Effects of Ferric Derisomaltose in Patients With Acute Heart Failure and Iron Deficiency on Exercise Capacity and Quality of Life",
+      "title": "The COLchicine HEART Failure PRESERVED Trial (COLHEART-PRESERVED)",
       "year": 2023,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05991128",
+      "url": "https://clinicaltrials.gov/study/NCT06081049",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT05847244",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05847244",
+      "doi": "",
+      "title": "The Effect of Addition of Metformin In Obese Non- Diabetic Patients With Heart Failure With Preserved Ejection Fraction",
+      "year": 2023,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05847244",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT06080802",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT06080802",
+      "doi": "",
+      "title": "The Effect of Addition of Metformin to SGLT2 In Diabetic Patients With Heart Failure With Preserved Ejection Fraction",
+      "year": 2023,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT06080802",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT05878912",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05878912",
+      "doi": "",
+      "title": "The Effect of Obesity and Weight Loss in Heart Failure With Preserved Ejection Fraction",
+      "year": 2023,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05878912",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -18005,16 +17915,16 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT05789147",
+      "id": "nct-NCT05888688",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT05789147",
+      "nct_id": "NCT05888688",
       "doi": "",
-      "title": "Transcutaneous Vagus Nerve Stimulation in Heart Failure",
+      "title": "The Sarcopenia Study",
       "year": 2023,
       "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05789147",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05888688",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -18105,21 +18015,6 @@
       "journal": "",
       "publication_type": "INTERVENTIONAL",
       "url": "https://clinicaltrials.gov/study/NCT05592275",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT05556031",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT05556031",
-      "doi": "",
-      "title": "Ambulatory Heart Failure Service Model Study",
-      "year": 2022,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05556031",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -18260,21 +18155,6 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT05371496",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT05371496",
-      "doi": "",
-      "title": "Cardiac and Metabolic Effects of Semaglutide in Heart Failure With Preserved Ejection Fraction",
-      "year": 2022,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05371496",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "nct-NCT05322109",
       "source": "ClinicalTrials.gov",
       "pmid": "",
@@ -18365,6 +18245,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT05383287",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05383287",
+      "doi": "",
+      "title": "Characteristics, Phenotypes, and TRAITS of Heart Failure With Preserved Ejection Fraction (TRAITS-HFpEF)",
+      "year": 2022,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05383287",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-35355441",
       "source": "PubMed",
       "pmid": "35355441",
@@ -18410,16 +18305,16 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT05278026",
+      "id": "nct-NCT05637398",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT05278026",
+      "nct_id": "NCT05637398",
       "doi": "",
-      "title": "Cohort Study of Heart Failure With Preserved Ejection Fraction in Chinese Han",
+      "title": "Colchicine in Patients With Heart Failure and Preserved Left Ventricular Ejection Fraction",
       "year": 2022,
       "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05278026",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05637398",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -18590,21 +18485,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT05556005",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT05556005",
-      "doi": "",
-      "title": "Efficacy of Trimetazidine in Diabetic Patients",
-      "year": 2022,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05556005",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-34811954",
       "source": "PubMed",
       "pmid": "34811954",
@@ -18620,16 +18500,16 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT05600387",
+      "id": "nct-NCT05584319",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT05600387",
+      "nct_id": "NCT05584319",
       "doi": "",
-      "title": "Empagliflozin on the Function of Left Atrium in Heart Failure With Mildly Reduced or Preserved Ejection Fraction",
+      "title": "EMPAGUM: Effects of Empagliflozin on Gut Microbiota in Heart Failure With a Preserved Ejection Fraction",
       "year": 2022,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05600387",
+      "url": "https://clinicaltrials.gov/study/NCT05584319",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -18665,6 +18545,51 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT05376748",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05376748",
+      "doi": "",
+      "title": "Exercise Capacity Before and After AF Ablation in Patients With HFpEF",
+      "year": 2022,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05376748",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT05582044",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05582044",
+      "doi": "",
+      "title": "Exercise Lower-body Negative Pressure in Heart Failure With Preserved Ejection Fraction",
+      "year": 2022,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05582044",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT05284617",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05284617",
+      "doi": "",
+      "title": "Exploratory Ph 2A, Double-Blind, Placebo-Controlled Dose Escalation Study of Safety, Tolerability, PD, & PK of HU6 for Subjects With Obese HFpEF",
+      "year": 2022,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05284617",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-35437939",
       "source": "PubMed",
       "pmid": "35437939",
@@ -18678,21 +18603,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT05204238",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT05204238",
-      "doi": "",
-      "title": "Follow Up of acuTe Heart failUre: a pRospective Echocardiographic and Clinical Study (FUTURE)",
-      "year": 2022,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05204238",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-36039813",
@@ -18830,6 +18740,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT05477498",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05477498",
+      "doi": "",
+      "title": "Iron Substitution With Ferric Carboxymaltose as Treatment Strategy for Heart Failure Patients With Preserved Ejection Fraction",
+      "year": 2022,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05477498",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "nct-NCT05551663",
       "source": "ClinicalTrials.gov",
       "pmid": "",
@@ -18950,16 +18875,16 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT05338437",
+      "id": "nct-NCT05475028",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT05338437",
+      "nct_id": "NCT05475028",
       "doi": "",
-      "title": "NMES in HF Patients to Improve Functional Recovery Following Hospitalization",
+      "title": "Network Medicine Approaches to Classify Heart Failure With PReserved Ejection Fraction by Signatures of DNA Methylation and Point-of-carE Risk calculaTors (PRESMET)",
       "year": 2022,
       "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05338437",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05475028",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -18990,6 +18915,21 @@
       "journal": "",
       "publication_type": "OBSERVATIONAL",
       "url": "https://clinicaltrials.gov/study/NCT05651919",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT05610410",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05610410",
+      "doi": "",
+      "title": "Peripheral Microvascular Blood Flow in ANOCA",
+      "year": 2022,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05610410",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -19205,21 +19145,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT05322616",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT05322616",
-      "doi": "",
-      "title": "Single-Ascending Dose Study of JK07 in Subjects With HFpEF",
-      "year": 2022,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05322616",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-34671911",
       "source": "PubMed",
       "pmid": "34671911",
@@ -19310,36 +19235,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT05236413",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT05236413",
-      "doi": "",
-      "title": "The Effect of a High Fiber Diet and High-Intensity Interval Exercise in Patients With HFpEF",
-      "year": 2022,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05236413",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT05330013",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT05330013",
-      "doi": "",
-      "title": "The Effect of Inflammation in Heart Failure",
-      "year": 2022,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05330013",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-35975623",
       "source": "PubMed",
       "pmid": "35975623",
@@ -19385,16 +19280,16 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT05490901",
+      "id": "nct-NCT05441839",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT05490901",
+      "nct_id": "NCT05441839",
       "doi": "",
-      "title": "The Prognostic Role and Diagnostic Efficacy of Exercise Right Heart Catheterization With a Simultaneous Echocardiography in Patients With Dyspnea on Exertion",
+      "title": "UK Heart Failure With Preserved Ejection Fraction",
       "year": 2022,
       "journal": "",
       "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05490901",
+      "url": "https://clinicaltrials.gov/study/NCT05441839",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -19475,6 +19370,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT05122793",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05122793",
+      "doi": "",
+      "title": "\"HerzCheck\" - Detection of Early Heart Failure Using Telemedicine in Structurally Weak Regions",
+      "year": 2021,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05122793",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-33499866",
       "source": "PubMed",
       "pmid": "33499866",
@@ -19505,16 +19415,16 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT04766892",
+      "id": "nct-NCT04945460",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT04766892",
+      "nct_id": "NCT04945460",
       "doi": "",
-      "title": "A Study of Mavacamten in Participants With HFpEF and Elevation of NT-proBNP With or Without Elevation of cTnT",
+      "title": "A Study of Sotatercept for the Treatment of Cpc-PH Due to HFpEF (MK-7962-007/A011-16)",
       "year": 2021,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT04766892",
+      "url": "https://clinicaltrials.gov/study/NCT04945460",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -19610,21 +19520,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT05174351",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT05174351",
-      "doi": "",
-      "title": "Beta-blocker Discontinuation in Heart Failure With Preserved Ejection Fraction",
-      "year": 2021,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05174351",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-33328410",
       "source": "PubMed",
       "pmid": "33328410",
@@ -19653,6 +19548,36 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT05097898",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05097898",
+      "doi": "",
+      "title": "Chronic Heart Failure With Preserved Ejection Fraction - COngestion eValuation",
+      "year": 2021,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05097898",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT05126836",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05126836",
+      "doi": "",
+      "title": "Cilostazol for HFpEF",
+      "year": 2021,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05126836",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-33932180",
@@ -19715,21 +19640,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT04970953",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT04970953",
-      "doi": "",
-      "title": "Diastolic Exercise Stress Testing in Heart Failure",
-      "year": 2021,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT04970953",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "nct-NCT04788576",
       "source": "ClinicalTrials.gov",
       "pmid": "",
@@ -19775,21 +19685,6 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT05002075",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT05002075",
-      "doi": "",
-      "title": "Efficacy of an m-Health Cardiac Rehabilitation Program in Heart Failure With Preserved Ejection Fraction",
-      "year": 2021,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05002075",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-34364665",
       "source": "PubMed",
       "pmid": "34364665",
@@ -19805,6 +19700,36 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT04822649",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT04822649",
+      "doi": "",
+      "title": "Exercise Capacity According to Coronary Microvascular Dysfunction and Body Composition",
+      "year": 2021,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT04822649",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT05162859",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05162859",
+      "doi": "",
+      "title": "Exercise Training in Heart Failure With Preserved Ejection Fraction - a Long-term Follow-up",
+      "year": 2021,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05162859",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-33306448",
       "source": "PubMed",
       "pmid": "33306448",
@@ -19818,6 +19743,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT05136820",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05136820",
+      "doi": "",
+      "title": "Flow Regulation by Opening the SepTum in Patients With Heart Failure; a Prospective, Randomized, Sham-controlled, Double-blind, Global Multicenter Study",
+      "year": 2021,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05136820",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-33931986",
@@ -19865,36 +19805,6 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT04964817",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT04964817",
-      "doi": "",
-      "title": "HFpEF and Symptomatic Obstructive Iliofemoral Venous Disease Study",
-      "year": 2021,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT04964817",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT04767061",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT04767061",
-      "doi": "",
-      "title": "Impact of Beta-blockers on Physical Function in HFpEF",
-      "year": 2021,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT04767061",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-33932134",
       "source": "PubMed",
       "pmid": "33932134",
@@ -19925,6 +19835,21 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
+      "id": "nct-NCT04945707",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT04945707",
+      "doi": "",
+      "title": "Impact of Intravenous Iron Repletion On Mechanisms of Exercise InTolerance in HFpEF (IRONMET-HFpEF)",
+      "year": 2021,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT04945707",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-33295106",
       "source": "PubMed",
       "pmid": "33295106",
@@ -19950,36 +19875,6 @@
       "journal": "",
       "publication_type": "INTERVENTIONAL",
       "url": "https://clinicaltrials.gov/study/NCT04913805",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT05093959",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT05093959",
-      "doi": "",
-      "title": "Metformin for Older Patients With Heart Failure With Preserved Ejection Fraction",
-      "year": 2021,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05093959",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT05115890",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT05115890",
-      "doi": "",
-      "title": "Muscle Blood Flow Regulation in HFpEF",
-      "year": 2021,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05115890",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -20045,6 +19940,21 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
+      "id": "nct-NCT04835194",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT04835194",
+      "doi": "",
+      "title": "Phenotypes and Outcomes of Heart Failure With Preserved Ejection Fraction in Patients With Hypertension and Diabetes",
+      "year": 2021,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT04835194",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "nct-NCT04757584",
       "source": "ClinicalTrials.gov",
       "pmid": "",
@@ -20100,6 +20010,21 @@
       "journal": "",
       "publication_type": "OBSERVATIONAL",
       "url": "https://clinicaltrials.gov/study/NCT04894968",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT05058833",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05058833",
+      "doi": "",
+      "title": "Prognostic Impact of Cardiac Diastolic Function and Coronary Microvascular Function",
+      "year": 2021,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05058833",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -20180,16 +20105,31 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT05059769",
+      "id": "nct-NCT05095688",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT05059769",
+      "nct_id": "NCT05095688",
       "doi": "",
-      "title": "Relationship Between Ambulatory Arterial Stiffness Index and Left Ventricular Diastolic Function in Patients With HFpEF",
+      "title": "Relationship Between Adipose Tissue Distribution and Arterial Stiffness in HFpEF",
       "year": 2021,
       "journal": "",
       "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05059769",
+      "url": "https://clinicaltrials.gov/study/NCT05095688",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT05030987",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05030987",
+      "doi": "",
+      "title": "Renal Denervation to Treat Heart Failure With Preserved Ejection Fraction",
+      "year": 2021,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05030987",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -20208,21 +20148,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT05055180",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT05055180",
-      "doi": "",
-      "title": "Right Ventricular Function and Pulmonary Hypertension in HFpEF",
-      "year": 2021,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05055180",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-34498488",
@@ -20300,21 +20225,6 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT05138575",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT05138575",
-      "doi": "",
-      "title": "SGLT2i and KNO3 in HFpEF - The SAK HFpEF Trial",
-      "year": 2021,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT05138575",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "nct-NCT05008432",
       "source": "ClinicalTrials.gov",
       "pmid": "",
@@ -20325,6 +20235,36 @@
       "journal": "",
       "publication_type": "OBSERVATIONAL",
       "url": "https://clinicaltrials.gov/study/NCT05008432",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT05128331",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05128331",
+      "doi": "",
+      "title": "sPERMIdine supplemenTation on Metabolic, Neuronal and Cardiovascular Response to Exercise TRAINING",
+      "year": 2021,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05128331",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT04727073",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT04727073",
+      "doi": "",
+      "title": "Spironolactone in the Treatment of Heart Failure",
+      "year": 2021,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT04727073",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -20405,6 +20345,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT05089539",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT05089539",
+      "doi": "",
+      "title": "The Effect of Angiotensin Receptor-Neprilysin Inhibition on Cardiac Fibrosis in Patients With HFpEF",
+      "year": 2021,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT05089539",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "nct-NCT05053256",
       "source": "ClinicalTrials.gov",
       "pmid": "",
@@ -20415,21 +20370,6 @@
       "journal": "",
       "publication_type": "OBSERVATIONAL",
       "url": "https://clinicaltrials.gov/study/NCT05053256",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT04753112",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT04753112",
-      "doi": "",
-      "title": "Treatment of PH With Angiotensin II Receptor Blocker and Neprilysin Inhibitor in HFpEF Patients With CardioMEMS Device",
-      "year": 2021,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT04753112",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -20463,6 +20403,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT04239807",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT04239807",
+      "doi": "",
+      "title": "3-Month Home-based Training With Whole Body Vibration (WBV) Device in Patients With Heart Failure and Preserved Ejection Fraction (GALILEO-HFpEF-HOME) (GALILEOHOME)",
+      "year": 2020,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT04239807",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-32081386",
@@ -20510,16 +20465,16 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT04232345",
+      "id": "nct-NCT04282850",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT04232345",
+      "nct_id": "NCT04282850",
       "doi": "",
-      "title": "A Study to Assess the Effect AZD4831 in Japanese and Chinese Healthy Volunteers",
+      "title": "Ablation Versus Medical Management of Atrial Fibrillation in HFpEF",
       "year": 2020,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT04232345",
+      "url": "https://clinicaltrials.gov/study/NCT04282850",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -20555,6 +20510,21 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
+      "id": "nct-NCT04343430",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT04343430",
+      "doi": "",
+      "title": "Acute Heart Failure With Preserved Ejection Fraction - COngestion Discharge Evaluation",
+      "year": 2020,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT04343430",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-33070637",
       "source": "PubMed",
       "pmid": "33070637",
@@ -20583,6 +20553,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT04281849",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT04281849",
+      "doi": "",
+      "title": "Balance, Aerobic Capacity, Mobility and Strength in Patients Hospitalized for Heart Failure (BAMS-HF) Program",
+      "year": 2020,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT04281849",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "nct-NCT04434664",
@@ -20615,16 +20600,16 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT04506606",
+      "id": "nct-NCT04269057",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT04506606",
+      "nct_id": "NCT04269057",
       "doi": "",
-      "title": "Cardiac Rehab Effects in HFpEF",
+      "title": "Change of NLRP3 Inflammasome Expression Level, Symptoms, and Functional Status in HFpEF Patients Treated With ARNI",
       "year": 2020,
       "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT04506606",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT04269057",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -20705,21 +20690,6 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT04602338",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT04602338",
-      "doi": "",
-      "title": "Diagnosis and OutcoMes evaluAtIoN of Multicenter Patients With HFpEF Using Multimodality Imaging",
-      "year": 2020,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT04602338",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-32430655",
       "source": "PubMed",
       "pmid": "32430655",
@@ -20775,36 +20745,6 @@
       "journal": "",
       "publication_type": "INTERVENTIONAL",
       "url": "https://clinicaltrials.gov/study/NCT04592445",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT04287946",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT04287946",
-      "doi": "",
-      "title": "Endovascular GSN Ablation in Subjects With HFpEF",
-      "year": 2020,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT04287946",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT04632160",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT04632160",
-      "doi": "",
-      "title": "Extended IASD Investigation: REDUCE LAP-HF IV",
-      "year": 2020,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT04632160",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -20915,36 +20855,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT04505449",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT04505449",
-      "doi": "",
-      "title": "Invasive Left Heart Catheterization Registry",
-      "year": 2020,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT04505449",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT04235699",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT04235699",
-      "doi": "",
-      "title": "Ketogenic Diet in Patients With Heart Failure",
-      "year": 2020,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT04235699",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-32504319",
       "source": "PubMed",
       "pmid": "32504319",
@@ -20975,16 +20885,16 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT04603404",
+      "id": "nct-NCT04391491",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT04603404",
+      "nct_id": "NCT04391491",
       "doi": "",
-      "title": "Multimodality Imaging in the Screening, Diagnosis and Risk StratifictiON of HFpEF",
+      "title": "Neuregulin-1 in Patient With Different Forms of Cardiovascular Diseases: a Pilot Study",
       "year": 2020,
       "journal": "",
       "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT04603404",
+      "url": "https://clinicaltrials.gov/study/NCT04391491",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -21033,6 +20943,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT04573166",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT04573166",
+      "doi": "",
+      "title": "Personalized Atrial Septostomy for Heart Failure",
+      "year": 2020,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT04573166",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "nct-NCT04546555",
@@ -21095,16 +21020,16 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT04327596",
+      "id": "nct-NCT04258410",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT04327596",
+      "nct_id": "NCT04258410",
       "doi": "",
-      "title": "Radiofrequency (RF) Ablation for Atrial Fibrillation (AF) in Patients With Heart Failure With Preserved Ejection Fraction",
+      "title": "Quercetin for Cardio-Skeletal Muscle Health and Estrogen Deficiency",
       "year": 2020,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT04327596",
+      "url": "https://clinicaltrials.gov/study/NCT04258410",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -21170,21 +21095,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT04233086",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT04233086",
-      "doi": "",
-      "title": "Retrospective Observational Analysis of a Cohort With Heart Failure With Preserved Ejection Fraction",
-      "year": 2020,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT04233086",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-31951680",
       "source": "PubMed",
       "pmid": "31951680",
@@ -21215,16 +21125,46 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT04318145",
+      "id": "nct-NCT04327024",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT04318145",
+      "nct_id": "NCT04327024",
       "doi": "",
-      "title": "Study to Evaluate Sex Differences in the Acute Effects of PL-3994 in Heart Failure Subjects",
+      "title": "Study of Verinurad in Heart Failure With Preserved Ejection Fraction",
       "year": 2020,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT04318145",
+      "url": "https://clinicaltrials.gov/study/NCT04327024",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT04682704",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT04682704",
+      "doi": "",
+      "title": "The Effect of Different Low-Level Tragus Stimulation Parameters On Autonomic Nervous System Function",
+      "year": 2020,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT04682704",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT04317339",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT04317339",
+      "doi": "",
+      "title": "The Efficacy and Safety of Zhigancao Tang Granule for HFpEF of Qi-Yin Dificiency",
+      "year": 2020,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT04317339",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -21243,6 +21183,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT04594499",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT04594499",
+      "doi": "",
+      "title": "The Relationship Between Pericardial Fat Thickness and Arterial Stiffness in HFpEF Patients",
+      "year": 2020,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT04594499",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-32377913",
@@ -21318,21 +21273,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT04455828",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT04455828",
-      "doi": "",
-      "title": "Wearable Remote Monitoring of Heart Rate and Respiratory Rate for Heart Failure",
-      "year": 2020,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT04455828",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "nct-NCT04154878",
@@ -21470,16 +21410,16 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT04063579",
+      "id": "nct-NCT04147299",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT04063579",
+      "nct_id": "NCT04147299",
       "doi": "",
-      "title": "Cardiac Magnetic Resonance Assessment for Heart Failure With Preserved Ejection Fraction",
+      "title": "Cardiopulmonary and Right Ventricular Function in Health and Disease",
       "year": 2019,
       "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT04063579",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT04147299",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -21500,31 +21440,16 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT03948685",
+      "id": "nct-NCT03960073",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT03948685",
+      "nct_id": "NCT03960073",
       "doi": "",
-      "title": "Carvedilol SR Study for Biomarkers From Blood and Urine and Safety of in Patients With Heart Failure With Preserved Ejection Fraction",
+      "title": "Chronic Kidney Disease and Heart Failure With Preserved Ejection Fraction: The Role of Mitochondrial Dysfunction",
       "year": 2019,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT03948685",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT03988634",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT03988634",
-      "doi": "",
-      "title": "Changes in NT-proBNP, Safety, and Tolerability in HFpEF Patients With a WHF Event (HFpEF Decompensation) Who Have Been Stabilized and Initiated at the Time of or Within 30 Days Post-decompensation (PARAGLIDE-HF)",
-      "year": 2019,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT03988634",
+      "url": "https://clinicaltrials.gov/study/NCT03960073",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -21588,21 +21513,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT04175080",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT04175080",
-      "doi": "",
-      "title": "Clinical Significance and Diagnosis of Sarcopenia in Cardiac Patients",
-      "year": 2019,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT04175080",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-30360888",
@@ -21710,6 +21620,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT04157660",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT04157660",
+      "doi": "",
+      "title": "Effect of Short-term Oxygen During CPET in HFpEF",
+      "year": 2019,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT04157660",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "nct-NCT03833336",
       "source": "ClinicalTrials.gov",
       "pmid": "",
@@ -21795,6 +21720,21 @@
       "journal": "",
       "publication_type": "INTERVENTIONAL",
       "url": "https://clinicaltrials.gov/study/NCT04173117",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT04163861",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT04163861",
+      "doi": "",
+      "title": "Frequency and Magnitude of Subclinical Systolic Dysfunction by Strain Imaging in Heart Failure With Preserved Ejection Fraction",
+      "year": 2019,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT04163861",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -21950,21 +21890,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT04068844",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT04068844",
-      "doi": "",
-      "title": "Mechanisms of Exercise Intolerance in Heart Failure With Preserved Ejection Fraction",
-      "year": 2019,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT04068844",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "nct-NCT04154657",
       "source": "ClinicalTrials.gov",
       "pmid": "",
@@ -21975,21 +21900,6 @@
       "journal": "",
       "publication_type": "INTERVENTIONAL",
       "url": "https://clinicaltrials.gov/study/NCT04154657",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT03882710",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT03882710",
-      "doi": "",
-      "title": "Metoprolol XR in Heart Failure With Normal Ejection Fraction",
-      "year": 2019,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT03882710",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -22023,21 +21933,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT03895541",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT03895541",
-      "doi": "",
-      "title": "Noninvasive Elastography Evaluation of Myocardial Stiffness in Elderly Patients With Isolated Diastolic Heart Failure: New Diagnostic Tool?",
-      "year": 2019,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT03895541",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-31770401",
@@ -22083,21 +21978,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT04133350",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT04133350",
-      "doi": "",
-      "title": "Patients With Heart Failure With Preserved Ejection Fraction Adherence to ASV Therapy (PEP ASV)",
-      "year": 2019,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT04133350",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-30446354",
@@ -22158,6 +22038,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT03923530",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT03923530",
+      "doi": "",
+      "title": "Pressure Assessment to Improve Outcomes After TAVR: a Registry",
+      "year": 2019,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT03923530",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-30852236",
@@ -22325,21 +22220,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT04153136",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT04153136",
-      "doi": "",
-      "title": "The ENCHANTMENT HIV Study",
-      "year": 2019,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT04153136",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-30091083",
       "source": "PubMed",
       "pmid": "30091083",
@@ -22430,6 +22310,21 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
+      "id": "nct-NCT03876223",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT03876223",
+      "doi": "",
+      "title": "Women's Ischemia Syndrome Evaluation (WISE) Pre-HFpEF",
+      "year": 2019,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT03876223",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "nct-NCT03871803",
       "source": "ClinicalTrials.gov",
       "pmid": "",
@@ -22485,21 +22380,6 @@
       "journal": "",
       "publication_type": "INTERVENTIONAL",
       "url": "https://clinicaltrials.gov/study/NCT03714815",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT03465072",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT03465072",
-      "doi": "",
-      "title": "Abnormal Vascular, Metabolic, and Neural Function During Exercise in Heart Failure With Preserved Ejection Fraction",
-      "year": 2018,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT03465072",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -22593,6 +22473,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT03506412",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT03506412",
+      "doi": "",
+      "title": "Circulating NEP and NEP Inhibition Study in Heart Failure With Preserved Ejection Fraction",
+      "year": 2018,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT03506412",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-30309625",
@@ -22700,6 +22595,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT03402490",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT03402490",
+      "doi": "",
+      "title": "Enhancement of Physical Activity in Elderly Patients With Diastolic Heart Failure by a Motivational Intervention",
+      "year": 2018,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT03402490",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "nct-NCT03775577",
       "source": "ClinicalTrials.gov",
       "pmid": "",
@@ -22710,6 +22620,21 @@
       "journal": "",
       "publication_type": "OBSERVATIONAL",
       "url": "https://clinicaltrials.gov/study/NCT03775577",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT03550235",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT03550235",
+      "doi": "",
+      "title": "Exploration of Dyspnea at Non-high Brain Natriuretic Peptide (BNP)",
+      "year": 2018,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT03550235",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -22728,21 +22653,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT03751748",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT03751748",
-      "doi": "",
-      "title": "Flow Regulation by Opening the Septum in Patients With Heart Failure Trial",
-      "year": 2018,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT03751748",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-30608208",
@@ -22835,21 +22745,6 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT03387813",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT03387813",
-      "doi": "",
-      "title": "Hemodynamic-GUIDEd Management of Heart Failure",
-      "year": 2018,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT03387813",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-28730869",
       "source": "PubMed",
       "pmid": "28730869",
@@ -22895,21 +22790,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT03629340",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT03629340",
-      "doi": "",
-      "title": "Metformin for Pulmonary Hypertension HFpEF",
-      "year": 2018,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT03629340",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-29279134",
       "source": "PubMed",
       "pmid": "29279134",
@@ -22938,21 +22818,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT03611153",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT03611153",
-      "doi": "",
-      "title": "Myeloperoxidase (MPO) Inhibitor A_Zeneca for Heart Failure With Preserved Ejection Fraction (HFpEF)",
-      "year": 2018,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT03611153",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "nct-NCT03776682",
@@ -23000,16 +22865,16 @@
       "provenance": "PubMed listing manually cross-checked, 2026-11-12"
     },
     {
-      "id": "nct-NCT03624010",
+      "id": "nct-NCT03617848",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT03624010",
+      "nct_id": "NCT03617848",
       "doi": "",
-      "title": "Open-Label Rollover Study of Levosimendan in PH-HFpEF Patients",
+      "title": "Optimising Management of Patients With Heart Failure With Preserved Ejection Fraction in Primary Care",
       "year": 2018,
       "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT03624010",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT03617848",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -23210,6 +23075,36 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT03682497",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT03682497",
+      "doi": "",
+      "title": "Study in HFpEF Patients to Compare the Effect of AZD9977 and Spironolactone on Serum Potassium",
+      "year": 2018,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT03682497",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT03715543",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT03715543",
+      "doi": "",
+      "title": "Surgical Resection of the Greater Splanchnic Nerve in Subjects Having Heart Failure With Preserved Ejection Fraction",
+      "year": 2018,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT03715543",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-29142012",
       "source": "PubMed",
       "pmid": "29142012",
@@ -23223,21 +23118,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed listing manually cross-checked, 2026-11-12"
-    },
-    {
-      "id": "nct-NCT03414632",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT03414632",
-      "doi": "",
-      "title": "Transthyretin Cardiac Amyloidosis in HFpEF",
-      "year": 2018,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT03414632",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-29428439",
@@ -23285,21 +23165,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT03066804",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT03066804",
-      "doi": "",
-      "title": "A Randomized, Double-blind Controlled Study Comparing LCZ696 to Medical Therapy for Comorbidities in HFpEF Patients",
-      "year": 2017,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT03066804",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "nct-NCT03254485",
       "source": "ClinicalTrials.gov",
       "pmid": "",
@@ -23315,16 +23180,16 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT03153111",
+      "id": "nct-NCT03098979",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT03153111",
+      "nct_id": "NCT03098979",
       "doi": "",
-      "title": "A Study to Evaluate Whether Macitentan is an Effective and Safe Treatment for Patients With Heart Failure With Preserved Ejection Fraction and Pulmonary Vascular Disease",
+      "title": "A Trial to Study Neladenoson Bialanate Over 20 Weeks in Patients With Chronic Heart Failure With Preserved Ejection Fraction",
       "year": 2017,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT03153111",
+      "url": "https://clinicaltrials.gov/study/NCT03098979",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -23343,6 +23208,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT03195660",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT03195660",
+      "doi": "",
+      "title": "Adherence to ASV Therapy in Heart Failure With Preserved Ejection Fraction Feasibility Study",
+      "year": 2017,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT03195660",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-28272231",
@@ -23435,21 +23315,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT03197350",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT03197350",
-      "doi": "",
-      "title": "Characterization of Heart Failure With Preserved Ejection Fraction",
-      "year": 2017,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT03197350",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-29273666",
       "source": "PubMed",
       "pmid": "29273666",
@@ -23465,31 +23330,16 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT03133793",
+      "id": "nct-NCT03260621",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT03133793",
+      "nct_id": "NCT03260621",
       "doi": "",
-      "title": "CoQ10 and D-ribose in Patients With Diastolic Heart Failure",
+      "title": "CMR Exercise Stress Testing in HFpEF",
       "year": 2017,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT03133793",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT03050593",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT03050593",
-      "doi": "",
-      "title": "Developing Imaging And plasMa biOmarkers iN Describing Heart Failure With Preserved Ejection Fraction (DIAMONDHFpEF)",
-      "year": 2017,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT03050593",
+      "url": "https://clinicaltrials.gov/study/NCT03260621",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -23705,31 +23555,16 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT03351179",
+      "id": "nct-NCT03041376",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT03351179",
+      "nct_id": "NCT03041376",
       "doi": "",
-      "title": "Predictors and Outcomes of In-hospital HFpEF in AMI Patients",
-      "year": 2017,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT03351179",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT03210402",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT03210402",
-      "doi": "",
-      "title": "REmodeling the Left Ventricle With Atrial Modulated Pacing",
+      "title": "Pedometer-Based Walking Intervention in Patients With Chronic Heart Failure With Preserved Ejection Fraction",
       "year": 2017,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT03210402",
+      "url": "https://clinicaltrials.gov/study/NCT03041376",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -23795,6 +23630,21 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
+      "id": "nct-NCT03289481",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT03289481",
+      "doi": "",
+      "title": "Treatment of HFpEF With Nitrate Supplement",
+      "year": 2017,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT03289481",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "nct-NCT03340233",
       "source": "ClinicalTrials.gov",
       "pmid": "",
@@ -23805,21 +23655,6 @@
       "journal": "",
       "publication_type": "INTERVENTIONAL",
       "url": "https://clinicaltrials.gov/study/NCT03340233",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT03310099",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT03310099",
-      "doi": "",
-      "title": "Unsaturated Fatty Acids Enriched-diet to Improve Cardiorespiratory Fitness, Metabolic Flexibility and Glucose Tolerance in Obese Patients",
-      "year": 2017,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT03310099",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -23945,16 +23780,16 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT02751853",
+      "id": "nct-NCT02696486",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT02751853",
+      "nct_id": "NCT02696486",
       "doi": "",
-      "title": "Effects of Acutely Elevated Afterload on Left Ventricular Contractility and Relaxation",
+      "title": "Exercise Training Effect in Patients With HF and PEF",
       "year": 2016,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT02751853",
+      "url": "https://clinicaltrials.gov/study/NCT02696486",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -24020,6 +23855,36 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
+      "id": "nct-NCT02885636",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT02885636",
+      "doi": "",
+      "title": "Inhaled Beta-adrenergic Agonists to Treat Pulmonary Vascular Disease in Heart Failure With Preserved EF (BEAT HFpEF): A Randomized Controlled Trial",
+      "year": 2016,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT02885636",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT02713126",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT02713126",
+      "doi": "",
+      "title": "Inorganic Nitrite to Amplify the Benefits and Tolerability of Exercise Training in Heart Failure With Preserved Ejection Fraction (HFpEF) (INABLE-Training)",
+      "year": 2016,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT02713126",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "nct-NCT02807168",
       "source": "ClinicalTrials.gov",
       "pmid": "",
@@ -24030,6 +23895,51 @@
       "journal": "",
       "publication_type": "INTERVENTIONAL",
       "url": "https://clinicaltrials.gov/study/NCT02807168",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT02918552",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT02918552",
+      "doi": "",
+      "title": "Oral Nitrite for Older Heart Failure With Preserved Ejection Fraction",
+      "year": 2016,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT02918552",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT02744339",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT02744339",
+      "doi": "",
+      "title": "Pharmacodynamic Effects of Riociguat in Pulmonary Hypertension and Heart Failure With Preserved Ejection Fraction",
+      "year": 2016,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT02744339",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT02835638",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT02835638",
+      "doi": "",
+      "title": "Quality of Sleep of Patients With Predominant Central Sleep Apnea Syndrome(SAS) Whose EF > 45% Treated by ASV",
+      "year": 2016,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT02835638",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -24065,16 +23975,16 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT02932566",
+      "id": "nct-NCT02856620",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT02932566",
+      "nct_id": "NCT02856620",
       "doi": "",
-      "title": "The Efficacy and Safety of Pirfenidone in Patients With Heart Failure and Preserved Left Ventricular Ejection Fraction",
+      "title": "The Role of Cardiac Mechanics, Biomarkers and Frailty in Aortic Stenosis",
       "year": 2016,
       "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT02932566",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT02856620",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -24095,21 +24005,6 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT02779634",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT02779634",
-      "doi": "",
-      "title": "Ubiquinol Treatment in Patients With Heart Failure and Preserved Ejection Fraction",
-      "year": 2016,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT02779634",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "nct-NCT02949531",
       "source": "ClinicalTrials.gov",
       "pmid": "",
@@ -24125,16 +24020,16 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT02911337",
+      "id": "nct-NCT02499601",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT02911337",
+      "nct_id": "NCT02499601",
       "doi": "",
-      "title": "Weight Loss as Therapy for Heart Failure With Preserved Ejection Fraction",
-      "year": 2016,
+      "title": "CORolla® TAA for Heart Failure With Preserved Ejection Fraction (HFpEF) and Diastolic Dysfunction (DD)",
+      "year": 2015,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT02911337",
+      "url": "https://clinicaltrials.gov/study/NCT02499601",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -24150,6 +24045,21 @@
       "journal": "",
       "publication_type": "INTERVENTIONAL",
       "url": "https://clinicaltrials.gov/study/NCT02636439",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT02347540",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT02347540",
+      "doi": "",
+      "title": "Heart Failure and Related Risk-factors After Preeclampsia",
+      "year": 2015,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT02347540",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -24200,16 +24110,16 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT02459626",
+      "id": "nct-NCT02425371",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT02459626",
+      "nct_id": "NCT02425371",
       "doi": "",
-      "title": "Left Ventricular Stiffness vs. Fibrosis Quantification by T1 Mapping in Heart Failure With Preserved Ejection Fraction",
+      "title": "Optimized Management of Comorbidity in Heart Failure With Preserved Ejection Fraction in the Elderly (>60 Years)",
       "year": 2015,
       "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT02459626",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT02425371",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -24228,21 +24138,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT02120014",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT02120014",
-      "doi": "",
-      "title": "Blood Volume and Hemodynamic Analysis in Patients With Chronic Heart Failure",
-      "year": 2014,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT02120014",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "nct-NCT02068040",
@@ -24290,21 +24185,6 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT02053246",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT02053246",
-      "doi": "",
-      "title": "Improving Treatment Personalization of Pulmonary Hypertension Associated With Diastolic Heart Failure",
-      "year": 2014,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT02053246",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-25012287",
       "source": "PubMed",
       "pmid": "25012287",
@@ -24335,31 +24215,16 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT02053493",
+      "id": "nct-NCT02173548",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT02053493",
+      "nct_id": "NCT02173548",
       "doi": "",
-      "title": "Nitrate's Effect on Activity Tolerance in Heart Failure With Preserved Ejection Fraction",
+      "title": "Interleukin-1 Blockade in HF With Preserved EF",
       "year": 2014,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT02053493",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT02078947",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT02078947",
-      "doi": "",
-      "title": "Optimizing Exercise Training in Prevention and Treatment of Diastolic Heart Failure",
-      "year": 2014,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT02078947",
+      "url": "https://clinicaltrials.gov/study/NCT02173548",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -24440,16 +24305,16 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT01919177",
+      "id": "nct-NCT01901809",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT01919177",
+      "nct_id": "NCT01901809",
       "doi": "",
-      "title": "Effect of Inorganic Nitrates (Beetroot Juice) on Arterial Hemodynamics and Exercise Capacity",
+      "title": "Diuretics and Dopamine in Heart Failure With Preserved Ejection Fraction",
       "year": 2013,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT01919177",
+      "url": "https://clinicaltrials.gov/study/NCT01901809",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -24500,16 +24365,16 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT01914315",
+      "id": "nct-NCT01840059",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT01914315",
+      "nct_id": "NCT01840059",
       "doi": "",
-      "title": "Rehabilitation Program in Heart Failure With Preserved Ejection Fraction",
+      "title": "Renal Denervation in Heart Failure With Preserved Ejection Fraction",
       "year": 2013,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT01914315",
+      "url": "https://clinicaltrials.gov/study/NCT01840059",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -24530,36 +24395,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT01989299",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT01989299",
-      "doi": "",
-      "title": "Ventricular Tachyarrhythmia Detection by Implantable Loop Recording in Patients With Heart Failure and Preserved Ejection Fraction",
-      "year": 2013,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT01989299",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
-      "id": "nct-NCT01599117",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT01599117",
-      "doi": "",
-      "title": "A Randomized Trial of Udenafil Therapy in Patients With Heart Failure With Preserved Ejection Fraction [ULTIMATE-HFpEF]",
-      "year": 2012,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT01599117",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-22753223",
       "source": "PubMed",
       "pmid": "22753223",
@@ -24573,21 +24408,6 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "nct-NCT01677494",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT01677494",
-      "doi": "",
-      "title": "Collagen Markers in Heart Failure and Preserved Ejection Fraction",
-      "year": 2012,
-      "journal": "",
-      "publication_type": "OBSERVATIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT01677494",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "nct-NCT01714752",
@@ -24615,6 +24435,21 @@
       "journal": "",
       "publication_type": "INTERVENTIONAL",
       "url": "https://clinicaltrials.gov/study/NCT01570517",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT01618981",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT01618981",
+      "doi": "",
+      "title": "LEft Atrial Pacing in Diastolic Heart Failure",
+      "year": 2012,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT01618981",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -24650,16 +24485,31 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "nct-NCT01726049",
+      "id": "nct-NCT01707277",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT01726049",
+      "nct_id": "NCT01707277",
       "doi": "",
-      "title": "Sildenafil in HFpEF (Heart Failure With Preserved Ejection Fraction) and PH",
+      "title": "The Effects of Inspiratory Muscle Training in Patients With Heart Failure With Preserved Ejection Fraction",
       "year": 2012,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT01726049",
+      "url": "https://clinicaltrials.gov/study/NCT01707277",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "nct-NCT01505179",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT01505179",
+      "doi": "",
+      "title": "The Effects of Ranolazine on Exercise Capacity in Patients With Heart Failure With Preserved Ejection Fraction",
+      "year": 2012,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT01505179",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -24695,6 +24545,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "nct-NCT01411735",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT01411735",
+      "doi": "",
+      "title": "Evaluation of Enalapril Versus Placebo in Patients With Diastolic Heart Failure",
+      "year": 2011,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT01411735",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "pmid-22047619",
       "source": "PubMed",
       "pmid": "22047619",
@@ -24708,6 +24573,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT01347125",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT01347125",
+      "doi": "",
+      "title": "ImCardia for DHF to Treat Diastolic Heart Failure (DHF) Patient a Pilot Study",
+      "year": 2011,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT01347125",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "nct-NCT01431027",
@@ -24725,16 +24605,16 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT01354613",
+      "id": "nct-NCT01288365",
       "source": "ClinicalTrials.gov",
       "pmid": "",
-      "nct_id": "NCT01354613",
+      "nct_id": "NCT01288365",
       "doi": "",
-      "title": "Reduced Contractile Reserve: a Therapeutic Target in Heart Failure With Preserved Ejection Fraction(HFpEF)",
+      "title": "The Impact of Exercise Training on Functional Capacity in Heart Failure",
       "year": 2011,
       "journal": "",
       "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT01354613",
+      "url": "https://clinicaltrials.gov/study/NCT01288365",
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
@@ -24845,6 +24725,21 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
+      "id": "nct-NCT01163734",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT01163734",
+      "doi": "",
+      "title": "Ranolazine in Diastolic Heart Failure",
+      "year": 2010,
+      "journal": "",
+      "publication_type": "INTERVENTIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT01163734",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
       "id": "nct-NCT01047631",
       "source": "ClinicalTrials.gov",
       "pmid": "",
@@ -24903,6 +24798,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT01030991",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT01030991",
+      "doi": "",
+      "title": "Classification of Heart Failure With Preserved Ejection Fraction",
+      "year": 2009,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT01030991",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "nct-NCT00939640",
@@ -24995,21 +24905,6 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
-      "id": "nct-NCT00757055",
-      "source": "ClinicalTrials.gov",
-      "pmid": "",
-      "nct_id": "NCT00757055",
-      "doi": "",
-      "title": "If Channel Blockade With Ivabradine in Patients With Diastolic Heart Failure",
-      "year": 2008,
-      "journal": "",
-      "publication_type": "INTERVENTIONAL",
-      "url": "https://clinicaltrials.gov/study/NCT00757055",
-      "discovery_status": "Pending screening",
-      "source_kind": "Trial registry",
-      "provenance": "ClinicalTrials.gov API v2"
-    },
-    {
       "id": "pmid-18656093",
       "source": "PubMed",
       "pmid": "18656093",
@@ -25023,6 +24918,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "nct-NCT00207220",
+      "source": "ClinicalTrials.gov",
+      "pmid": "",
+      "nct_id": "NCT00207220",
+      "doi": "",
+      "title": "Ventricular-Vascular Coupling in Heart Failure",
+      "year": 2005,
+      "journal": "",
+      "publication_type": "OBSERVATIONAL",
+      "url": "https://clinicaltrials.gov/study/NCT00207220",
+      "discovery_status": "Pending screening",
+      "source_kind": "Trial registry",
+      "provenance": "ClinicalTrials.gov API v2"
     },
     {
       "id": "pmid-2404638",
@@ -25050,7 +24960,7 @@
       "source": "PubMed",
       "query_label": "hfpef",
       "query": "(\"heart failure with preserved ejection fraction\"[Title/Abstract] OR HFpEF[Title/Abstract] OR \"diastolic heart failure\"[Title/Abstract]) AND (\"clinical trial\"[Publication Type] OR \"randomized controlled trial\"[Publication Type] OR \"observational study\"[Publication Type] OR \"cohort studies\"[MeSH Terms] OR \"guideline\"[Publication Type] OR \"registry\"[Title/Abstract] OR \"trial\"[Title/Abstract])",
-      "reported_matches": 3997,
+      "reported_matches": 3999,
       "retrieved": 750,
       "search_truncated": true
     },
@@ -25058,8 +24968,8 @@
       "source": "PubMed",
       "query_label": "hfmrEF",
       "query": "(\"heart failure with mildly reduced ejection fraction\"[Title/Abstract] OR HFmrEF[Title/Abstract] OR \"heart failure with normal ejection fraction\"[Title/Abstract]) AND (\"clinical trial\"[Publication Type] OR \"randomized controlled trial\"[Publication Type] OR \"observational study\"[Publication Type] OR \"cohort studies\"[MeSH Terms] OR \"guideline\"[Publication Type] OR \"registry\"[Title/Abstract] OR \"trial\"[Title/Abstract])",
-      "reported_matches": 713,
-      "retrieved": 713,
+      "reported_matches": 715,
+      "retrieved": 715,
       "search_truncated": false
     },
     {
