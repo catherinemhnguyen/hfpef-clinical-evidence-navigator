@@ -50,7 +50,12 @@ jobs:
         run: python scripts/extract_candidates.py --pmids "$SELECTED_PMIDS" --limit 2 --llm-check
       - name: Record successfully audited IDs only, never clinical claims
         if: steps.config.outputs.enabled == 'true' && steps.select.outputs.pmids != ''
-        run: python scripts/automation_queue.py record
+        run: |
+          if [ -f outputs/extraction_drafts/batch_report.json ]; then
+            python scripts/automation_queue.py record
+          else
+            echo 'Extraction produced no report; nothing recorded' >> "$GITHUB_STEP_SUMMARY"
+          fi
       - name: Preserve private-to-Actions unreviewed draft artifacts
         if: steps.config.outputs.enabled == 'true' && steps.select.outputs.pmids != ''
         uses: actions/upload-artifact@v4
