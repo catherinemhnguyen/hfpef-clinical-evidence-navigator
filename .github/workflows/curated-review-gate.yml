@@ -1,0 +1,28 @@
+name: Curated clinical record review gate
+on:
+  pull_request:
+    paths:
+      - 'data/studies.json'
+      - 'scripts/validate_data.py'
+      - 'scripts/check_curated_review.py'
+      - '.github/workflows/curated-review-gate.yml'
+permissions:
+  contents: read
+jobs:
+  review-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch current main for comparison
+        run: git fetch origin main
+      - name: Enforce reviewer metadata for added or edited clinical entries
+        run: python scripts/check_curated_review.py
+      - name: Validate curated evidence structure
+        run: python scripts/validate_data.py
+      - name: Test regression behavior
+        run: python -m unittest discover -s tests -v
