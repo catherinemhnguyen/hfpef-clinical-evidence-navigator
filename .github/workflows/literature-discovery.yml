@@ -7,7 +7,7 @@ on:
       - '.github/workflows/literature-discovery.yml'
       - 'scripts/discover_literature.py'
   schedule:
-    - cron: '17 8 * * 1'
+    - cron: '17 8 * * 1,3,5'
 permissions:
   contents: write
 jobs:
