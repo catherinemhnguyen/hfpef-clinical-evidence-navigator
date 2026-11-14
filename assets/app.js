@@ -121,28 +121,65 @@ function download(name,content,type) {
 async function initializeDiscovery() {
   const count = $('discovery-count');
   const list = $('discovery-list');
+  const more = $('discovery-more');
+  const input = $('discovery-search');
+  const source = $('discovery-source');
+  const sort = $('discovery-sort');
   try {
-    const response = await fetch('data/discovery_candidates.json');
-    if (!response.ok) throw Error('Discovery data unavailable');
-    const records = (await response.json()).candidates;
-    const input = $('discovery-search');
+    const response = await fetch('data/discovery_candidates.json', {cache:'no-cache'});
+    if (!response.ok) throw Error('Discovery data unavailable (HTTP ' + response.status + ')');
+    const data = await response.json();
+    if (!Array.isArray(data.candidates)) throw Error('Discovery record array unavailable');
+    const records = data.candidates;
+    $('total-candidates').textContent = fmt(records.length);
+    $('discovery-heading-count').textContent = fmt(records.length);
+    if (data.generated_at && !Number.isNaN(Date.parse(data.generated_at))) {
+      $('discovery-updated').textContent = 'Latest indexed search: ' +
+        new Date(data.generated_at).toLocaleDateString('en-US', {year:'numeric',month:'long',day:'numeric'}) +
+        ' · Automatically discovered; human review pending.';
+    }
+    let pageSize = 30;
     function render() {
       const query = input.value.trim().toLowerCase();
-      const filtered = records.filter(r => [r.title, r.journal, r.publication_type, r.year, r.pmid, r.nct_id].join(' ').toLowerCase().includes(query));
-      count.textContent = filtered.length + ' candidates match; showing first ' + Math.min(filtered.length,100) + '. Refine search or download the full CSV. The 22 detailed study records are separate.';
-      list.replaceChildren(...filtered.slice(0,100).map(r => {
-        const card = make('article', 'study-card');
-        addText(card, 'span', 'tag', r.source + ' · Pending screening');
-        addText(card, 'h3', '', r.title);
-        addText(card, 'p', 'study-title', (r.year || '') + ' · ' + (r.journal || r.publication_type));
-        addText(card, 'p', 'review-note', r.publication_type);
-        if (r.url && r.url.startsWith('https://')) card.append(detailLink('Open source ↗', r.url));
+      const filtered = records.filter(r => {
+        if (source.value !== 'all' && r.source !== source.value) return false;
+        return [r.title, r.journal, r.publication_type, r.year, r.pmid, r.nct_id, r.doi]
+          .map(v => String(v ?? '')).join(' ').toLowerCase().includes(query);
+      });
+      filtered.sort((a,b) => {
+        if (sort.value === 'title') return String(a.title).localeCompare(String(b.title));
+        const d = (Number(b.year)||0) - (Number(a.year)||0);
+        return sort.value === 'oldest' ? -d : d;
+      });
+      const shown = filtered.slice(0,pageSize);
+      count.textContent = 'Showing ' + fmt(shown.length) + ' of ' + fmt(filtered.length) +
+        ' matching candidates (' + fmt(records.length) + ' indexed). Pending screening; not verified study results.';
+      list.replaceChildren(...shown.map(r => {
+        const card = make('article','study-card');
+        addText(card,'span','tag',(r.source || 'Source unknown') + ' · UNREVIEWED');
+        addText(card,'h3','',r.title || 'Untitled record');
+        addText(card,'p','study-title', [r.year, r.journal || r.publication_type].filter(Boolean).join(' · '));
+        addText(card,'p','review-note', 'Pending screening · Bibliographic entry only; no clinical outcomes verified');
+        if (r.url && /^https:\/\//.test(r.url)) card.append(detailLink('View original record ↗',r.url));
         return card;
       }));
+      if (!filtered.length) list.append(make('div','empty-state','No candidates match. Try another search.'));
+      more.hidden = shown.length >= filtered.length;
     }
-    input.addEventListener('input', render);
+    const reset=()=>{pageSize=30;render();};
+    input.addEventListener('input',reset);
+    source.addEventListener('change',reset);
+    sort.addEventListener('change',reset);
+    more.addEventListener('click',()=>{pageSize+=30;render();});
+    $('clear-discovery').addEventListener('click',()=>{
+      input.value='';source.value='all';sort.value='newest';reset();input.focus();
+    });
     render();
-  } catch(error) { count.textContent = 'Could not load the unreviewed discovery index.'; }
+  } catch (error) {
+    count.textContent = 'Could not load discovery index: ' + error.message;
+    $('total-candidates').textContent = 'Unavailable';
+    $('discovery-updated').textContent = 'Discovery information unavailable.';
+  }
 }
 
 async function initialize() {
@@ -153,6 +190,7 @@ async function initialize() {
     if (!Array.isArray(meta.studies)) throw Error('Expected a studies array in the JSON dataset.');
     state.metadata=meta;state.studies=meta.studies;
     updateSummary(meta);
+    $('curated-inline-count').textContent = fmt(meta.studies.length);
     populateSelect($('category'),categoryList(state.studies,'treatment_category'));
     populateSelect($('population'),categoryList(state.studies,'population_group'));
     ['search','category','population','sort'].forEach(id => $(id).addEventListener('input',applyFilters));
