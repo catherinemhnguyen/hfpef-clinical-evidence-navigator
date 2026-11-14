@@ -1,0 +1,78 @@
+name: HFpEF scheduled AI extraction and auditor (unreviewed)
+on:
+  schedule:
+    - cron: '17 9 * * 1,3,5'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: hfpef-scheduled-extraction
+  cancel-in-progress: false
+jobs:
+  draft-and-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: gpt-4.1-mini
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check optional API configuration
+        id: config
+        shell: bash
+        run: |
+          if [ -n "$OPENAI_API_KEY" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "No OPENAI_API_KEY secret: scheduled paid extraction skipped safely" >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Choose new PubMed candidates, skipping previously drafted IDs
+        if: steps.config.outputs.enabled == 'true'
+        id: select
+        shell: bash
+        run: |
+          python scripts/automation_queue.py select --limit 2
+          selected="$(python -c 'import json;print(",".join(json.load(open("outputs/selected_pmids.json"))))')"
+          echo "pmids=$selected" >> "$GITHUB_OUTPUT"
+          if [ -z "$selected" ]; then
+            echo "No new high-priority PubMed candidates to process" >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Generate draft extraction plus mandatory independent AI audit
+        if: steps.config.outputs.enabled == 'true' && steps.select.outputs.pmids != ''
+        id: extract
+        continue-on-error: true
+        env:
+          SELECTED_PMIDS: ${{ steps.select.outputs.pmids }}
+        run: python scripts/extract_candidates.py --pmids "$SELECTED_PMIDS" --limit 2 --llm-check
+      - name: Record successfully audited IDs only, never clinical claims
+        if: steps.config.outputs.enabled == 'true' && steps.select.outputs.pmids != ''
+        run: python scripts/automation_queue.py record
+      - name: Preserve private-to-Actions unreviewed draft artifacts
+        if: steps.config.outputs.enabled == 'true' && steps.select.outputs.pmids != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: unreviewed-audited-extractions
+          path: outputs/extraction_drafts/
+          retention-days: 30
+          if-no-files-found: warn
+      - name: Commit only the bibliographic processing ledger
+        if: steps.config.outputs.enabled == 'true' && steps.select.outputs.pmids != ''
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/extraction_attempts.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Record unreviewed AI extraction attempts"
+            git pull --rebase origin main
+            git push
+          fi
+      - name: Note automated scientific review limitation
+        if: always()
+        run: |
+          echo "AI drafting/auditing is not independent clinical verification." >> "$GITHUB_STEP_SUMMARY"
+          echo "No data/studies.json changes occur in this workflow." >> "$GITHUB_STEP_SUMMARY"
