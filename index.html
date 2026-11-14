@@ -14,7 +14,7 @@
     <div class="container topbar-inner">
       <div class="brand-mark" aria-hidden="true">H<span>+</span></div>
       <div class="brand-text">HFpEF <span>Evidence Navigator</span></div>
-      <a class="top-link" href="#methods">About this project <span aria-hidden="true">↗</span></a>
+      <nav aria-label="Main sections" style="display:flex;gap:1.1rem;align-items:center;flex-wrap:wrap"><a class="top-link" href="#discovery">Discover literature ↗</a><a class="top-link" href="#evidence">Curated studies ↗</a><a class="top-link" href="#methods">About ↗</a></nav>
     </div>
   </header>
 
@@ -26,14 +26,17 @@
           <h1>Explore the evidence.<br><em>Understand the context.</em></h1>
           <p class="hero-intro">An organized, searchable guide to selected clinical trials in heart failure with preserved and mildly reduced ejection fraction.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#evidence">Browse studies <span aria-hidden="true">→</span></a>
+            <a class="button button-primary" href="#discovery">Browse discovered literature <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="#evidence">Explore curated studies →</a>
             <a class="button button-secondary" href="data/studies.json" target="_blank" rel="noopener">View source JSON <span aria-hidden="true">↗</span></a>
           </div>
         </div>
         <div class="hero-panel" aria-label="Dataset summary">
-          <div class="panel-kicker">PROTOTYPE DATASET <span class="status-dot"></span></div>
+          <div class="panel-kicker">TWO-TIER RESEARCH INDEX <span class="status-dot"></span></div>
+          <div class="panel-row" style="margin:1rem 0"><span>Discovered literature candidates <small style="display:block;font-size:.72rem">Unverified; pending screening</small></span><strong id="total-candidates" aria-live="polite">Loading…</strong></div>
+          <div class="panel-rule"></div>
           <div class="panel-main-number" id="total-studies">—</div>
-          <p class="panel-main-label">curated clinical trials</p>
+          <p class="panel-main-label">selected detailed studies (clinical review pending)</p>
           <div class="panel-rule"></div>
           <div class="panel-row"><span>Participants enrolled*</span><strong id="total-participants">—</strong></div>
           <div class="panel-row"><span>Evidence categories</span><strong id="total-categories">—</strong></div>
@@ -53,7 +56,7 @@
         <div>
           <p class="section-kicker">THE EVIDENCE LIBRARY</p>
           <h2>Clinical trial explorer</h2>
-          <p>Search 22 selected detailed studies by intervention, population, or outcome. Three guidance records are separately available in the source data and Streamlit app.</p>
+          <p>Explore <strong id="curated-inline-count">22</strong> selected, structured studies by intervention, population, or outcome. These records are distinct from the larger unreviewed discovery queue. Three guidance documents are available separately.</p>
         </div>
         <div class="source-actions">
           <button id="download-json" class="button button-quiet" type="button">Export results as JSON ↓</button>
@@ -87,14 +90,15 @@
 
     <section id="discovery" class="container evidence-section">
       <div class="section-heading">
-        <div><p class="section-kicker">EXPANDING THE EVIDENCE</p><h2>New literature discovery queue</h2>
-        <p>Source-linked citations awaiting review. Some publications are follow-up analyses or protocols, not new independent trials.</p></div>
+        <div><p class="section-kicker">EXPANDING THE EVIDENCE · AUTOMATED SEARCH</p><h2>Browse <span id="discovery-heading-count">discovered</span> literature candidates</h2>
+        <p>This is a <strong>separate, unverified bibliography</strong> sourced from PubMed and ClinicalTrials.gov. Records have not been independently screened, extracted, or clinically validated; multiple publications may describe the same trial. Candidate totals are not counts of unique HFpEF studies.</p><p id="discovery-updated" class="review-note">Loading discovery metadata…</p></div>
         <a class="button button-secondary" href="data/discovery_candidates.csv" download>Download candidate CSV ↓</a>
       </div>
-      <div class="field field-search"><label for="discovery-search">Search candidate publications</label>
-      <input id="discovery-search" type="search" placeholder="Try shunt, exercise, iron, or tirzepatide" /></div>
-      <div class="results-line"><p id="discovery-count">Loading citations…</p></div>
-      <div id="discovery-list" class="study-grid"></div>
+      <div class="filters" role="search" aria-label="Filter unreviewed discovery candidates"><div class="field field-search"><label for="discovery-search">Search candidate publications</label>
+      <input id="discovery-search" type="search" placeholder="Search title, journal, PMID, or trial ID" /></div><div class="field"><label for="discovery-source">Discovery source</label><select id="discovery-source"><option value="all">All sources</option><option value="PubMed">PubMed</option><option value="ClinicalTrials.gov">ClinicalTrials.gov</option></select></div><div class="field field-sort"><label for="discovery-sort">Sort by</label><select id="discovery-sort"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="title">Title A–Z</option></select></div></div>
+      <div class="results-line"><p id="discovery-count" aria-live="polite">Loading citations…</p><button id="clear-discovery" class="text-button" type="button">Clear filters</button></div>
+      <div id="discovery-list" class="study-grid" aria-live="polite"></div>
+      <div class="results-line"><button id="discovery-more" class="button button-secondary" type="button" hidden>Show more candidates</button></div>
     </section>
     <section id="methods" class="methods-section">
       <div class="container methods-grid">
@@ -113,6 +117,6 @@
       </div>
     </section>
   </main>
-  <footer class="footer"><div class="container footer-inner"><span>HFpEF Clinical Evidence Navigator · v0.3</span><span>Educational research prototype · Updated 2026</span></div></footer>
+  <footer class="footer"><div class="container footer-inner"><span>HFpEF Clinical Evidence Navigator · Discovery + curated library</span><span>Educational research prototype · Updated 2026</span></div></footer>
 </body>
 </html>
