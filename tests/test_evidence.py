@@ -74,7 +74,9 @@ class EvidenceTests(unittest.TestCase):
         rows = [flatten_study(s) for s in self.studies] + [flatten_guideline(g) for g in self.guidelines]
         with (ROOT/'data/evidence_index.csv').open('r', encoding='utf-8-sig', newline='') as f:
             text = f.read()
-        self.assertEqual(text, csv_text(rows))
+        # CSV writer uses CRLF while checked-in snapshots may use LF on checkout.
+        # Compare records without treating platform newline conventions as content changes.
+        self.assertEqual(text.replace('\r\n', '\n'), csv_text(rows).replace('\r\n', '\n'))
 
 
 if __name__ == '__main__':
