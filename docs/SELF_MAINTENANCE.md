@@ -25,6 +25,10 @@ To publish a verified new clinical record:
 
 **Repository owners should enable branch protection requiring pull requests, relevant status checks, and actual human approval.** Without branch protection, a direct push can bypass the PR-based check. Do not falsely claim these controls are already enabled.
 
+## Human-adjudicated reliability benchmark
+
+Use [VERIFICATION_PILOT.md](VERIFICATION_PILOT.md) to compare independent human judgments with model-extracted fields and AI auditor flags. The evaluation script is offline and fails if human labels or source hashes are missing. These scores assess extraction of the supplied input text, not clinical full-text verification or a guarantee of scalable reliability. See [CLINICIAN_FEEDBACK.md](CLINICIAN_FEEDBACK.md) for a 15-minute clinician usability pilot.
+
 ## Checklist before calling it fully automatic
 
 - [ ] Add `OPENAI_API_KEY` under GitHub repository Settings → Secrets and variables → Actions if you authorize API charges.
