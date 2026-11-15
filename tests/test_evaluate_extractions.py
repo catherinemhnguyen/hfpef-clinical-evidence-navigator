@@ -53,6 +53,14 @@ class BenchmarkTests(unittest.TestCase):
         self.assertEqual(stats["auditor_correct_acceptance_rate"], 1.0)
         self.assertIn("extractor-A / auditor-B", result["model_pairs"])
 
+    def test_template_is_blank_and_hash_bound(self):
+        template = ev.make_review_template(self.folder)
+        review = template["reviews"][0]
+        self.assertEqual(review["source_sha256"], "f" * 64)
+        self.assertIsNone(review["fields"]["sample_size"]["expected_present"])
+        with self.assertRaisesRegex(ValueError, "human reviewer"):
+            ev.evaluate(template, self.folder)
+
     def test_reject_unlabeled_or_no_human_reviews(self):
         with self.assertRaisesRegex(ValueError, "No manually completed reviews"):
             ev.evaluate({"schema_version": 1, "reviews": []}, self.folder)
