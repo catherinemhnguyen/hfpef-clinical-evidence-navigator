@@ -58,6 +58,26 @@ class ExtractionTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             ex.select_candidates(rows, ["99999999"], 1, "High")
 
+    def test_separate_auditor_model_is_used_only_for_audit(self):
+        from unittest.mock import patch
+        extraction = {
+            "report_type": "original_trial",
+            "fields": {k: {"value": None, "evidence_quote": None} for k in ex.FIELD_NAMES},
+            "knowledge_units": [], "missing_information": [],
+        }
+        audit = {"judgments": [], "potential_omissions": []}
+        record = {"id": "pmid-12345678", "pmid": "12345678"}
+        source = {"title": "Example", "text": "Study abstract with no result fields",
+                  "url": "https://pubmed.ncbi.nlm.nih.gov/12345678/",
+                  "source_kind": "PubMed abstract only"}
+        with patch.object(ex, "call_model", side_effect=[extraction, audit]) as mocked:
+            draft = ex.build_draft(record, source, "gpt-4.1-mini", "test-key",
+                                   True, auditor_model="gpt-6.1-sol")
+        self.assertEqual([call.args[0] for call in mocked.call_args_list],
+                         ["gpt-4.1-mini", "gpt-6.1-sol"])
+        self.assertEqual(draft["auditor_model"], "gpt-6.1-sol")
+        self.assertFalse(draft["human_approved"])
+
     def test_missing_key_fails_without_network(self):
         import os
         from unittest.mock import patch
