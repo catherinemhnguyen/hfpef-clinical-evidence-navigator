@@ -72,12 +72,12 @@ def evaluate(annotation: dict, drafts_dir: Path) -> dict:
         sha = review.get("source_sha256")
         if not isinstance(sha, str) or sha != draft.get("source_sha256"):
             raise ValueError(f"{pmid}: reviewed source hash does not match draft")
-        if not review.get("reviewer") or not review.get("source_notes"):
+        if not str(review.get("reviewer") or "").strip() or not str(review.get("source_notes") or "").strip():
             raise ValueError(f"{pmid}: human reviewer and source_notes are required")
         if review.get("reference_scope") != "same_input_text":
             raise ValueError(f"{pmid}: compare against same input text; use separate full-text review for publication")
-        if review.get("review_date") is None:
-            raise ValueError(f"{pmid}: review_date required")
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(review.get("review_date") or "")):
+            raise ValueError(f"{pmid}: review_date must be YYYY-MM-DD")
         key = (pmid, str(draft.get("model")), str(draft.get("auditor_model", "")))
         if key in seen:
             raise ValueError(f"{pmid}: duplicate model-pair review")
@@ -141,13 +141,43 @@ def evaluate(annotation: dict, drafts_dir: Path) -> dict:
     }
 
 
+def make_review_template(drafts_dir: Path) -> dict:
+    """Create deliberately blank human review labels from AI drafts."""
+    reviews = []
+    for path in sorted(drafts_dir.glob("pmid-*-draft.json")):
+        if not re.fullmatch(r"pmid-\d{7,9}-draft\.json", path.name):
+            continue
+        draft = json.loads(path.read_text(encoding="utf-8"))
+        if str(draft.get("pmid")) != path.name.removeprefix("pmid-").removesuffix("-draft.json"):
+            raise ValueError(f"{path.name}: PMID identity mismatch")
+        if not re.fullmatch(r"[a-fA-F0-9]{64}", str(draft.get("source_sha256", ""))):
+            raise ValueError(f"{path.name}: missing valid input source hash")
+        reviews.append({
+            "pmid": str(draft["pmid"]), "draft_file": path.name,
+            "source_sha256": draft["source_sha256"],
+            "reviewer": "", "review_date": "", "source_notes": "",
+            "reference_scope": "same_input_text",
+            "fields": {name: {"expected_present": None, "extraction_correct": None}
+                       for name in FIELD_NAMES},
+        })
+    if not reviews:
+        raise ValueError("No valid PMID drafts found; generate or download drafts first")
+    return {"schema_version": 1, "reviews": reviews}
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--reviews", type=Path, required=True, help="Local JSON with human field adjudications")
+    parser.add_argument("--reviews", type=Path, help="Local JSON with human field adjudications")
+    parser.add_argument("--make-template", action="store_true", help="Create a blank field review worksheet (no accuracy scores)")
     parser.add_argument("--drafts", type=Path, required=True, help="Directory containing model-generated draft JSON")
     parser.add_argument("--output", type=Path, help="Optional JSON results file")
     args = parser.parse_args(argv)
-    report = evaluate(json.loads(args.reviews.read_text(encoding="utf-8")), args.drafts)
+    if args.make_template:
+        report = make_review_template(args.drafts)
+    else:
+        if args.reviews is None:
+            parser.error("--reviews is required unless --make-template is set")
+        report = evaluate(json.loads(args.reviews.read_text(encoding="utf-8")), args.drafts)
     payload = json.dumps(report, indent=2, ensure_ascii=False) + "\n"
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)
