@@ -1,6 +1,6 @@
 # HFpEF Clinical Evidence Navigator
 
-**v0.4.0 | Discovery + opt-in LLM draft extraction | Updated November 12, 2026**
+**v0.5.0 | Discovery, source identity checks, independent AI audit | Updated November 16, 2026**
 
 A small, reproducible, public-facing **Python/Streamlit** prototype organizing selected trial findings and guidance related to heart failure with preserved ejection fraction (HFpEF) and adjacent mildly reduced EF populations. The previous static GitHub Pages website is preserved.
 
@@ -22,6 +22,12 @@ Recreate the seed with `python scripts/discover_literature.py --offline` or run 
 ## Independent verification pilot and user feedback
 
 A new **human-adjudicated evaluation tool** measures field-level extraction precision/recall and whether the AI auditor finds mistakes, without automatically treating an LLM's verdict as truth. Generate a blank source-bound worksheet with `python scripts/evaluate_extractions.py --make-template --drafts outputs/pilot-a --output outputs/pilot-a-reviews.json` and score it after independent human annotation. **No clinical accuracy score has yet been established by this tool.** See [the verification pilot](docs/VERIFICATION_PILOT.md) and [clinician feedback plan](docs/CLINICIAN_FEEDBACK.md). Manual extraction Actions now let you choose separate extraction and auditor models for cost-controlled comparisons; the scheduled model defaults are unchanged.
+
+## Bibliographic source verification and clinical-safety boundaries
+
+The Monday/Wednesday/Friday automated discovery workflow now runs reproducible **local identity checks across every candidate**, and independently re-fetches up to **20 pending PubMed or ClinicalTrials.gov records per run**. The public website reports **bibliographic source checks**, not physician-verified efficacy claims. Problems and API outages are logged; no records are promoted to the curated clinical library without independent human review. See [metadata verification methods](docs/METADATA_VERIFICATION.md).
+
+The public site also provides a GitHub Issue Form to collect usability feedback from cardiologists, researchers and trainees, without patient information. See [clinician feedback pilot](docs/CLINICIAN_FEEDBACK.md).
 
 ## LLM-assisted extraction drafts (v0.4)
 
