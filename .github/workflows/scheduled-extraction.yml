@@ -14,7 +14,8 @@ jobs:
     timeout-minutes: 25
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      OPENAI_MODEL: gpt-4.1-mini
+      OPENAI_MODEL: gpt-6-luna
+      OPENAI_AUDIT_MODEL: gpt-6.1-sol
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
