@@ -9,12 +9,12 @@
   <script defer src="assets/app.js"></script>
 </head>
 <body>
-  <a href="#evidence" class="skip-link">Skip to clinical evidence</a>
+  <a href="#discovery" class="skip-link">Skip to literature browser</a>
   <header class="topbar">
     <div class="container topbar-inner">
       <div class="brand-mark" aria-hidden="true">H<span>+</span></div>
       <div class="brand-text">HFpEF <span>Evidence Navigator</span></div>
-      <nav aria-label="Main sections" style="display:flex;gap:1.1rem;align-items:center;flex-wrap:wrap"><a class="top-link" href="#discovery">Discover literature ↗</a><a class="top-link" href="#evidence">Curated studies ↗</a><a class="top-link" href="#methods">About ↗</a><a class="top-link" href="https://github.com/catherinemhnguyen/hfpef-clinical-evidence-navigator/issues/new?template=site-feedback.yml" target="_blank" rel="noopener noreferrer">Give feedback ↗</a></nav>
+      <nav aria-label="Main sections" style="display:flex;gap:1.1rem;align-items:center;flex-wrap:wrap"><a class="top-link" href="#discovery">All literature ↗</a><a class="top-link" href="#evidence">Detailed study summaries ↗</a><a class="top-link" href="#methods">About ↗</a><a class="top-link" href="https://github.com/catherinemhnguyen/hfpef-clinical-evidence-navigator/issues/new?template=site-feedback.yml" target="_blank" rel="noopener noreferrer">Give feedback ↗</a></nav>
     </div>
   </header>
 
@@ -24,16 +24,16 @@
         <div class="hero-copy">
           <p class="eyebrow"><span class="eyebrow-dot"></span> CLINICAL RESEARCH / OPEN DATA</p>
           <h1>Explore the evidence.<br><em>Understand the context.</em></h1>
-          <p class="hero-intro">An organized, searchable guide to selected clinical trials in heart failure with preserved and mildly reduced ejection fraction.</p>
+          <p class="hero-intro">Explore automatically indexed HFpEF literature now, with transparent machine-check and human-review status for every record. Detailed trial summaries remain available separately.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#discovery">Browse discovered literature <span aria-hidden="true">→</span></a>
-            <a class="button button-secondary" href="#evidence">Explore curated studies →</a>
+            <a class="button button-primary" href="#discovery">Browse all machine-indexed records <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="#evidence">Explore detailed trial summaries →</a>
             <a class="button button-secondary" href="data/studies.json" target="_blank" rel="noopener">View source JSON <span aria-hidden="true">↗</span></a>
           </div>
         </div>
         <div class="hero-panel" aria-label="Dataset summary">
           <div class="panel-kicker">TWO-TIER RESEARCH INDEX <span class="status-dot"></span></div>
-          <div class="panel-row" style="margin:1rem 0"><span>Discovered literature candidates <small style="display:block;font-size:.72rem">Unverified; pending screening</small></span><strong id="total-candidates" aria-live="polite">Loading…</strong></div>
+          <div class="panel-row" style="margin:1rem 0"><span>Published literature index <small style="display:block;font-size:.72rem">Automated bibliographic checks; human review pending</small></span><strong id="total-candidates" aria-live="polite">Loading…</strong></div>
           <div class="panel-rule"></div>
           <div class="panel-main-number" id="total-studies">—</div>
           <p class="panel-main-label">selected detailed studies (clinical review pending)</p>
@@ -48,15 +48,27 @@
 
     <section class="notice container" aria-label="Important context">
       <div class="notice-icon" aria-hidden="true">i</div>
-      <p><strong>Research prototype, not clinical guidance.</strong> This index is intentionally selective and has not undergone expert clinical validation. EF eligibility criteria, endpoints, and effect measures differ by trial; results should not be directly ranked against each other.</p>
+      <p><strong>Research prototype, not clinical guidance.</strong> The full literature bibliography is published before human screening, with explicit automated-check statuses. A metadata check or source-identity match is <strong>not</strong> clinical validation of HFpEF eligibility, treatment efficacy, or safety. Detailed study summaries also await independent clinical review.</p>
     </section>
 
+    <section id="discovery" class="container evidence-section">
+      <div class="section-heading">
+        <div><p class="section-kicker">PUBLIC LITERATURE INDEX · AUTOMATED BIBLIOGRAPHIC CHECKS</p><h2>Browse <span id="discovery-heading-count">discovered</span> records</h2>
+        <p>All discovered PubMed publications and ClinicalTrials.gov registrations are shown here <strong>before human review</strong>, as requested. Each record shows the level of automated bibliographic checking completed and a <strong>human review pending</strong> label. Automated checks do not validate clinical outcomes, and several publications may refer to one trial. Record totals are not counts of unique HFpEF studies.</p><p id="bibliography-check-status" class="review-note">Loading bibliographic verification information…</p><p id="discovery-updated" class="review-note">Loading discovery metadata…</p></div>
+        <a class="button button-secondary" href="data/discovery_candidates.csv" download>Download candidate CSV ↓</a>
+      </div>
+      <div class="filters" role="search" aria-label="Filter unreviewed discovery candidates"><div class="field field-search"><label for="discovery-search">Search candidate publications</label>
+      <input id="discovery-search" type="search" placeholder="Search title, journal, PMID, or trial ID" /></div><div class="field"><label for="discovery-source">Discovery source</label><select id="discovery-source"><option value="all">All sources</option><option value="PubMed">PubMed</option><option value="ClinicalTrials.gov">ClinicalTrials.gov</option></select></div><div class="field"><label for="discovery-check">Automated review</label><select id="discovery-check"><option value="all">All review statuses</option><option value="source">Source identity rechecked</option><option value="metadata">Metadata check passed</option><option value="pending">Verification pending / flagged</option></select></div><div class="field field-sort"><label for="discovery-sort">Sort by</label><select id="discovery-sort"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="title">Title A–Z</option></select></div></div>
+      <div class="results-line"><p id="discovery-count" aria-live="polite">Loading citations…</p><button id="clear-discovery" class="text-button" type="button">Clear filters</button></div>
+      <div id="discovery-list" class="study-grid" aria-live="polite"></div>
+      <div class="results-line"><button id="discovery-more" class="button button-secondary" type="button" hidden>Show more candidates</button></div>
+    </section>
     <section id="evidence" class="container evidence-section">
       <div class="section-heading">
         <div>
-          <p class="section-kicker">THE EVIDENCE LIBRARY</p>
-          <h2>Clinical trial explorer</h2>
-          <p>Explore <strong id="curated-inline-count">22</strong> selected, structured studies by intervention, population, or outcome. These records are distinct from the larger unreviewed discovery queue. Three guidance documents are available separately.</p>
+          <p class="section-kicker">DETAILED STUDY SUMMARIES · CLINICAL REVIEW PENDING</p>
+          <h2>Selected clinical trial summaries</h2>
+          <p>Explore <strong id="curated-inline-count">22</strong> selected, structured studies by intervention, population, or outcome. These detailed summaries are separate from the automated literature bibliography and have not yet undergone independent full-text clinical validation. Three guidance documents are available separately.</p>
         </div>
         <div class="source-actions">
           <button id="download-json" class="button button-quiet" type="button">Export results as JSON ↓</button>
@@ -88,18 +100,6 @@
       <p id="error-message" class="error-message" hidden></p>
     </section>
 
-    <section id="discovery" class="container evidence-section">
-      <div class="section-heading">
-        <div><p class="section-kicker">EXPANDING THE EVIDENCE · AUTOMATED SEARCH</p><h2>Browse <span id="discovery-heading-count">discovered</span> literature candidates</h2>
-        <p>This is a <strong>separate, unverified bibliography</strong> sourced from PubMed and ClinicalTrials.gov. Records have not been independently screened, extracted, or clinically validated; multiple publications may describe the same trial. Candidate totals are not counts of unique HFpEF studies.</p><p id="bibliography-check-status" class="review-note">Loading bibliographic verification information…</p><p id="discovery-updated" class="review-note">Loading discovery metadata…</p></div>
-        <a class="button button-secondary" href="data/discovery_candidates.csv" download>Download candidate CSV ↓</a>
-      </div>
-      <div class="filters" role="search" aria-label="Filter unreviewed discovery candidates"><div class="field field-search"><label for="discovery-search">Search candidate publications</label>
-      <input id="discovery-search" type="search" placeholder="Search title, journal, PMID, or trial ID" /></div><div class="field"><label for="discovery-source">Discovery source</label><select id="discovery-source"><option value="all">All sources</option><option value="PubMed">PubMed</option><option value="ClinicalTrials.gov">ClinicalTrials.gov</option></select></div><div class="field field-sort"><label for="discovery-sort">Sort by</label><select id="discovery-sort"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="title">Title A–Z</option></select></div></div>
-      <div class="results-line"><p id="discovery-count" aria-live="polite">Loading citations…</p><button id="clear-discovery" class="text-button" type="button">Clear filters</button></div>
-      <div id="discovery-list" class="study-grid" aria-live="polite"></div>
-      <div class="results-line"><button id="discovery-more" class="button button-secondary" type="button" hidden>Show more candidates</button></div>
-    </section>
     <section id="methods" class="methods-section">
       <div class="container methods-grid">
         <div>
@@ -112,7 +112,7 @@
           <div class="method-item"><span>01</span><div><h3>Traceable sources</h3><p>Primary trial publications are linked by DOI and PMID, plus ClinicalTrials.gov identifiers when recorded.</p></div></div>
           <div class="method-item"><span>02</span><div><h3>Explicit denominators</h3><p>Enrollment criteria and LVEF thresholds remain visible, even when studies span HFmrEF and HFpEF.</p></div></div>
           <div class="method-item"><span>03</span><div><h3>Outcome-aware summaries</h3><p>Hazard ratios, recurrent-event rate ratios, and patient-reported outcomes are labeled separately.</p></div></div>
-          <div class="method-item"><span>04</span><div><h3>Clinical review pending</h3><p>These first records are source-checked drafts, not an exhaustive review or expert-approved synthesis.</p></div></div>
+          <div class="method-item"><span>04</span><div><h3>Explicit review statuses</h3><p>All discovered references are searchable immediately. Each record clearly distinguishes structural metadata checks, source-identity rechecks and pending human clinical review.</p></div></div>
         </div>
       </div>
     </section>
