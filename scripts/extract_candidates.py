@@ -233,7 +233,7 @@ Mark unsupported or unclear; list important source facts omitted by the draft. A
 LLM audit is NOT independent clinical validation and is not a substitute for human review."""
 
 
-def build_draft(record: dict, source: dict, model: str, key: str, llm_check: bool) -> dict:
+def build_draft(record: dict, source: dict, model: str, key: str, llm_check: bool, auditor_model: str | None = None) -> dict:
     context = json.dumps({"pmid": record.get("pmid"), "title": source["title"],
                           "source_kind": source["source_kind"], "source_text": source["text"]}, ensure_ascii=False)
     extracted = call_model(model, key, EXTRACT_INSTRUCTIONS, context, extraction_schema(), "clinical_extraction_draft")
@@ -243,12 +243,13 @@ def build_draft(record: dict, source: dict, model: str, key: str, llm_check: boo
              "input_source": source["url"], "source_kind": source["source_kind"],
              "source_sha256": hashlib.sha256(source["text"].encode("utf-8")).hexdigest(),
              "created_utc": datetime.now(timezone.utc).isoformat(), "model": model,
+             "auditor_model": (auditor_model or model) if llm_check else None,
              "review_status": "AI draft only — human source review and adjudication required",
              "extraction": extracted, "mechanical_evidence_checks": mechanical,
              "llm_audit": None, "human_approved": False}
     if llm_check:
         audit_context = json.dumps({"source_text": source["text"], "draft": extracted}, ensure_ascii=False)
-        draft["llm_audit"] = call_model(model, key, AUDIT_INSTRUCTIONS, audit_context,
+        draft["llm_audit"] = call_model(auditor_model or model, key, AUDIT_INSTRUCTIONS, audit_context,
                                         auditor_schema(), "clinical_extraction_audit")
     return draft
 
@@ -259,6 +260,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--limit", type=int, default=3, help="Max documents (1–10); limits API costs")
     parser.add_argument("--priority", choices=["High", "Medium", "Low / needs relevance check", "all"], default="High")
     parser.add_argument("--model", default=os.environ.get("OPENAI_MODEL", "gpt-4.1-mini"))
+    parser.add_argument("--audit-model", default=os.environ.get("OPENAI_AUDIT_MODEL"),
+                        help="Optional independent auditor model; defaults to the extractor model")
     parser.add_argument("--llm-check", action="store_true", help="Second model call audits each extraction (extra cost)")
     parser.add_argument("--source-text", type=Path, help="Optional licensed UTF-8 full text for ONE selected PMID, instead of abstract")
     parser.add_argument("--output-dir", type=Path, default=ROOT / "outputs" / "extraction_drafts")
@@ -279,6 +282,7 @@ def main(argv: list[str] | None = None) -> int:
         parser.error("No matching candidates. Select another priority or explicit PMID(s).")
     args.output_dir.mkdir(parents=True, exist_ok=True)
     report = {"created_utc": datetime.now(timezone.utc).isoformat(), "model": args.model,
+              "auditor_model": (args.audit_model or args.model) if args.llm_check else None,
               "attempted": len(chosen), "drafts_written": 0, "failed": [],
               "output_dir": str(args.output_dir), "human_review_completed": False}
     for candidate in chosen:
@@ -294,7 +298,8 @@ def main(argv: list[str] | None = None) -> int:
                 pub = fetch_pubmed_abstract(pmid)
                 source = {"title": pub["title"], "text": pub["abstract"],
                           "url": pub["source_url"], "source_kind": "PubMed abstract only"}
-            draft = build_draft(candidate, source, args.model, key, args.llm_check)
+            draft = build_draft(candidate, source, args.model, key, args.llm_check,
+                                auditor_model=args.audit_model)
             destination = args.output_dir / f"pmid-{pmid}-draft.json"
             destination.write_text(json.dumps(draft, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
             report["drafts_written"] += 1

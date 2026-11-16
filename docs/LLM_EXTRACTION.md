@@ -31,7 +31,7 @@ python -m unittest discover -s tests -v
 
 `--source-text` is **optional and local only**. Check the article's license and completeness first; do not commit copyrighted full text, abstracts, API keys, or confidential documents. The source file is never uploaded to GitHub by the script, though its text is sent to the model API for extraction. Review the model provider's data handling before processing nonpublic material. Do not process patient data.
 
-Default model: `gpt-4.1-mini`, overridable using `--model MODEL` or `OPENAI_MODEL`; model compatibility, pricing, and availability can change. The script uses the OpenAI **Responses API** with strict JSON schema output and `store: false`, but the call still goes to an external provider. The key is never included in generated output.
+Default extractor model: `gpt-4.1-mini`, overridable using `--model MODEL` or `OPENAI_MODEL`. The **independent auditor model** may be selected separately using `--audit-model MODEL` or `OPENAI_AUDIT_MODEL`; otherwise the auditor uses the same model as extraction. For a small optional manual comparison, the workflow accepts a newer model such as `gpt-6.1-sol` as the audit model. **The scheduled workflow is not automatically upgraded**, to avoid increasing ongoing API costs. Check model access, pricing, and Structured Outputs support before use. See [VERIFICATION_PILOT.md](VERIFICATION_PILOT.md) for a human-adjudicated benchmark that does not make model API calls. The script uses the OpenAI **Responses API** with strict JSON schema output and `store: false`, but the call still goes to an external provider. The key is never included in generated output.
 
 ## What each draft contains
 

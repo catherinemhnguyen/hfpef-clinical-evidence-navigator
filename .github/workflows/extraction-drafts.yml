@@ -21,6 +21,14 @@ on:
         description: 'Run optional second LLM source audit (extra cost)'
         type: boolean
         default: false
+      extraction_model:
+        description: 'Extractor model ID (test access and costs before running)'
+        type: string
+        default: 'gpt-4.1-mini'
+      audit_model:
+        description: 'Independent auditor model ID; e.g. gpt-6.1-sol (more expensive)'
+        type: string
+        default: 'gpt-4.1-mini'
 permissions:
   contents: read
 jobs:
@@ -48,9 +56,11 @@ jobs:
           INPUT_LIMIT: ${{ inputs.limit }}
           INPUT_PRIORITY: ${{ inputs.priority }}
           INPUT_AUDIT: ${{ inputs.llm_check }}
+          INPUT_EXTRACT_MODEL: ${{ inputs.extraction_model }}
+          INPUT_AUDIT_MODEL: ${{ inputs.audit_model }}
         shell: bash
         run: |
-          args=(--limit "$INPUT_LIMIT" --priority "$INPUT_PRIORITY")
+          args=(--limit "$INPUT_LIMIT" --priority "$INPUT_PRIORITY" --model "$INPUT_EXTRACT_MODEL" --audit-model "$INPUT_AUDIT_MODEL")
           if [ -n "$INPUT_PMIDS" ]; then args+=(--pmids "$INPUT_PMIDS"); fi
           if [ "$INPUT_AUDIT" = 'true' ]; then args+=(--llm-check); fi
           python scripts/extract_candidates.py "${args[@]}"

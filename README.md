@@ -19,6 +19,10 @@ GitHub Actions successfully completed the first run, producing **1,660 candidate
 
 Recreate the seed with `python scripts/discover_literature.py --offline` or run the live API search without `--offline` on an internet-connected computer. **The first GitHub Actions live API crawl succeeded on November 12, 2026.** It was not independently reproduced in the local offline environment; future weekly runs depend on the GitHub Actions configuration and permissions. Clinical outcomes are never automatically synthesized or promoted from a citation alone. This is not a comprehensive systematic review.
 
+## Independent verification pilot and user feedback
+
+A new **human-adjudicated evaluation tool** measures field-level extraction precision/recall and whether the AI auditor finds mistakes, without automatically treating an LLM's verdict as truth. Generate a blank source-bound worksheet with `python scripts/evaluate_extractions.py --make-template --drafts outputs/pilot-a --output outputs/pilot-a-reviews.json` and score it after independent human annotation. **No clinical accuracy score has yet been established by this tool.** See [the verification pilot](docs/VERIFICATION_PILOT.md) and [clinician feedback plan](docs/CLINICIAN_FEEDBACK.md). Manual extraction Actions now let you choose separate extraction and auditor models for cost-controlled comparisons; the scheduled model defaults are unchanged.
+
 ## LLM-assisted extraction drafts (v0.4)
 
 **New: opt-in research extraction, not automatic clinical publication.** The [manual GitHub Actions extraction workflow](.github/workflows/extraction-drafts.yml) selects 1–10 PubMed publications already found by the discovery crawler, retrieves available **PubMed abstracts**, and calls an LLM to produce structured clinical fields and source-linked knowledge units. Every populated field must have a short verbatim source excerpt. Basic evidence-substring and numerical consistency checks flag possible unsupported claims; an optional second LLM call audits contextual support and omissions.
