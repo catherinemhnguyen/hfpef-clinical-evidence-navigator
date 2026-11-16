@@ -5,12 +5,14 @@ on:
     branches: [main]
     paths:
       - 'scripts/extract_candidates.py'
+      - 'scripts/verify_candidates.py'
       - 'scripts/validate_data.py'
       - 'tests/**'
       - '.github/workflows/extraction-ci.yml'
   pull_request:
     paths:
       - 'scripts/extract_candidates.py'
+      - 'scripts/verify_candidates.py'
       - 'scripts/validate_data.py'
       - 'tests/**'
       - '.github/workflows/extraction-ci.yml'

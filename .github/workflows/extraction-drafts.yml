@@ -18,17 +18,17 @@ on:
         options: ['High', 'Medium', 'all']
         default: 'High'
       llm_check:
-        description: 'Run optional second LLM source audit (extra cost)'
+        description: 'Run independent second LLM source audit (extra cost)'
         type: boolean
-        default: false
+        default: true
       extraction_model:
         description: 'Extractor model ID (test access and costs before running)'
         type: string
-        default: 'gpt-4.1-mini'
+        default: 'gpt-6-luna'
       audit_model:
         description: 'Independent auditor model ID; e.g. gpt-6.1-sol (more expensive)'
         type: string
-        default: 'gpt-4.1-mini'
+        default: 'gpt-6.1-sol'
 permissions:
   contents: read
 jobs:
@@ -37,7 +37,7 @@ jobs:
     timeout-minutes: 25
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      OPENAI_MODEL: gpt-4.1-mini
+      OPENAI_MODEL: gpt-6-luna
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

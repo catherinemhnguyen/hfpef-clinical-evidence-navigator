@@ -1,0 +1,68 @@
+name: HFpEF Navigator usability feedback
+description: Suggest improvements to the research evidence explorer (no patient details)
+title: "[Feedback] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping us improve this research prototype.
+        **Do not share patient identifiers, protected health information,
+        medical records, or personal health questions.** The site is not
+        clinical decision support, and candidate records are not medically validated.
+  - type: dropdown
+    id: role
+    attributes:
+      label: Your perspective
+      options:
+        - Cardiology clinician
+        - Cardiovascular researcher
+        - Medical trainee
+        - Other researcher
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: feature
+    attributes:
+      label: Which part did you try?
+      options:
+        - Curated detailed studies
+        - Unverified literature discovery
+        - Search or filtering
+        - Export / citation links
+        - General website navigation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: What were you trying to do?
+      description: Use a general research question, not a patient case.
+      placeholder: "I wanted to compare the primary endpoints reported in two HFpEF trials."
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What worked, and what was unclear or missing?
+      placeholder: "The LVEF inclusion criteria were easy to see, but I couldn't filter by endpoint."
+    validations:
+      required: true
+  - type: dropdown
+    id: success
+    attributes:
+      label: Were you able to complete the task?
+      options:
+        - Yes
+        - Partially
+        - No
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: One improvement you would prioritize
+      placeholder: "Please add a filter for randomized versus observational evidence."
+    validations:
+      required: false

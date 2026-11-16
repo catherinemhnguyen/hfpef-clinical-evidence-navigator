@@ -8,8 +8,12 @@ The website has two clearly different layers:
 
 - `.github/workflows/literature-discovery.yml`: Monday/Wednesday/Friday at 08:17 UTC (subject to GitHub Actions timing and settings). Uses public APIs and updates the unreviewed candidate files and title triage queue.
 - `.github/workflows/scheduled-extraction.yml`: Monday/Wednesday/Friday at 09:17 UTC, selects up to **two** previously successfully processed-free, high-priority PubMed IDs; retrieves abstracts; creates LLM structured drafts; always requests a second LLM audit. The raw source excerpts and clinical drafts are retained in **Actions artifacts for 30 days**, not added to the public website. The public `data/extraction_attempts.json` ledger stores only bibliographic PMIDs and processing status. Failed candidates can be retried, and manual runs are available.
-- If the repo secret `OPENAI_API_KEY` is missing, the paid extraction stage **skips safely**. A connected ChatGPT subscription does not provide this API key. GitHub Actions and model API usage may incur costs; review billing and usage limits. Default model is `gpt-4.1-mini`; verify availability and pricing before enabling.
+- If the repo secret `OPENAI_API_KEY` is missing, the paid extraction stage **skips safely**. A connected ChatGPT subscription does not provide this API key. GitHub Actions and model API usage may incur costs; review billing and usage limits. New default extraction model is `gpt-6-luna` and independent auditor is `gpt-6.1-sol`; verify access, usage limits and pricing before enabling paid requests. Model changes have not been tested with a live API key.
 - Scheduled workflows are not guaranteed to fire at the exact minute. The extraction workflow reads the most recently committed discovery data; it is not guaranteed to wait for a concurrently running discovery job. The crawler and extraction workflows both need successful GitHub Actions permissions.
+
+## Automated bibliographic crosschecking
+
+After each scheduled discovery run, `scripts/verify_candidates.py --online-limit 20` checks identifier integrity for all unreviewed records, and separately re-fetches up to 20 pending PubMed or ClinicalTrials.gov source identities. Reports and mismatches are stored in `data/verification_report.json`, `data/verification_flags.csv`, and `data/verification_online_ledger.json`. Source identity matching does **not** certify HFpEF relevance, numerical trial outcomes or clinical approval. See [METADATA_VERIFICATION.md](METADATA_VERIFICATION.md).
 
 ## Clinical safety gates and reviewer workflow
 
