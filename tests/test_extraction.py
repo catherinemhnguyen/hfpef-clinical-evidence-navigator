@@ -15,7 +15,7 @@ class ExtractionTests(unittest.TestCase):
         schema = ex.extraction_schema()
         self.assertEqual(set(schema["properties"]), set(schema["required"]))
         self.assertEqual(set(schema["properties"]["fields"]["properties"]), set(ex.FIELD_NAMES))
-        self.assertEqual(set(ex.auditor_schema()["properties"]), {"judgments", "potential_omissions"})
+        self.assertEqual(set(ex.auditor_schema()["properties"]), {"judgments", "knowledge_judgments", "potential_omissions"})
 
     def test_validated_verbatim_quote(self):
         self.assertTrue(ex.quote_present("EF above 40%", "Inclusion: EF above 40% at baseline."))
@@ -65,7 +65,9 @@ class ExtractionTests(unittest.TestCase):
             "fields": {k: {"value": None, "evidence_quote": None} for k in ex.FIELD_NAMES},
             "knowledge_units": [], "missing_information": [],
         }
-        audit = {"judgments": [], "potential_omissions": []}
+        audit = {"judgments": [{"field": name, "verdict": "not_extracted", "reason": "not supplied"}
+                               for name in ex.FIELD_NAMES],
+                 "knowledge_judgments": [], "potential_omissions": []}
         record = {"id": "pmid-12345678", "pmid": "12345678"}
         source = {"title": "Example", "text": "Study abstract with no result fields",
                   "url": "https://pubmed.ncbi.nlm.nih.gov/12345678/",
@@ -77,6 +79,27 @@ class ExtractionTests(unittest.TestCase):
                          ["gpt-4.1-mini", "gpt-6.1-sol"])
         self.assertEqual(draft["auditor_model"], "gpt-6.1-sol")
         self.assertFalse(draft["human_approved"])
+
+    def test_auditor_coverage_blocks_incomplete_review(self):
+        extracted = {
+            "fields": {name: {"value": None, "evidence_quote": None}
+                       for name in ex.FIELD_NAMES},
+            "knowledge_units": [{"category": "results", "claim": "Claim",
+                                 "evidence_quote": "support"}],
+        }
+        audit = {"judgments": [
+            {"field": name, "verdict": "not_extracted", "reason": "not extracted"}
+            for name in ex.FIELD_NAMES],
+            "knowledge_judgments": [],
+            "potential_omissions": []}
+        with self.assertRaisesRegex(ValueError, "knowledge-unit"):
+            ex.validate_auditor_coverage(audit, extracted)
+        audit["knowledge_judgments"] = [{"index": 0, "verdict": "unclear",
+                                          "reason": "source incomplete"}]
+        ex.validate_auditor_coverage(audit, extracted)
+        audit["judgments"].pop()
+        with self.assertRaisesRegex(ValueError, "field judgments"):
+            ex.validate_auditor_coverage(audit, extracted)
 
     def test_missing_key_fails_without_network(self):
         import os
