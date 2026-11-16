@@ -131,6 +131,20 @@ async function initializeDiscovery() {
     const data = await response.json();
     if (!Array.isArray(data.candidates)) throw Error('Discovery record array unavailable');
     const records = data.candidates;
+    const identityStatus = $('bibliography-check-status');
+    try {
+      const checkResponse = await fetch('data/verification_report.json', {cache:'no-cache'});
+      if (!checkResponse.ok) throw Error('No verification summary published yet');
+      const check = await checkResponse.json();
+      if (check.total_candidates !== records.length) throw Error('Verification summary is stale');
+      identityStatus.textContent = 'Bibliographic checks (not clinical validation): ' +
+        fmt(check.local_metadata_passed) + ' structurally consistent records; ' +
+        fmt(check.online_identity_matched) + ' separately rechecked against source APIs; ' +
+        fmt(check.local_metadata_flagged + check.online_identity_mismatched) +
+        ' flagged for metadata review. No clinical findings have been automatically approved.';
+    } catch (_error) {
+      identityStatus.textContent = 'Independent source-identity checks are pending or updating; all discovered records remain unverified clinical candidates.';
+    }
     $('total-candidates').textContent = fmt(records.length);
     $('discovery-heading-count').textContent = fmt(records.length);
     if (data.generated_at && !Number.isNaN(Date.parse(data.generated_at))) {
