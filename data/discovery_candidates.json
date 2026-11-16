@@ -1,6 +1,6 @@
 {
   "project": "HFpEF Clinical Evidence Navigator",
-  "generated_at": "2026-11-14T02:14:45+00:00",
+  "generated_at": "2026-11-16T10:16:35+00:00",
   "discovery_method": "Public API bibliographic discovery; clinical eligibility and outcome review pending",
   "not_systematic_review": true,
   "candidates": [
@@ -6155,6 +6155,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "pmid-43030112",
+      "source": "PubMed",
+      "pmid": "43030112",
+      "nct_id": "",
+      "doi": "10.3390/nu18213483",
+      "title": "Phase Angle, Skeletal Muscle Function, and Molecular Phenotype in HFpEF: A Subanalysis of the SAUNA-HFpEF Study.",
+      "year": 2026,
+      "journal": "Nutrients",
+      "publication_type": "Journal Article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43030112/",
+      "discovery_status": "Pending screening",
+      "source_kind": "Journal publication",
+      "provenance": "PubMed ESummary API"
+    },
+    {
       "id": "pmid-41662912",
       "source": "PubMed",
       "pmid": "41662912",
@@ -7815,6 +7830,21 @@
       "journal": "International journal of cardiology",
       "publication_type": "Journal Article",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41580132/",
+      "discovery_status": "Pending screening",
+      "source_kind": "Journal publication",
+      "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "pmid-43033234",
+      "source": "PubMed",
+      "pmid": "43033234",
+      "nct_id": "",
+      "doi": "10.1007/s00246-026-04556-x",
+      "title": "SGLT2 Inhibitors in Fontan Circulation: Bridging the Evidence Gap Between Adult Heart Failure Data and Single-Ventricle Physiology.",
+      "year": 2026,
+      "journal": "Pediatric cardiology",
+      "publication_type": "Journal Article, Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43033234/",
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
@@ -11510,21 +11540,6 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "pmid-40578265",
-      "source": "PubMed",
-      "pmid": "40578265",
-      "nct_id": "",
-      "doi": "10.1016/j.jchf.2025.102523",
-      "title": "Heart-Lung Interactions in HFpEF: Dynamic Hyperinflation and Exercise PCWP.",
-      "year": 2025,
-      "journal": "JACC. Heart failure",
-      "publication_type": "Journal Article, Randomized Controlled Trial, Research Support, N.I.H., Extramural",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40578265/",
-      "discovery_status": "Pending screening",
-      "source_kind": "Journal publication",
-      "provenance": "PubMed ESummary API"
-    },
-    {
       "id": "pmid-39820727",
       "source": "PubMed",
       "pmid": "39820727",
@@ -12000,21 +12015,6 @@
       "journal": "European journal of heart failure",
       "publication_type": "Journal Article, Multicenter Study, Randomized Controlled Trial",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41039732/",
-      "discovery_status": "Pending screening",
-      "source_kind": "Journal publication",
-      "provenance": "PubMed ESummary API"
-    },
-    {
-      "id": "pmid-40606208",
-      "source": "PubMed",
-      "pmid": "40606208",
-      "nct_id": "",
-      "doi": "10.1016/j.ijcha.2025.101723",
-      "title": "Intravenous iron for iron deficiency in heart failure with preserved ejection fraction. A multivariate analysis.",
-      "year": 2025,
-      "journal": "International journal of cardiology. Heart & vasculature",
-      "publication_type": "Journal Article",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40606208/",
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
@@ -24960,7 +24960,7 @@
       "source": "PubMed",
       "query_label": "hfpef",
       "query": "(\"heart failure with preserved ejection fraction\"[Title/Abstract] OR HFpEF[Title/Abstract] OR \"diastolic heart failure\"[Title/Abstract]) AND (\"clinical trial\"[Publication Type] OR \"randomized controlled trial\"[Publication Type] OR \"observational study\"[Publication Type] OR \"cohort studies\"[MeSH Terms] OR \"guideline\"[Publication Type] OR \"registry\"[Title/Abstract] OR \"trial\"[Title/Abstract])",
-      "reported_matches": 3999,
+      "reported_matches": 4001,
       "retrieved": 750,
       "search_truncated": true
     },
