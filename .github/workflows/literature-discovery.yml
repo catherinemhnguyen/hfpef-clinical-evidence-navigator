@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: Discover bibliographic candidates
-        run: python scripts/discover_literature.py --max-pubmed 1500 --max-trials 400
+        run: python scripts/discover_literature.py --max-pubmed 12000 --max-trials 5000
       - name: Independently recheck public-source identities and flag metadata exceptions
         run: python scripts/verify_candidates.py --online-limit 20
       - name: Generate title-level screening queue (never promotes records)
