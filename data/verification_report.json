@@ -1,0 +1,14 @@
+{
+  "generated_at_utc": "2026-11-16T15:35:52+00:00",
+  "scope": "bibliographic identity only; NOT HFpEF eligibility, clinical extraction or physician validation",
+  "total_candidates": 1662,
+  "local_metadata_passed": 1662,
+  "local_metadata_flagged": 0,
+  "online_identity_matched": 20,
+  "online_identity_mismatched": 0,
+  "online_identity_unavailable": 0,
+  "online_identity_not_checked": 1642,
+  "online_attempted_this_run": 20,
+  "unverified_clinical_records": 1662,
+  "not_a_comprehensive_search": true
+}
