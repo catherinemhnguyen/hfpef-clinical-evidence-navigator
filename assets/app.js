@@ -125,6 +125,7 @@ async function initializeDiscovery() {
   const input = $('discovery-search');
   const source = $('discovery-source');
   const sort = $('discovery-sort');
+  const checkFilter = $('discovery-check');
   try {
     const response = await fetch('data/discovery_candidates.json', {cache:'no-cache'});
     if (!response.ok) throw Error('Discovery data unavailable (HTTP ' + response.status + ')');
@@ -132,18 +133,41 @@ async function initializeDiscovery() {
     if (!Array.isArray(data.candidates)) throw Error('Discovery record array unavailable');
     const records = data.candidates;
     const identityStatus = $('bibliography-check-status');
+    let auditReport = null;
+    let identityChecks = new Map();
     try {
-      const checkResponse = await fetch('data/verification_report.json', {cache:'no-cache'});
-      if (!checkResponse.ok) throw Error('No verification summary published yet');
+      const [checkResponse, ledgerResponse] = await Promise.all([
+        fetch('data/verification_report.json', {cache:'no-cache'}),
+        fetch('data/verification_online_ledger.json', {cache:'no-cache'})
+      ]);
+      if (!checkResponse.ok || !ledgerResponse.ok) throw Error('Source verification summary unavailable');
       const check = await checkResponse.json();
-      if (check.total_candidates !== records.length) throw Error('Verification summary is stale');
-      identityStatus.textContent = 'Bibliographic checks (not clinical validation): ' +
-        fmt(check.local_metadata_passed) + ' structurally consistent records; ' +
-        fmt(check.online_identity_matched) + ' separately rechecked against source APIs; ' +
+      const ledger = await ledgerResponse.json();
+      if (check.total_candidates !== records.length ||
+          !check.generated_at_utc || !data.generated_at ||
+          Date.parse(check.generated_at_utc) < Date.parse(data.generated_at) ||
+          ledger.schema_version !== 1 || !ledger.records) {
+        throw Error('Source verification results are stale');
+      }
+      auditReport = check;
+      identityChecks = new Map(Object.entries(ledger.records));
+      identityStatus.textContent = 'Automated checks: ' +
+        fmt(check.local_metadata_passed) + ' bibliographic records passed structural checks; ' +
+        fmt(check.online_identity_matched) + ' independently matched to their source records; ' +
         fmt(check.local_metadata_flagged + check.online_identity_mismatched) +
-        ' flagged for metadata review. No clinical findings have been automatically approved.';
+        ' metadata exceptions. All still require human clinical review.';
     } catch (_error) {
-      identityStatus.textContent = 'Independent source-identity checks are pending or updating; all discovered records remain unverified clinical candidates.';
+      identityStatus.textContent = 'Verification report unavailable or updating: records are visible but automated status remains pending. Human clinical review is not complete.';
+    }
+    function reviewLevel(record) {
+      if (!auditReport) return 'pending';
+      const current = identityChecks.get(record.id);
+      if (current && (current.status === 'identity_mismatch' || current.status === 'unavailable')) return 'pending';
+      if (current && current.status === 'identity_match') return 'source';
+      // The aggregate permits a blanket metadata pass only if no exceptions exist.
+      if (auditReport.local_metadata_flagged === 0 &&
+          auditReport.local_metadata_passed === records.length) return 'metadata';
+      return 'pending';
     }
     $('total-candidates').textContent = fmt(records.length);
     $('discovery-heading-count').textContent = fmt(records.length);
@@ -157,6 +181,7 @@ async function initializeDiscovery() {
       const query = input.value.trim().toLowerCase();
       const filtered = records.filter(r => {
         if (source.value !== 'all' && r.source !== source.value) return false;
+        if (checkFilter.value !== 'all' && reviewLevel(r) !== checkFilter.value) return false;
         return [r.title, r.journal, r.publication_type, r.year, r.pmid, r.nct_id, r.doi]
           .map(v => String(v ?? '')).join(' ').toLowerCase().includes(query);
       });
@@ -167,13 +192,24 @@ async function initializeDiscovery() {
       });
       const shown = filtered.slice(0,pageSize);
       count.textContent = 'Showing ' + fmt(shown.length) + ' of ' + fmt(filtered.length) +
-        ' matching candidates (' + fmt(records.length) + ' indexed). Pending screening; not verified study results.';
+        ' matching published records (' + fmt(records.length) + ' indexed). Human clinical review pending.';
       list.replaceChildren(...shown.map(r => {
         const card = make('article','study-card');
-        addText(card,'span','tag',(r.source || 'Source unknown') + ' · UNREVIEWED');
+        addText(card,'span','tag',(r.source || 'Source unknown') + ' · BIBLIOGRAPHIC RECORD');
         addText(card,'h3','',r.title || 'Untitled record');
         addText(card,'p','study-title', [r.year, r.journal || r.publication_type].filter(Boolean).join(' · '));
-        addText(card,'p','review-note', 'Pending screening · Bibliographic entry only; no clinical outcomes verified');
+        const reviewRow = make('div','review-status-row');
+        const level = reviewLevel(r);
+        if (level === 'source') {
+          addText(reviewRow,'span','review-check review-source','✓ Independently matched source identity');
+        } else if (level === 'metadata') {
+          addText(reviewRow,'span','review-check review-metadata','✓ Automated metadata check passed');
+        } else {
+          addText(reviewRow,'span','review-check review-pending','! Metadata verification pending / flagged');
+        }
+        addText(reviewRow,'span','review-check review-human','○ Human clinical review pending');
+        card.append(reviewRow);
+        addText(card,'p','review-note','Published bibliographic record only. Automated checks do not validate eligibility, study design, outcomes, or safety.');
         if (r.url && /^https:\/\//.test(r.url)) card.append(detailLink('View original record ↗',r.url));
         return card;
       }));
@@ -184,9 +220,10 @@ async function initializeDiscovery() {
     input.addEventListener('input',reset);
     source.addEventListener('change',reset);
     sort.addEventListener('change',reset);
+    checkFilter.addEventListener('change',reset);
     more.addEventListener('click',()=>{pageSize+=30;render();});
     $('clear-discovery').addEventListener('click',()=>{
-      input.value='';source.value='all';sort.value='newest';reset();input.focus();
+      input.value='';source.value='all';sort.value='newest';checkFilter.value='all';reset();input.focus();
     });
     render();
   } catch (error) {
