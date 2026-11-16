@@ -24,11 +24,11 @@ on:
       extraction_model:
         description: 'Extractor model ID (test access and costs before running)'
         type: string
-        default: 'gpt-4.1-mini'
+        default: 'gpt-6-luna'
       audit_model:
         description: 'Independent auditor model ID; e.g. gpt-6.1-sol (more expensive)'
         type: string
-        default: 'gpt-4.1-mini'
+        default: 'gpt-6.1-sol'
 permissions:
   contents: read
 jobs:
