@@ -420,6 +420,146 @@
       "status": "identity_match",
       "source": "PubMed EFetch",
       "flags": []
+    },
+    "pmid-42471240": {
+      "fingerprint": "ca4c2193d2b9756335d6a019f15fe3dbb36256b0d7fed406ebbe6c95d46408d4",
+      "checked_at_utc": "2026-11-20T09:11:17+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-42499458": {
+      "fingerprint": "5100e52cf6613b5cff5de612b57b11b864a9155e66d9951a00b24cb27f1db451",
+      "checked_at_utc": "2026-11-20T09:11:18+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-39508889": {
+      "fingerprint": "4cb5b78ef474d0bb80dfdc320109d2561e5a1ded3e3e0876207cd543888dfb1e",
+      "checked_at_utc": "2026-11-20T09:11:18+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-42264013": {
+      "fingerprint": "b8759022e011b54ba3a3ecf1605ef1c384af05cab461573dcb225a27d4419f8c",
+      "checked_at_utc": "2026-11-20T09:11:19+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-42836827": {
+      "fingerprint": "903de2a71b30e7a86aae15233238bce86805f5cb932a98862261fcad7febbb74",
+      "checked_at_utc": "2026-11-20T09:11:19+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-42158122": {
+      "fingerprint": "ef6bf6f3ea16fa50ab263bfe2ab99b75428e278fa7deafc8823acacc24334913",
+      "checked_at_utc": "2026-11-20T09:11:20+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-41920703": {
+      "fingerprint": "c1662346c5fd53656346b53b1436d6c74eac42634c7d575990366b18b292136c",
+      "checked_at_utc": "2026-11-20T09:11:20+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-42387409": {
+      "fingerprint": "0490fec0b87eaa8637f3280f2c50cae0dccb9809d9a23a4d07f9ef408079824e",
+      "checked_at_utc": "2026-11-20T09:11:21+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-42710812": {
+      "fingerprint": "bbe65b9a5edf901f986a4fda6ed95f856cd7f2d2fd1cf1fe647f8b089dc6db1a",
+      "checked_at_utc": "2026-11-20T09:11:21+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-41774493": {
+      "fingerprint": "774b5a58841250e22c9dc4aade3fa12063c6c2167174a3b3d2ef2df8ff79b747",
+      "checked_at_utc": "2026-11-20T09:11:22+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-42285871": {
+      "fingerprint": "57fed70a4ae32135d41291fb16023255bf978af882a279be636aa52bb2a1cd8c",
+      "checked_at_utc": "2026-11-20T09:11:22+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-40449820": {
+      "fingerprint": "cac182bb1bfba362ec5ece5369c78ea9255f5e0741bb5f47cd63a6eb3a171b6b",
+      "checked_at_utc": "2026-11-20T09:11:23+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-41901601": {
+      "fingerprint": "781cb6f56c850c72fab3f3154a9a3889bd6255991710e0acd4a4c153827b7116",
+      "checked_at_utc": "2026-11-20T09:11:23+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-41503686": {
+      "fingerprint": "2599baaa3a8ca928e795494efdb43a03ddf802646f8f1f5b91c216da33782d7b",
+      "checked_at_utc": "2026-11-20T09:11:24+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-41457144": {
+      "fingerprint": "e0a02431269cbdc448211068f40afe66d85ea683a18ff84341ccc258fa1adc39",
+      "checked_at_utc": "2026-11-20T09:11:24+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-42173348": {
+      "fingerprint": "99048b68565f25ee795eee0e483a8357927d1ce43550c47227043e4f3210face",
+      "checked_at_utc": "2026-11-20T09:11:25+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-42282066": {
+      "fingerprint": "5ee7133dd3c5293629dc5f24ea7003823b71abc1a3658cdbc6eaeae1b0ab6023",
+      "checked_at_utc": "2026-11-20T09:11:25+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-41453729": {
+      "fingerprint": "f7fa3a5d50ba5289d16fdf6c03d48e789aeb77adaa21e4eb2114517a57612610",
+      "checked_at_utc": "2026-11-20T09:11:25+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-42933567": {
+      "fingerprint": "7cf9f289c3526e88254ab2ded70ebdda5753b6fbb9eeb1f7481889cab8fae5f1",
+      "checked_at_utc": "2026-11-20T09:11:26+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-42403237": {
+      "fingerprint": "2d3bce31c7f4110fb7a6255bf533d7ac7ec4b050ce03e75736c953767c65cf80",
+      "checked_at_utc": "2026-11-20T09:11:26+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
     }
   }
 }

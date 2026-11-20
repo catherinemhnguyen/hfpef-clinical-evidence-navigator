@@ -1,6 +1,6 @@
 {
   "project": "HFpEF Clinical Evidence Navigator",
-  "generated_at": "2026-11-18T09:11:52+00:00",
+  "generated_at": "2026-11-20T09:11:17+00:00",
   "discovery_method": "Public API bibliographic discovery; clinical eligibility and outcome review pending",
   "not_systematic_review": true,
   "candidates": [
@@ -8045,16 +8045,16 @@
       "provenance": "PubMed ESummary API"
     },
     {
-      "id": "pmid-42862749",
+      "id": "pmid-43046872",
       "source": "PubMed",
-      "pmid": "42862749",
+      "pmid": "43046872",
       "nct_id": "",
       "doi": "10.1159/crd/absag023",
-      "title": "Semaglutide in Heart Failure with Preserved Ejection Fraction and Obesity: The Gap Between Discussion and Use.",
+      "title": "Semaglutide in Heart Failure With Preserved-Ejection Fraction and Obesity: The Gap Between Discussion and Use.",
       "year": 2026,
       "journal": "Cardiology",
       "publication_type": "Journal Article",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42862749/",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43046872/",
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
@@ -8175,6 +8175,21 @@
       "journal": "Heart & lung : the journal of critical care",
       "publication_type": "Journal Article",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42480264/",
+      "discovery_status": "Pending screening",
+      "source_kind": "Journal publication",
+      "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "pmid-42720588",
+      "source": "PubMed",
+      "pmid": "42720588",
+      "nct_id": "",
+      "doi": "10.1093/bjr/tqag225",
+      "title": "Sex differences in cardiac function and remodeling in patients with preserved left ventricular ejection fraction across all stages of chronic kidney disease.",
+      "year": 2026,
+      "journal": "The British journal of radiology",
+      "publication_type": "Journal Article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42720588/",
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
@@ -8335,10 +8350,10 @@
       "pmid": "42961949",
       "nct_id": "",
       "doi": "10.1093/eschf/xvag274",
-      "title": "Sex-Specific Mechanisms and Therapeutics in Heart Failure: Translating Biology into Personalized Care.",
+      "title": "Sex-specific mechanisms and therapeutics in heart failure: translating biology into personalized care.",
       "year": 2026,
       "journal": "ESC heart failure",
-      "publication_type": "Journal Article",
+      "publication_type": "Journal Article, Review",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42961949/",
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
@@ -23473,7 +23488,7 @@
       "title": "Prevalence, Incidence, and Outcomes of Diastolic Dysfunction in Isolated Tricuspid Regurgitation: Perhaps Not Really \"Isolated\"?",
       "year": 2024,
       "journal": "JACC. Cardiovascular imaging",
-      "publication_type": "Journal Article",
+      "publication_type": "Journal Article, Research Support, N.I.H., Extramural",
       "url": "https://pubmed.ncbi.nlm.nih.gov/39066743/",
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
@@ -71010,16 +71025,16 @@
       "source": "PubMed",
       "query_label": "hfpef",
       "query": "(\"heart failure with preserved ejection fraction\"[Title/Abstract] OR HFpEF[Title/Abstract] OR \"diastolic heart failure\"[Title/Abstract]) AND (\"clinical trial\"[Publication Type] OR \"randomized controlled trial\"[Publication Type] OR \"observational study\"[Publication Type] OR \"cohort studies\"[MeSH Terms] OR \"guideline\"[Publication Type] OR \"registry\"[Title/Abstract] OR \"trial\"[Title/Abstract])",
-      "reported_matches": 4002,
-      "retrieved": 4002,
+      "reported_matches": 4004,
+      "retrieved": 4004,
       "search_truncated": false
     },
     {
       "source": "PubMed",
       "query_label": "hfmrEF",
       "query": "(\"heart failure with mildly reduced ejection fraction\"[Title/Abstract] OR HFmrEF[Title/Abstract] OR \"heart failure with normal ejection fraction\"[Title/Abstract]) AND (\"clinical trial\"[Publication Type] OR \"randomized controlled trial\"[Publication Type] OR \"observational study\"[Publication Type] OR \"cohort studies\"[MeSH Terms] OR \"guideline\"[Publication Type] OR \"registry\"[Title/Abstract] OR \"trial\"[Title/Abstract])",
-      "reported_matches": 715,
-      "retrieved": 715,
+      "reported_matches": 714,
+      "retrieved": 714,
       "search_truncated": false
     },
     {
