@@ -1,6 +1,6 @@
 {
   "project": "HFpEF Clinical Evidence Navigator",
-  "generated_at": "2026-11-20T09:11:17+00:00",
+  "generated_at": "2026-11-23T09:31:15+00:00",
   "discovery_method": "Public API bibliographic discovery; clinical eligibility and outcome review pending",
   "not_systematic_review": true,
   "candidates": [
@@ -1443,6 +1443,21 @@
       "discovery_status": "Pending screening",
       "source_kind": "Trial registry",
       "provenance": "ClinicalTrials.gov API v2"
+    },
+    {
+      "id": "pmid-43066666",
+      "source": "PubMed",
+      "pmid": "43066666",
+      "nct_id": "",
+      "doi": "10.1016/j.jchf.2026.103500",
+      "title": "Cardiac and Metabolic Effects of Semaglutide in Obesity-Related HFpEF: Rationale and Design of CAMEO-SEMA.",
+      "year": 2026,
+      "journal": "JACC. Heart failure",
+      "publication_type": "Journal Article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43066666/",
+      "discovery_status": "Pending screening",
+      "source_kind": "Journal publication",
+      "provenance": "PubMed ESummary API"
     },
     {
       "id": "pmid-41385054",
@@ -4220,6 +4235,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "pmid-43066674",
+      "source": "PubMed",
+      "pmid": "43066674",
+      "nct_id": "",
+      "doi": "10.1016/j.vhri.2026.102158",
+      "title": "Health Utility of Thai Patients With Heart Failure Using EQ-5D-5L Instrument.",
+      "year": 2026,
+      "journal": "Value in health regional issues",
+      "publication_type": "Journal Article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43066674/",
+      "discovery_status": "Pending screening",
+      "source_kind": "Journal publication",
+      "provenance": "PubMed ESummary API"
+    },
+    {
       "id": "pmid-41711165",
       "source": "PubMed",
       "pmid": "41711165",
@@ -5105,6 +5135,21 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
+      "id": "pmid-43065287",
+      "source": "PubMed",
+      "pmid": "43065287",
+      "nct_id": "",
+      "doi": "10.1080/17512433.2026.2768391",
+      "title": "Incremental associations of pharmacological components in heart failure with mildly reduced or preserved ejection fraction: a systematic review and component network meta-analysis.",
+      "year": 2026,
+      "journal": "Expert review of clinical pharmacology",
+      "publication_type": "Journal Article, Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43065287/",
+      "discovery_status": "Pending screening",
+      "source_kind": "Journal publication",
+      "provenance": "PubMed ESummary API"
+    },
+    {
       "id": "nct-NCT07554638",
       "source": "ClinicalTrials.gov",
       "pmid": "",
@@ -5490,6 +5535,21 @@
       "journal": "",
       "publication_type": "Study Guide",
       "url": "https://pubmed.ncbi.nlm.nih.gov/29763016/",
+      "discovery_status": "Pending screening",
+      "source_kind": "Journal publication",
+      "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "pmid-30725783",
+      "source": "PubMed",
+      "pmid": "30725783",
+      "nct_id": "",
+      "doi": "",
+      "title": "Left Ventricular Failure.",
+      "year": 2026,
+      "journal": "",
+      "publication_type": "Study Guide",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30725783/",
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
@@ -6175,7 +6235,7 @@
       "pmid": "42962984",
       "nct_id": "",
       "doi": "10.1016/j.healun.2026.10.025",
-      "title": "Not All PVR Reductions Are Created Equal: Lessons From the CADENCE Trial.",
+      "title": "Not all PVR reductions are created equal: Lessons from the CADENCE trial.",
       "year": 2026,
       "journal": "The Journal of heart and lung transplantation : the official publication of the International Society for Heart Transplantation",
       "publication_type": "Journal Article",
@@ -18448,7 +18508,7 @@
       "title": "'Working me to life': longitudinal perceptions from adults with heart failure with preserved ejection fraction enrolled in an exercise training clinical trial.",
       "year": 2024,
       "journal": "European journal of cardiovascular nursing",
-      "publication_type": "Journal Article, Randomized Controlled Trial",
+      "publication_type": "Journal Article, Randomized Controlled Trial, Research Support, N.I.H., Extramural",
       "url": "https://pubmed.ncbi.nlm.nih.gov/38597735/",
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
@@ -71025,16 +71085,16 @@
       "source": "PubMed",
       "query_label": "hfpef",
       "query": "(\"heart failure with preserved ejection fraction\"[Title/Abstract] OR HFpEF[Title/Abstract] OR \"diastolic heart failure\"[Title/Abstract]) AND (\"clinical trial\"[Publication Type] OR \"randomized controlled trial\"[Publication Type] OR \"observational study\"[Publication Type] OR \"cohort studies\"[MeSH Terms] OR \"guideline\"[Publication Type] OR \"registry\"[Title/Abstract] OR \"trial\"[Title/Abstract])",
-      "reported_matches": 4004,
-      "retrieved": 4004,
+      "reported_matches": 4008,
+      "retrieved": 4008,
       "search_truncated": false
     },
     {
       "source": "PubMed",
       "query_label": "hfmrEF",
       "query": "(\"heart failure with mildly reduced ejection fraction\"[Title/Abstract] OR HFmrEF[Title/Abstract] OR \"heart failure with normal ejection fraction\"[Title/Abstract]) AND (\"clinical trial\"[Publication Type] OR \"randomized controlled trial\"[Publication Type] OR \"observational study\"[Publication Type] OR \"cohort studies\"[MeSH Terms] OR \"guideline\"[Publication Type] OR \"registry\"[Title/Abstract] OR \"trial\"[Title/Abstract])",
-      "reported_matches": 714,
-      "retrieved": 714,
+      "reported_matches": 716,
+      "retrieved": 716,
       "search_truncated": false
     },
     {

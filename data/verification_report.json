@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-11-20T09:11:27+00:00",
+  "generated_at_utc": "2026-11-23T09:31:22+00:00",
   "scope": "bibliographic identity only; NOT HFpEF eligibility, clinical extraction or physician validation",
-  "total_candidates": 4734,
-  "local_metadata_passed": 4734,
+  "total_candidates": 4738,
+  "local_metadata_passed": 4738,
   "local_metadata_flagged": 0,
-  "online_identity_matched": 80,
+  "online_identity_matched": 100,
   "online_identity_mismatched": 0,
   "online_identity_unavailable": 0,
-  "online_identity_not_checked": 4654,
+  "online_identity_not_checked": 4638,
   "online_attempted_this_run": 20,
-  "unverified_clinical_records": 4734,
+  "unverified_clinical_records": 4738,
   "not_a_comprehensive_search": true
 }
