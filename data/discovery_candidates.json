@@ -1,6 +1,6 @@
 {
   "project": "HFpEF Clinical Evidence Navigator",
-  "generated_at": "2026-11-25T09:19:41+00:00",
+  "generated_at": "2026-11-27T09:17:03+00:00",
   "discovery_method": "Public API bibliographic discovery; clinical eligibility and outcome review pending",
   "not_systematic_review": true,
   "candidates": [
@@ -1925,6 +1925,21 @@
       "provenance": "ClinicalTrials.gov API v2"
     },
     {
+      "id": "pmid-43086335",
+      "source": "PubMed",
+      "pmid": "43086335",
+      "nct_id": "",
+      "doi": "10.1038/s41586-026-11231-x",
+      "title": "Clinical landscape of cardiometabolic heart failure with preserved ejection fraction.",
+      "year": 2026,
+      "journal": "Nature",
+      "publication_type": "Journal Article, Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43086335/",
+      "discovery_status": "Pending screening",
+      "source_kind": "Journal publication",
+      "provenance": "PubMed ESummary API"
+    },
+    {
       "id": "pmid-41571576",
       "source": "PubMed",
       "pmid": "41571576",
@@ -3540,6 +3555,21 @@
       "journal": "JAMA cardiology",
       "publication_type": "Journal Article, Randomized Controlled Trial, Multicenter Study",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41903165/",
+      "discovery_status": "Pending screening",
+      "source_kind": "Journal publication",
+      "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "pmid-43078855",
+      "source": "PubMed",
+      "pmid": "43078855",
+      "nct_id": "",
+      "doi": "10.1038/s43856-026-01796-z",
+      "title": "Empirical assessment of constraints and credibility when emulating a placebo-controlled trial with the clone-censor-weight approach.",
+      "year": 2026,
+      "journal": "Communications medicine",
+      "publication_type": "Journal Article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43078855/",
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
@@ -5180,6 +5210,21 @@
       "provenance": "PubMed ESummary API"
     },
     {
+      "id": "pmid-43090917",
+      "source": "PubMed",
+      "pmid": "43090917",
+      "nct_id": "",
+      "doi": "10.3390/jcm15228885",
+      "title": "Incretin-Based Therapies and SGLT2 Inhibitors in Obesity-Associated HFpEF: A Systematic Review of Direct and BMI-Stratified Randomized Evidence.",
+      "year": 2026,
+      "journal": "Journal of clinical medicine",
+      "publication_type": "Journal Article, Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43090917/",
+      "discovery_status": "Pending screening",
+      "source_kind": "Journal publication",
+      "provenance": "PubMed ESummary API"
+    },
+    {
       "id": "pmid-42775506",
       "source": "PubMed",
       "pmid": "42775506",
@@ -6660,6 +6705,21 @@
       "journal": "International journal of cardiology",
       "publication_type": "Journal Article, Randomized Controlled Trial",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41662912/",
+      "discovery_status": "Pending screening",
+      "source_kind": "Journal publication",
+      "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "pmid-43086309",
+      "source": "PubMed",
+      "pmid": "43086309",
+      "nct_id": "",
+      "doi": "10.1038/s41746-026-03138-8",
+      "title": "Phenomapping-derived tool to individualize the effect of sacubitril-valsartan in heart failure with preserved ejection fraction.",
+      "year": 2026,
+      "journal": "NPJ digital medicine",
+      "publication_type": "Journal Article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43086309/",
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
@@ -8475,6 +8535,21 @@
       "journal": "Pediatric cardiology",
       "publication_type": "Journal Article, Review",
       "url": "https://pubmed.ncbi.nlm.nih.gov/43033234/",
+      "discovery_status": "Pending screening",
+      "source_kind": "Journal publication",
+      "provenance": "PubMed ESummary API"
+    },
+    {
+      "id": "pmid-43097111",
+      "source": "PubMed",
+      "pmid": "43097111",
+      "nct_id": "",
+      "doi": "10.1007/s00246-026-04555-y",
+      "title": "SGLT2i Use and Safety in Congenital Heart Disease: An Analysis of the ACTION Heart Failure Registry.",
+      "year": 2026,
+      "journal": "Pediatric cardiology",
+      "publication_type": "Journal Article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43097111/",
       "discovery_status": "Pending screening",
       "source_kind": "Journal publication",
       "provenance": "PubMed ESummary API"
@@ -71085,8 +71160,8 @@
       "source": "PubMed",
       "query_label": "hfpef",
       "query": "(\"heart failure with preserved ejection fraction\"[Title/Abstract] OR HFpEF[Title/Abstract] OR \"diastolic heart failure\"[Title/Abstract]) AND (\"clinical trial\"[Publication Type] OR \"randomized controlled trial\"[Publication Type] OR \"observational study\"[Publication Type] OR \"cohort studies\"[MeSH Terms] OR \"guideline\"[Publication Type] OR \"registry\"[Title/Abstract] OR \"trial\"[Title/Abstract])",
-      "reported_matches": 4008,
-      "retrieved": 4008,
+      "reported_matches": 4013,
+      "retrieved": 4013,
       "search_truncated": false
     },
     {

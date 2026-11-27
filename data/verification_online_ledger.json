@@ -833,6 +833,146 @@
       "status": "identity_match",
       "source": "PubMed EFetch",
       "flags": []
+    },
+    "pmid-39907680": {
+      "fingerprint": "7c0f07d6da9ae37a33f83c00f787f3138fa3d506f0beeaebdb4d68914dfc27a5",
+      "checked_at_utc": "2026-11-27T09:17:03+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-42349572": {
+      "fingerprint": "92d831b3500e497d2da6bde54bebcb3223038ce35cd384c0a00138b9be5265ff",
+      "checked_at_utc": "2026-11-27T09:17:04+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-42000551": {
+      "fingerprint": "1a6fb56578470501eb2ff280fd2c89df2c4bfe42ed1e5a59296592ee03e998c2",
+      "checked_at_utc": "2026-11-27T09:17:04+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-42727188": {
+      "fingerprint": "655e2dfe27b67f63741b908891725f68a1604fe19f3484ac8c6a91cd4145bd5f",
+      "checked_at_utc": "2026-11-27T09:17:05+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-42298662": {
+      "fingerprint": "7adb4fd68c620a89f0ff242f54a1e1c489a6387caddd8499c505a9bf874c9d76",
+      "checked_at_utc": "2026-11-27T09:17:05+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-41953528": {
+      "fingerprint": "33beb9bd23968c9c8c6a4c72d5666507f35a1ef9909ff6b32994719c9f3ee1f4",
+      "checked_at_utc": "2026-11-27T09:17:06+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-42189435": {
+      "fingerprint": "f4cd977da4784ef88e4f9b07beaab260d9f4c15a5053ae6e24e0f842b19d6e7c",
+      "checked_at_utc": "2026-11-27T09:17:06+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "nct-NCT07598760": {
+      "fingerprint": "d0aa67831ef60c24c43b6a774069ab815c4edc1ba2b4b1bfe4e14e1fca40760a",
+      "checked_at_utc": "2026-11-27T09:17:07+00:00",
+      "status": "identity_match",
+      "source": "ClinicalTrials.gov API v2",
+      "flags": []
+    },
+    "nct-NCT07776054": {
+      "fingerprint": "76fb305b1d6fd0a2180f09f174506e0fceff9dd54a9f740eadd2cb965da16e13",
+      "checked_at_utc": "2026-11-27T09:17:07+00:00",
+      "status": "identity_match",
+      "source": "ClinicalTrials.gov API v2",
+      "flags": []
+    },
+    "pmid-43086335": {
+      "fingerprint": "43ca06a71ffb269734a0494c6dde3b00f962809a8765de03c8e7445f6e98769e",
+      "checked_at_utc": "2026-11-27T09:17:08+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-41571576": {
+      "fingerprint": "6a47546080af7389e834a6c0bd8ecf5953d044c52b7f52036addc5857e368f87",
+      "checked_at_utc": "2026-11-27T09:17:08+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-42149306": {
+      "fingerprint": "314eb334bdbde1a9db8c52e17e985d810f38d471796ed4056cf369e955c51284",
+      "checked_at_utc": "2026-11-27T09:17:08+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-42860551": {
+      "fingerprint": "8d8c84dd8b1fdb134fe34406153a008402c428c2709ccaada41688f6aa38347b",
+      "checked_at_utc": "2026-11-27T09:17:09+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-41935682": {
+      "fingerprint": "e951d9a14eef01765f356d99d3252ac2dd5e21508a8611cc671b66602e831121",
+      "checked_at_utc": "2026-11-27T09:17:09+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-42882000": {
+      "fingerprint": "e827b3719db61d0e71ba2abef7452b4aff82a12837143384a73cf04e42cbe9f7",
+      "checked_at_utc": "2026-11-27T09:17:10+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-42252454": {
+      "fingerprint": "10c2ea1b20ebd817e43f38c7e88d796f47b8d727a5ea684f2b3b35c2c5fdd2cb",
+      "checked_at_utc": "2026-11-27T09:17:10+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-42374188": {
+      "fingerprint": "cfe5cf9608a1b5c92bacb42ff65fde3a64aa3e1c4cfc6aa98d26b7288e036972",
+      "checked_at_utc": "2026-11-27T09:17:11+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-42924832": {
+      "fingerprint": "f33e1b3acb6aea7c02799f56ffdc72ff5bee6c31b18137f7fcd3c1e332b220e7",
+      "checked_at_utc": "2026-11-27T09:17:12+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "pmid-40801434": {
+      "fingerprint": "4306a7984e80cc9347a4746e2ee44e3d00f374c56bd89ed289cefb481230039f",
+      "checked_at_utc": "2026-11-27T09:17:12+00:00",
+      "status": "identity_match",
+      "source": "PubMed EFetch",
+      "flags": []
+    },
+    "nct-NCT07390110": {
+      "fingerprint": "f156a5cc5bee6df7e492c546fa93492a57ffe2ed3f0e3d8fcee503f2c135bb4e",
+      "checked_at_utc": "2026-11-27T09:17:13+00:00",
+      "status": "identity_match",
+      "source": "ClinicalTrials.gov API v2",
+      "flags": []
     }
   }
 }
